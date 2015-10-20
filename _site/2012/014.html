@@ -1,0 +1,1548 @@
+﻿<!DOCTYPE html>
+
+<html lang="en"><head>
+
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>IJMEM - Numerical Simulation of Performance Augmentation in a Plate Fin Heat Exchanger Using Winglet Type Vortex Generators</title>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+
+<link href='http://fonts.googleapis.com/css?family=Antic+Slab:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+
+<link rel="stylesheet" href="../css/style.css" />
+
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../images/icon.ico" rel="shortcut icon" type="image/x-icon">
+
+<!--Goole Analytics Most Visited Article Code-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-45437411-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<!-- Include Most Visited Articles JS Code -->
+<script type="text/javascript" src="mostvisited.js"></script> 
+
+<!-- Include SHARE THIS js sources -->
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "8f49e037-5155-4595-abc0-d069deae6488", doNotHash: true, doNotCopy: false, hashAddressBar: false, onhover:false});</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <div class="header">
+
+  <div class="container">
+
+  <div class="row">
+
+        <header id="header">
+          <div class="logo col-sm-4"><a href="http://avestia.com"><img src="/images/logo.png" alt="Journal" class="img" /></a></div>
+          <div class="threemenu col-sm-5">
+            <div class="row"><a class="link col-sm-4" href="http://avestia.com"><img src="/images/home.jpg" class="img"></a> <a class="link col-sm-4" href="http://avestia.com/journals/"><img src="/images/journals.jpg" class="img"></a> <a class="link col-sm-4" href="http://amss.avestia.com"><img src="/images/submit.jpg" class="img"></a></div>
+          </div>
+          <div class="searching col-sm-3">
+<div class="sharethis">Share this page:<br/>
+<span class='st_email'></span>
+<span class='st_facebook'></span>
+<span class='st_twitter'></span>
+<span class='st_googleplus'></span>
+<span class='st_linkedin'></span>
+</div>
+            
+         <div class="search_wrapper">
+         <form class="search" action="../results" method="get">
+              <fieldset>
+                <span class="text">
+                <input name="q" id="q" type="text" value="" placeholder="Search..." /><button class="search_top_button">GO</button>
+                </span>
+
+              </fieldset>
+            </form>
+            
+            </div>
+          </div>
+          <div class="col-lg-12"><div class="avada-row">
+
+            <nav id="nav" class="nav-holder">
+
+              <div role="navigation" class="navbar navbar-default">
+
+                <div class="container-fluid">
+
+                  <div class="navbar-header">
+      
+                  
+                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<span class="navbar-brand" href="#">Menu</span>
+      </div>
+
+      <div class="navbar-collapse collapse">
+
+        <ul class="nav navbar-nav">			
+						<li><a href="/">Journal Home</a></li><span class="menu-line">|</span>
+                        <li><a href="../aims/">Aims and Scopes</a></li><span class="menu-line">|</span>
+                        <li><a href="../charges/">Article Processing Charges</a></li><span class="menu-line">|</span>
+                        <li><a href="../guidelines/">Author Guidelines</a></li><span class="menu-line">|</span>
+                        <li><a href="../board/">Editorial Board</a></li><br>
+                        <li><a href="../volumes/">Past Volumes</a></li><span class="menu-line">|</span>
+                        <li><a href="../current/">Current Volume</a></li><span class="menu-line">|</span>
+                        <li><a href="../propose/">Propose a Special Topic</a></li><span class="menu-line">|</span>
+                        <li><a href="../register/">Receive Updates</a></li><span class="menu-line">|</span>
+                        <li><a href="../contact/">Contact Us</a></li>
+
+
+
+
+        </ul>
+
+      </div>
+
+      <!--/.nav-collapse -->
+
+      </div>
+
+      <!--/.container-fluid -->
+
+      </div>
+
+    </nav>
+
+    </div>
+
+    </div>
+    <div class="clearfix"></div>
+
+    </header>
+
+  </div>
+
+  </div>
+<div class="clearfix"></div>
+  </div>
+
+  <div class="slider">
+
+  <div class="container">
+
+  <div class="row"><div class="col-lg-12"><img class="img2" src="../images/international.jpg" alt="img"></div></div>
+
+  </div>
+
+  </div>
+
+  <div class="container">
+  <div class="clearfix"></div>
+  <div class="row">
+
+  <div class="col-lg-12 text"><div align=center>
+<div class="table">
+
+  <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 style='border:none; width: 100%'>
+   <tr>
+      <td>Volume 1, Issue 2 - Year 2012 - Pages 109-121</td>
+      <td align="right"><a href="PDF/014.pdf">View PDF (Full-text)</a></td>
+    </tr>
+   <tr>
+      <td>DOI: 10.11159/ijmem.2012.014</td>
+      <td align="right"><a href="#references">Linked References</a></td>
+    </tr>
+	<tr>
+	<td colspan="2">ISSN: 1929-2724</td>
+	</tr>
+   </table>
+   
+</div>
+</div>
+
+<br>
+
+<p align="center" style="font-size:22pt;">Numerical Simulation of Performance Augmentation in a Plate Fin Heat Exchanger Using Winglet Type Vortex Generators</p>
+	<p align="center"><strong>Amin Ebrahimi&sup1;, Saeid Kheradmand&sup2;</strong>
+  	<br>&sup1;Department of Mechanical Engineering, Ferdowsi University of Mashhad
+Mashhad, Iran<br>
+ebrahimi.amin@gmail.com<br>
+&sup2;Department of Mechanical Engineering, Isfahan University
+Isfahan, Iran<br>
+saeid_kheradmand@yahoo.com
+</p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<p align="justify"><i><strong>Abstract- </strong> A detailed evaluation of the performance parameters in the laminar flow regime with regard to the enhancement of heat transfer using winglet type vortex generators has been accomplished in this study. Three dimensional numerical studies of flow structure and laminar convectionheat transfer are performed in a plate fin heat exchanger with longitudinal vortex generators (LVGs) in present paper. The Effects of common ﬂow up and common ﬂow down pairs of vortices produced by LVGs with two different shapes of the winglets, a pair of rectangular winglet (RWP) and a pair of delta winglet (DWP), are studied at various Reynolds numbers. The results show that effect of LVGs could effectively enhance the heat transfer of the heat exchanger. According to the non-dimensional defined parameter for evaluation of performance, (N<sub>um</sub>/N<sub>um,0</sub>)/(f/f<sub>0</sub>), the channel with DWP shows better overall performance than RWP. The common ﬂow down configuration of DWP shows a better overall performance at Reynolds numbers lower than 720 and common ﬂow up conﬁguration of DWP shows a better overall performance at Reynolds numbers more than 720; also, the common ﬂow down conﬁguration shows a better overall performance than the common ﬂow up conﬁguration for RWP.</i></p>
+
+<p align="left"><i><strong>Keywords:</strong></i> Plate Fin Heat Exchanger, Vortex Generator, Winglet Pair, Enhanced Heat Transfer, Laminar Flow</p>
+<p>&nbsp;</p>
+<p align="justify">  &copy; Copyright 2012 Authors - This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/2.0" target="_blank">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
+
+
+
+
+<p class=MsoNormalCxSpFirst style='text-indent:0cm;border:none;padding:0cm'><b><span lang=EN-US>Nomenclature</span></b></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>a     : minimum transverse distance between winglet pair, m</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>A     : Heat transfer area or cross-sectional area, m<sup>2</sup></span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>c<sub>p        </sub>: specific heat, J/(kg K)</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>C­<sub>p</sub>   : pressure coefficient</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>f      : friction factor</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>h     : heat transfer coefficient, W/(m<sup>2</sup>K) or height of
+vortex</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>         generator, m</span></p>
+
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>H    : channel height, m</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>k     : thermal conductivity, W/(m K)</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>l      : chord length of vortex generator, m</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>L     : channel length, m</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>Nu  : Nusselt nember</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>p     : pressure, Pa</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>q     : heat flux, W/m<sup>2</sup></span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>Q     : heat transfer capacity, W</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>Re   : Reynolds number</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>T     : temperature, K</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>U     : velocity vector</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>W   : channel width, m</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>s     : distance between the trailing edge of the winglet</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>         and the entry of the channel, m</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>x,y,z     : Cartesian coordinate</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><b><i><span
+lang=EN-US>Greek symbols</span></i></b></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>&#946;     : attack angle of the winglet, degree</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>&#957;     : kinematic viscosity, m<sup>2</sup>s</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>&#961;     : density, kg/m<sup>3</sup></span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>&#915;     : circulation of cross section, m<sup>2</sup>/s</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><b><i><span
+lang=EN-US>Subscripts</span></i></b></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>0     : flat plate</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>app : apparent</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>in    : inlet</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>m    : mean</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>out : outlet</span></p>
+
+<p class=MsoNormalCxSpMiddle style='text-indent:0cm;border:none;padding:0cm'><span
+lang=EN-US>w    : wall</span></p>
+
+<img src="../images/line.png" width="100%;" height="1" />
+<h2>1. Introduction</h2> 
+
+
+<p align="justify" style="text-indent:19.85pt;">The compact heat
+exchangers are widely employed in heating, warming and cooling applications in
+such fields as automobile industries, chemical engineering, power system,
+aerospace, air conditioning, and electronic chip cooling, etc.</p>
+
+<p align="justify" style="text-indent:19.85pt;">The subject of heat
+transfer enhancement have attracted many researchers for a long time to develop
+more compact and low cost heat exchangers with high efficiency and the weight
+as light as possible. It is well known that the thermal resistance of gas is
+generally much higher than the other contributions. Hence, Efforts to improve
+refrigerant to air heat exchanger performance should focus on reducing the dominant
+thermal resistance on the air side of the heat exchanger. </p>
+
+<p align="justify" style="text-indent:19.85pt;">Different methods are
+used for heat transfer augmentation in thermal systems. Active (require
+external power) and passive (no need to external power) methods are two groups
+for this goal (Webb, 1994 and Jacobi and Shah, 1995). In the two past decades,
+considerable researches have been focused on impact of the passive generation
+of longitudinal vortices on the heat transfer enhancement. Due to pressure
+difference between two sides of vortex generator, the flow along the side edges
+separates and generates vortices. Transverse, longitudinal and horseshoe
+vortices can generate by vortex generators. As described by Fiebig (1995), when
+angel of attack of VGs is small, generates vortices are mainly longitudinal,
+and when VGs are perpendicular to the flow direction, generates vortices are
+mainly transverse. When longitudinal vortex generators (LVGs) used near a heat
+transfer surface, generated vortices due to presence of LVGs distorted the
+temperature field in the channel and they increase the heat transfer between
+the fluid and its neighbouring surfaces by transporting fluid from the wall
+into the free stream and vice versa.</p>
+
+<p align="justify" style="text-indent:19.85pt;">The first report on
+boundary layer control to delay boundary layer separation on aircraft wings by
+using longitudinal vortices was presented in 1960 by Schubauer and Spangenberg (1960).
+The influence of vortex generators on the heat transfer performance was studied
+by Jonhnson and Joubert (1969). Since then, considerable researches focused on
+the use of LVGs to enhance heat transfer performance.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Delta and cube winglet
+are studied by Edwards and Alker (1974) and they showed better overall
+performance of delta winglets. On the other hand Local distribution of heat
+transfer is studied by Katoaka et al. (1977). Velocity and temperature
+distributions are studied and reported by Fiebig et al. (1989). Fiebig et al.
+(1991) showed that local heat transfer with winglet could be three times larger
+than channel flow without winglet in laminar regime. In another experimental
+research Fiebig et al. studied various types of wing and winglets. </p>
+
+<p align="justify" style="text-indent:19.85pt;">Zhu et al. (1995)
+numerically investigated the heat transfer and turbulent flow in a
+rectangular channel with rectangular winglets on one wall and rib-roughness
+elements on the other wall. Results showed that the combined effect of
+rib-roughness and vortex generators could increase the average Nusselt number
+about 450%.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Deb et al. (1995)
+numerically studied heat transfer and flow structure in laminar and
+turbulent flows in a rectangular channel with built-in delta winglets. Biswas
+et al. (1996) carried out numerical and experimental studies of flow structure
+and heat transfer effects of longitudinal vortices behind a delta winglet
+placed in a laminar channel flow. They observed that Presence of delta
+winglet will cause produce a main vortex, a corner vortex and an induced vortex.
+Also, they define a parameter for evaluation of performance quality which
+indicates heat transfer augmentation for a given pressure loss penalty.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Lee et al. (1999)
+numerically studied heat transfer characteristics and structure of turbulence
+in a three-dimensional turbulent boundary layer with delta wing LVGs. They
+found that longitudinal vortices are capable of disturbing the turbulent and
+thermal boundary layer, which caused anisotropy of turbulent intensity and the
+best heat transfer enhancement in the region where the flows are directed
+toward the wall but the vortex core is the region of relatively lower mixing.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Lau et al. (1999)
+measured temperature and instantaneous velocity vector of the turbulent channel
+flow with embedded longitudinal vortices using quadruple hot-wire probes.
+Fluid Flow and heat transfer behind a vortex generators studied by Henze and
+Wolfersdorf (2011) experimentally at Reynolds number of 300000.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Liou et al. (2000)
+carried out experimental investigation on twelve different shaped vortex
+generators to study the heat transfer enhancement in a sharp turning two-pass
+square duct. They showed the importance of secondary flow characteristics and
+their effects on heat transfer.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Yang et al. (2001)
+numerically studied the effects of different attack angles of the delta winglet
+pair on flow field and heat transfer created by interactions between a pair of
+vortices generated by a vortex generator in a rectangular channel turbulent
+flow. Gentry and Jacobi (1997, 2002) experimentally explored the heat transfer
+enhancement in flat-plate flow and developing channel flows with built-in
+delta wings by a naphthalene sublimation technique. The results indicated that
+the average heat transfer could be increased by 50-60% at low Reynolds number
+conditions in comparison with the same channel flow with no delta-wing vortex
+generator.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Sohankar and Davidson
+(2003) carried out unsteady three-dimensional DNS and LES simulations to
+investigate the flow and heat structures in a plate-fin heat exchanger with
+vortex generators. The thickness of the winglet is ignored in this study.</p>
+
+<p align="justify" style="text-indent:19.85pt;">In a numerical study
+two types of winglets are compared by Ferrouillatet al. (2006). This study
+showed that the delta vortex generators were better than the rectangular vortex
+generators pair in terms of heat transfer and mixing.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Sohankar (2007)
+simulated three-dimensional unsteady flow and heat transfer using Direct
+Numerical Simulation (DNS) and Large Eddy Simulation (LES) for a channel with
+two angled finite thickness ribs as a vee-shaped vortex generator to augment
+heat transfer.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Hiravennavar et al.
+(2007) performed a numerical simulation to investigate the unsteady,
+laminar,three-dimensionalflow structure and heat-transfer enhancement by a
+delta winglet pair at various Reynolds numbers and winglet thicknesses.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Yang et al. (2008)
+studied the effects of winglet with common flow up configuration on heat
+transfer and flow in turbulent regime.</p>
+
+<p align="justify" style="text-indent:19.85pt;">A modified rectangular
+longitudinal vortex generator (LVG) is presented and studied by Min et al. (2010).
+This modified wing performs better than original wing.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Winglets are also used
+in micro channels in order to improve heat transfer for liquid flow by Liu et
+al. (2011). They found that the range of critical Reynolds numbers  were at a
+much smaller value by adding winglets than the one without; heat transfer
+performance was improved (9-21% higher for those with laminar flow and 39-90%
+for those with turbulent flow).</p>
+
+<p align="justify" style="text-indent:19.85pt;">Winglet various attack
+angles are experimentally and numerically studied by Wu and Tao (2012). The
+results showed that the average Nusselt number on the surfaces of plate
+increases with the increase of the attack angle.</p>
+
+<p align="justify" style="text-indent:19.85pt;">He et al. (2012) numerically
+studied the potential of punched winglet type vortex generator arrays to
+augment heat transfer performance of finned tube heat exchanger.  They
+reported 34-81% enhancement in heat transfer coefficient accompanied by 43-136%
+pressure drop penalty.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Heat
+transfer augmentation of a plate-fin heat exchanger equipped with two rows of
+winglet type vortex generators with five different strategic placements of the
+VG numerically investigated by Sinha et al. (2013). The Reynolds number which
+they studied was varied in the range of 250–1580.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Effects of the
+different winglets shapes and configurations on the heat transfer augmentation
+at various Reynolds numbers are presented in this paper. </p>
+
+<h2>2. Model Descriptions</h2>
+<h4>2. 1. Geometric
+Configurations</h4>
+
+<p align="justify" style="text-indent:19.85pt;">Simulations are
+performed on a three-dimensional flat plate channel which is equipped by two
+neighbouring fins. Figure 1 shows the schematic diagram of the channel
+with LVGs used for simulations in which X, Y, Z are stream wise, normal, and
+span wise coordinates, respectively. The model adopted in this study includes a
+pair of winglets with a chord length (l) equal to channel height (H), the
+length of the channel (L) equals 25H, the aspect ratio of the channel (AR=W/H)
+equals 4.0, the height of the winglets (h) equals 0.5H. The distance between
+the trailing edge of the winglet and the entry of the channel(s) equals 2.707
+H. The winglets are positioned such that the minimum transverse distance
+between the winglet pair (a) equals 0.5H. The angle of attack of the winglets is
+45°. The winglet width equals 0.01H. The effects of two different shapes of
+winglet including delta winglet pair and rectangular winglet pair investigated
+in the present study.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Two different
+configurations of the LVGs attached on the bottom of the channel are
+considered in this study (Figure1). Due to symmetric arrangement, the
+computations are done in the shadow region in Figure 1.</p>
+
+<figure>
+<img src="014_t_files/image001.png" class="img"/>
+
+<figcaption>
+Figure 1. Physical model and geometric details of a channel with winglet
+type LVGs.</figcaption>
+</figure>
+<br>
+
+
+<h4>2. 2. Governing
+Equations and Boundary Conditions</h4>
+
+<p align="justify" style="text-indent:19.85pt;">In
+this investigation, air is used as working fluid. The generation of
+longitudinal vortices is a quasi-steady phenomenon (S. Ferrouillat,
+2006). Due to the low air velocity and the small
+fin pitch, the flow in the channel of heat
+exchanger is laminar. The flow and heat transfer
+computations are performed for a three-dimensional, steady and incompressible
+flow of air with constant physical properties.&nbsp;The
+governing equations for the fluid flow including continuity, momentum
+and energy equationsin non-dimensional form and standard
+tensor notation can be expressed as follows.</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="014_t_files/image002.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(1)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="014_t_files/image003.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(2)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="014_t_files/image004.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(3)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+
+
+<p align="justify" style="text-indent:19.85pt;">Where
+<i>&#961;</i> is fluid density (kg/m<sup>3</sup>); <i>u</i> is flow velocity
+(m/s); <i>x</i> is Cartesian coordinates (m); <i>&#951;</i> is kinetic viscosity
+(kg/m&nbsp;s); <i>p</i> is static pressure (Pa); <i>T</i> is Temperature (K); <i>k</i>
+is thermal conductivity (W/m&nbsp;K); and <i>c<sub>p</sub></i> is specific heat
+of fluid (J/ (kg&nbsp;K)).</p>
+
+<p align="justify" style="text-indent:19.85pt;">The
+required boundary conditions for numerical simulation in this paper can be described
+as follows:</p>
+
+<p align="justify" style="text-indent:19.85pt;">At
+the inlet boundary: <i>u</i>=<i>u<sub>in</sub></i>=Constant, <i>v</i>=<i>w</i>=0,
+<i>T</i>=<i>T<sub>in</sub>=</i>Constant.</p>
+
+<p align="justify" style="text-indent:19.85pt;">At
+the side boundaries of channel: <i>w</i>=0, <img width=117 height=28 src="014_t_files/image005.png"></p>
+
+<p align="justify" style="text-indent:19.85pt;">At
+the top and bottom boundaries: </p>
+
+<p align="justify" style="text-indent:19.85pt;">On
+the extended surface: <i>v</i>=0, <img width=120 height=30 src="014_t_files/image006.png"></p>
+
+<p align="justify" style="text-indent:19.85pt;">On
+the walls: <i>u</i>=<i>v</i>=<i>w</i>=0, <i>T</i>=<i>T<sub>w</sub></i>=Constant.</p>
+
+<p align="justify" style="text-indent:19.85pt;">At
+the fin surfaces: <i>u</i>=<i>v</i>=<i>w</i>=0, <i>T</i>=<i>T<sub>w</sub></i>=Constant.</p>
+
+<p align="justify" style="text-indent:19.85pt;">At
+the outlet boundary: <img width=155 height=28 src="014_t_files/image007.png"></p>
+
+<h4>2. 3. Parameter
+Definitions</h4>
+
+<p align="justify" style="text-indent:19.85pt;">The Reynolds&nbsp;number (<i>Re</i>), average Nusselt number (<i>Nu</i>)
+and apparent friction coefficient (<i>f<sub>app</sub>Re</i>) are defined by the
+following equations:</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="014_t_files/image008.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(4)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="014_t_files/image009.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(5)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="014_t_files/image010.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(6)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<p align="justify" style="text-indent:19.85pt;">Where
+<i>u<sub>in </sub></i>is the mean velocity at the channel inlet, <i>&#957; </i>kinematic
+viscosity, <i>h</i> heat transfer coefficient, <i>&#916;p </i>the pressure drop
+across computational domain.</p>
+
+<p align="justify" style="text-indent:19.85pt;">The
+mean bulk temperature, pressure and Nusselt number of a cross-section are
+defined as:</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="014_t_files/image011.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(7)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="014_t_files/image012.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(8)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="014_t_files/image013.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(9)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<p align="justify" style="text-indent:19.85pt;">Where
+<i>&#934;</i> is total heat transfer rate between the air and solid wall
+(including fin and LVG surfaces) and <i>A</i> is total heat transfer area.</p>
+
+<p align="justify" style="text-indent:19.85pt;">The
+log-mean temperature difference (<i>&#916;T</i>), the total heat transfer (<i>Q</i>)
+and the heat transfer coefficient (<i>h</i>) are defined as:</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="014_t_files/image014.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(10)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="014_t_files/image015.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(11)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="014_t_files/image016.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(12)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<p align="justify" style="text-indent:19.85pt;">Where
+<img width=14 height=19 src="014_t_files/image017.png"> is the mass flow rate of air in the channel.</p>
+
+<p align="justify" style="text-indent:19.85pt;">The
+definition of span-averaged local heat transfer coefficient <i>h<sub>x</sub></i>
+is as:</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="014_t_files/image018.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(13)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<p align="justify" style="text-indent:19.85pt;">Where
+<i>q<sub>x</sub></i> is the line-weighted average heat flux, <i>T<sub>x</sub></i>
+is the mass-weighted average air temperature of the cross-section.</p>
+
+<p align="justify" style="text-indent:19.85pt;">The
+pressure coefficient is defined as:</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="014_t_files/image019.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(14)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+
+<p align="justify" style="text-indent:19.85pt;">Where
+<img width=9 height=19 src="014_t_files/image020.png"> is the static pressure at the cross section at which pressure
+coefficient is being evaluated and <i>p<sub>in </sub></i>is the free-stream
+static pressure at channel inlet.</p>
+
+<p align="justify" style="text-indent:19.85pt;">The
+circulation of the cross-section is defined by the following equation:</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="014_t_files/image021.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(15)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<h2>3. Numerical Methods</h2>
+
+<p align="justify" style="text-indent:19.85pt;">The
+computational domain is discretized by non-uniform grids, in which the grids in
+channel region and near the walls are fine enough. In order to improve
+the accuracy of the simulation results, the grids around the winglets and the
+channel walls are refined.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Second
+order upwind scheme is used to discretize the convective terms of the governing
+equations for momentum and energy and central difference scheme is employed for
+the diffusion terms. SIMPLEC algorithm has been used in order to implement the
+coupling between pressure and velocity. The convergence criterion is that the
+scaled residuals of momentum and continuity equations are all less than 1.0×10<sup>&#8722;</sup><sup>6</sup> and the scaled residual of energy equation
+is less than 1.0×10<sup>&#8722;7</sup>. The described model with the introduced
+boundary conditions are solved using OpenFOAM solver(Jasak 2006). </p>
+
+
+<h4>3. 1. Numerical
+Simulations and Validation of Model</h4>
+
+<p align="justify" style="text-indent:19.85pt;">Before
+reporting any computational results the grid independence test and model
+verification must be performed to ensure the accuracy and reliability of the
+numerical simulations. In order to validate the independency of solution on the
+grids, a flat plate channel which is equipped by DWP
+in common flow up configuration is considered at Reynolds number
+equals to 750. Four different grid systems are studied which include about
+35,000, 65,000, 155,000 and 250,000 cells. The results are presented in table
+2. In cases with grid points numbers below 155,000 Nu<sub>m</sub> is affected
+by grid point's number. The average Nusselt number of the fourth grid system
+differs from that of the third by less than 0.12%. Hence, for present study, in
+order to decrease the computation time and cost the final grid number is
+selected as about 155,000.</p>
+
+<div class="widetable">
+<table>
+<caption>Table 1. Variation of the predicted mean Nusselt number with number of
+cells (Re=750).</caption>
+<thead>
+ <tr>
+  <td width=113 style='width:3.0cm;border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:11.35pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='text-align:center;
+  text-indent:0cm'>Number of Cells</p>
+  </td>
+  <td width=47 style='width:34.95pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:11.35pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='text-align:center;
+  text-indent:0cm'>Nu<sub>m</sub></p>
+  </td>
+  <td width=84 valign=top style='width:62.75pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:11.35pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='text-align:center;
+  text-indent:0cm'>% Diff Nu<sub>m</sub></p>
+  </td>
+ </tr>
+ </thead>
+ <tbody>
+ <tr style='height:11.35pt'>
+  <td width=113 style='width:3.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:11.35pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='text-align:center;
+  text-indent:0cm'>35,000</p>
+  </td>
+  <td width=47 style='width:34.95pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.35pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='text-align:center;
+  text-indent:0cm'>6.417</p>
+  </td>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.35pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='text-align:center;
+  text-indent:0cm'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='height:11.35pt'>
+  <td width=113 style='width:3.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:11.35pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='text-align:center;
+  text-indent:0cm'>65,000</p>
+  </td>
+  <td width=47 style='width:34.95pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.35pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='text-align:center;
+  text-indent:0cm'>6.487</p>
+  </td>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.35pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='text-align:center;
+  text-indent:0cm'>1.09</p>
+  </td>
+ </tr>
+ <tr style='height:11.35pt'>
+  <td width=113 style='width:3.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:11.35pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='text-align:center;
+  text-indent:0cm'>155,000</p>
+  </td>
+  <td width=47 style='width:34.95pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.35pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='text-align:center;
+  text-indent:0cm'>6.580</p>
+  </td>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.35pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='text-align:center;
+  text-indent:0cm'>1.43</p>
+  </td>
+ </tr>
+ <tr style='height:11.35pt'>
+  <td width=113 style='width:3.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:11.35pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='text-align:center;
+  text-indent:0cm'>250,000</p>
+  </td>
+  <td width=47 style='width:34.95pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.35pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='text-align:center;
+  text-indent:0cm'>6.588</p>
+  </td>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:11.35pt'>
+  <p class=MsoNormalCxSpMiddle align=center style='text-align:center;
+  text-indent:0cm'>0.12</p>
+  </td>
+ </tr>
+ </tbody>
+</table>
+
+</div>
+
+
+<br>
+<p align="justify" style="text-indent:19.85pt;">In addition to grid independence validation, the characteristics of
+heat transfer and fluid flow are compared with the available experimental and
+numerical results published in literature. Thus, numerical simulations are
+performed for a flat plate and plate which is equipped with a pair of delta
+winglet in common flow up configuration where punched directly from the plate
+at attack angles of 45°. Geometrical parameters for the tested plates in the
+channels which used to verify the model are presented in (Wu and Tao,
+2012). The Reynolds number which is presented in experimental
+results is based on the channel height and varies from 500 to 2000. The
+corresponding air volumetric flow rate in the channel inlet varies from 2.5 liter
+to 9.2 liter. The predicted results (Mean Nusselt number, Nu<sub>m</sub>, versus
+Reynolds number, Re) are compared with experimental and numerical results from (Wu
+and Tao 2012). The variations of the average Nusselt number are presented in
+figure 2. The mean deviation between simulated results and experimental values
+is less than 6.9% and the maximum deviation is less than 8.8%
+in present study. The deviations between experimental and numerical results of
+the average Nusselt number are all less than 10% in (Wu and Tao 2012) investigations. The uncertainty in the reported experimental value of the surface
+convection heat transfer coefficient in (Wu and Tao 2012) tests is less than 6.28%.</p>
+
+
+<figure>
+<img src="014_t_files/image022.png" class="img"/>
+
+<figcaption>
+Figure 2. Comparison of average Nusselt number obtained from
+simulation and experimental data. </figcaption>
+</figure>
+<br>
+
+<h2>4. Results</h2>
+<h4>4. 1. Flow Structure</h4>
+
+<p align="justify" style="text-indent:19.85pt;">The
+four different cases mentioned above are simulated and the results of flow
+field are presented in this section. The development of the secondary flow obtained
+from the simulations is presented at four different locations along stream wise
+direction downstream of the LVGs in figure 3 for Re=750. The plots show the
+generation of the counter-rotating vortices by LVGs, their gradual deformation
+and decrease in their strength as they move downstream in the channel. The
+effect of channel walls on vortical structures can be seen when the cross-flow
+at any two stations downstream of the winglets are compared. Two
+counter-rotating main vortices behind the winglets cause the fluid to churn.
+This churning motion causes the fluid near the wall to flow in the central
+region and vice versa.</p>
+
+<p align="justify" style="text-indent:19.85pt;">It
+can be seen in figure 3(I and III) that common flow down vortices cause the downwash
+flow toward the lower wall which is observable between the vortices, and the
+upwash flow away from the lower wall which is observable in the outside region
+of the vortices. As common flow down vortices move downstream in the channel,
+the distance between axes of main vortices increases. Figure 3(II and IV) shows
+that common flow up vortices cause the downwash flow which occurs in the
+outside region of the vortices, and the upwash flow occurs in the central
+region. Unlike the common flow down, the distance between axes of main vortices
+does not change, and the distance of the vortices from the lower wall considerably
+increases as vortices move downstream. A comparison of the secondary velocity
+vectors between different plots in figure 3 indicates that the strength of
+vortices generated by RWP is more than that of DWP.</p>
+
+
+<figure>
+<img src="014_t_files/image023.png" class="img"/>
+
+<figcaption>
+Figure 3. Secondary velocity vectors at different locations along streamwise
+direction (Re=750).</figcaption>
+</figure>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">Figure
+4 shows the circulation distribution along stream wise direction in the channel
+for flat plate and four different cases at Re=750. It is clearly seen in figure
+4 that the circulation distribution in flat plate channel flow is less compared
+to other different cases which are equipped with VGs. At winglets upstream
+region, the variations of the circulation for all flow cases are almost same.
+Moreover, the maximum circulation for channels with VGs is located in
+downstream of winglets, giving a maximum circulation at about x/H=3 for channel
+flows with DWP and at about x/H=3.2 for channel flows with RWP vortex
+generators. The circulation distribution for channel flows with DWP is almost
+same in two different configurations (Common flow up and common flow down); In
+contrast to this, channels with RWP generally do not
+show same behavior in different configurations. As mentioned in figure 3,
+figure 4 again shows that, in the channels with RWP,
+circulation is relatively higher than that of the
+channels with DWP. The maximum circulation in winglets downstream can be found
+in channels with RWP in the common flow up configuration. Compared with flat
+plate channel flow, circulation increased by 47.4% for channels with DWP and
+increased by 86% and 91.2% for the channels with RWP in the common
+flow down and common flow up configurations, respectively. It
+is found that common flow down VGs with a certain minimum
+spacing between the vanes provide less decay of circulation, which is due to
+the viscous dissipation, than common flow up configurations.</p>
+
+<figure>
+<img src="014_t_files/image024.png" class="img"/>
+
+<figcaption>
+Figure 4. Variation of the circulation in the main
+flow direction (Re=750).</figcaption>
+</figure>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">Figure
+5 shows the variation of the pressure coefficient along the stream wise
+direction for flat plate and four different cases of channel at Re=750. It can
+be seen that the pressure coefficient of the flat plate channel gradually
+decreases along the stream wise direction. In winglets upstream, the variations
+of the pressure coefficient are nearly identical for the all cases. The
+simulation results indicate a steep decrease in pressure coefficient due to the
+resistance of the vortex generators very near the location of winglet pairs
+leading edge (x/H=2). This steep decrease continues to x/H=3.2 for channels
+with DWP in both configurations and channels with RWP in common flow down
+configuration. This steep decrease for channels with RWP in common flow up
+configuration continues to x/H=3.0. After this decrease, a rather quickly
+increase is observed which is due to the increase of the cross section flow
+area. Afterwards, the pressure coefficient gradually decreases in the stream wise
+direction. By analysis the above results, it is found that the friction resistance
+of the channel walls is the most important factor influencing the air flow resistance
+in the flat plate case. Considering figure 5, it can be concluded that in
+addition of the friction resistance of the channel walls, flow resistance in
+the channels with winglet pairs depends on the local resistance caused by the
+presence of VGs. It means in the region that the VG is placed addition pressure
+drag is brought about. The pressure drop for channels with RWP is more than
+channels equipped by DWP. Pressure coefficient distribution for channels with
+DWP is almost same in different configurations while for channels with RWP this
+is not so. At the channel outlet the pressure drop for channels with RWP in
+common flow up configuration is higher than that for channels with RWP in
+common flow down configuration; while, the pressure drop for channels with RWP
+in common flow down configuration is more than that for channels with RWP in
+common flow up configuration in a short distance downstream of the trailing
+edge of the winglet pairs.</p>
+
+<figure>
+<img src="014_t_files/image025.png" class="img"/>
+
+<figcaption>
+Figure 5. Variations of pressure coefficient in the main
+flow direction (Re=750)</figcaption>
+</figure>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">Figure
+6 shows the influence of Reynolds number on the apparent friction coefficient of
+the channel in flat plate and four different cases. This figure indicated that
+by increasing the Reynolds number, the apparent friction coefficient increases.
+Considering all cases, it is observed that the apparent friction coefficient
+for channels with VGs have larger values compared with flat plate channel under
+different Reynolds number. Among all cases, channels with RWP have higher apparent
+friction coefficient compared with other cases.</p>
+
+<figure>
+<img src="014_t_files/image026.png" class="img"/>
+
+<figcaption>
+Figure 6. Variation of apparent friction coefficient versus
+Reynolds number for the five cases.</figcaption>
+</figure>
+<br>
+
+<p align="justify" style="text-indent:19.85pt;">Figure
+7 shows the increases of the friction factor ratio in the channel with
+different configurations versus Reynolds number in order to compare effects of
+different configurations. The results indicate that in higher Reynolds number
+the difference between friction factor ratios of each configuration with flat
+plate increases. For instance, At Reynolds number equals to 200, the friction factor
+ratios in the channel with DWP and RWP in common flow up configuration are 8.5%
+and 25%, respectively; and at Reynolds number equal to 1000, the friction
+factor ratios in the channel with DWP and RWP in common flow up configuration
+are 20.1% and 61.2%, respectively. Friction factor ratio of the channels with
+RWP is relatively higher than that for the channels with DWP. However,
+the difference between the channel with DWP in common flow up and common flow
+down configurations is very small. Also, in channels with RWP, common flow up
+configuration has higher values than common flow down configuration.</p>
+
+<figure>
+<img src="014_t_files/image027.png" class="img"/>
+
+<figcaption>
+Figure 7. Variation of friction factor ratio versus
+Reynolds number for the five cases.</figcaption>
+</figure>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">Flow
+structure considered in this section by analyzing the results of simulations
+such as secondary flows, circulation, pressure drops, and friction factor. The
+results indicated that presence of winglets in channels generate to
+counter-rotating main vortices behind the winglets. The secondary flow
+generated by the winglets has significant influence on the flow field in
+channel which can enhance the mixing of the hotter fluid at the walls and
+cooler fluid at the middle of the channel. It causes an increase in temperature
+gradient at the walls and hence enhancing heat transfer performance. In the
+next section heat transfer characteristic of the channels with LVGs are
+investigated.</p>
+
+<h4>4. 2. Heat transfer</h4>
+
+<p align="justify" style="text-indent:19.85pt;">Thermal
+performance of the channel is considered and results of temperature
+distribution, heat fluxes and Nusselt number are presented in this section.
+Figure 8 shows the results of non-dimensional temperature profile at different
+cross sections along the channel for four different cases at Re=750. Considering
+figure 8(I and III) it is indicates that contours of non-dimensional
+temperature are thickened in the upwash region and thinned in the downwash
+region. Figure 8(II and IV) shows that there is a little change in temperature
+profile. It means that the longitudinal vortices do not have significant
+influence on the temperature profile due to maintenance of their distance
+from wall when they move to downstream.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Figure
+9 shows the variation of the span wise local heat flux, on the lower
+channel wall at x/H=5.0for Re=750. On the lower wall the span wise local heat
+flux for the channel with winglets in common flow up configuration
+is higher than that of the flat plate channel only when z/H&gt;0.3 and
+z/H&gt;0.2, respectively. Considering figure 8, in this region the thermal
+boundary layer is thickened due to the upwash flow generated by pair of
+vortices. In the outer region, the span wise local heat flux is higher
+for channels equipped with winglets in common flow up configuration. Also, on
+the lower wall the span wise local heat flux for the channel with
+winglets in common flow down configuration is lower than that of the
+flat plate channel when z/H&gt;1.29 and z/H&gt;1.03, respectively.
+Considering figure 8, due to the upwash flow generated by pair of vortices the
+thermal boundary layer is thickened in this region.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Figure
+10 shows the variation of the span wise local heat flux, on the upper
+channel wall at x/H=5.0for Re=750.On the upper wall,
+the span wise local heat flux for channels with winglets in common flow
+down configuration is lower in the central region (z/H&lt;0.8) and higher
+in the outer region compared with the flat plate channel. On the upper
+wall the span wise local heat flux for the channel with winglets in
+common flow up configuration is higher than that of the flat plate
+channel when z/H&lt;6.2 and z/H&lt;0.45, respectively. As mentioned in figure 3,
+the distance of the common flow up vortices from the lower wall considerably
+increases as vortices move downstream; thus, the increase of the span wise local
+heat flux on the upper wall of the channels with winglet in common flow
+up configuration is larger than that of common flow down configuration.</p>
+
+<p align="justify" style="text-indent:19.85pt;">The Nusselt
+number along the channel is sketched in figure 11. It is found that the Nusselt
+number of the channels with LVGs significantly increases compared to the
+channels without the vortex generators. It is clearly seen in figure 11 that
+the heat transfer enhancement by using LVGs occurs not only in the region where
+the LVGs are attached, but also in the long distance downstream. The results
+indicate that on average, Nusselt number increased by 15.72-33.37% for channels
+equipped with LVGs.</p>
+
+<figure>
+<img src="014_t_files/image028.png" class="img"/>
+
+<figcaption>
+Figure 8. Non-dimensional temperature contours at various
+cross sections (Re=750).</figcaption>
+</figure>
+<br>
+
+<p align="justify" style="text-indent:19.85pt;">Figure
+12 shows the mean Nusselt number for five different cases as a function of
+Reynolds number. This figure indicated that by increasing the Reynolds number,
+the Nusselt number increases. Considering all cases, it is clearly observed
+that Nusselt number for channels with VGs always have larger values compared
+with flat plate channel under different Reynolds number. Nusselt number of
+common flow down configuration is lower than that of common flow up configuration
+for the channel with RWP or DWP. Among all cases, channels with RWP have higher
+Nusselt number compared with other cases. For instance, at Reynolds number
+equals 300, the Nusslet number is 4.44in the flat plate channel, 4.81, 4.83 in
+the channels with DWP in common flow down and common flow up configurations,
+Respectively and 5.17, 5.33 in channels with RWP in common flow down and common
+flow up configurations, Respectively.</p>
+
+<p align="justify" style="text-indent:19.85pt;">As
+far as the heat transfer enhancement is concerned the results should be explain
+in comparison with flat plate channel. In order to investigate the heat transfer
+performance the Nusselt number ratio ((Nu-Nu<sub>0</sub>)/Nu<sub>0</sub>)
+studied at various Reynolds numbers.</p>
+
+<p align="justify" style="text-indent:19.85pt;">The
+Nusselt number ratio versus Reynolds number is depicted in figure 13. It can be
+clearly observed that Nusselt number ratio increases with increasing Reynolds
+number. Compared with the flat-plate channel, the Nusselt number ratio increases
+by 10.7-45.6% and 3.8-25.6% for the channels with RWP and DWP in the common
+flow up configuration, respectively. Also, Nu/Nu<sub>0</sub>
+increases by 8.4-38.4% and 3.3-21% for the channels with RWP and DWP in the
+common flow down configuration, respectively. Analysis of the above
+results indicates that the VG does have effect to enhance heat transfer. It is
+found that channels with RWP in common flow up configuration provides the better
+effectiveness of the heat transfer enhancement, the next is the RWP in common
+flow down configuration and then DWP in common flow up configuration and DWP in
+common flow down configuration in order.</p>
+
+<figure>
+<img src="014_t_files/image029.png" class="img"/>
+
+<figcaption>
+Figure 9. Variation of the span wise local heat flux of
+the lower wall (x/H=5.0, Re=750).</figcaption>
+</figure>
+<br>
+
+<figure>
+<img src="014_t_files/image030.png" class="img"/>
+
+<figcaption>
+Figure 10. Variation of the span wise local heat flux
+of the upper wall (x/H=5.0, Re=750).</figcaption>
+</figure>
+<br>
+
+<figure>
+<img src="014_t_files/image031.png" class="img"/>
+
+<figcaption>
+Figure 11. Variation of Nusselt number in main flow
+direction (Re=750).</figcaption>
+</figure>
+<br>
+
+<figure>
+<img src="014_t_files/image032.png" class="img"/>
+
+<figcaption>
+Figure 12. Variation of mean Nusselt number versus Reynolds
+number for the five cases.</figcaption>
+</figure>
+<br>
+
+<figure>
+<img src="014_t_files/image033.png" class="img"/>
+
+<figcaption>
+Figure 13. Variation of Nusselt number ratio versus
+Reynolds number for the five cases.</figcaption>
+</figure>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">As
+mentioned in previous parts, heat transfer enhancement that occurs by using
+LVGs is associated with increase of pressure drop. A performance evaluation
+parameter, (Nu<sub>m</sub>/Nu<sub>m,0</sub>)/(f/f<sub>0</sub>), is defined as a
+measure of the amount of the heat transfer enhancement against the pressure
+drop increase in order to investigate the overall performance of the channels
+with different shaped winglets and different configurations. The better
+the overall performance of the channel, the larger the value of (Nu<sub>m</sub>/Nu<sub>m,0</sub>)/(f/f<sub>0</sub>).
+The overall performance of four different cases in comparison with flat plate
+channel is presented at various Reynolds numbers in figure 14. It is found
+that, however the heat transfer enhancement in channels with RWP is more than
+channels with DWP, the overall performance of the channels with DWP is better
+than channels with RWP. In channels with DWP the overall performance increases by
+increasing Reynolds number. The difference between two different configurations
+of DWP is small and when the Reynolds number is more than 500 the overall
+performance of the channel which is equipped by DWP is more than one. Overall
+performance of the channels with RWP is less than one. Channels with RWP in
+common flow down configuration have better overall performance than common flow
+up configuration.</p>
+
+<figure>
+<img src="014_t_files/image034.png" class="img"/>
+
+<figcaption>
+Figure 14. Overall performance versus Reynolds number for
+the five cases.</figcaption>
+</figure>
+<br>
+
+<h2>5. Conclusion</h2>
+
+<p align="justify" style="text-indent:19.85pt;">The aim of the present
+study is to investigate the effects of LVGs on the flow structure and heat
+transfer in a plate fin heat exchanger using winglet type vortex generators. A
+numerical simulation of laminar flow over two different shaped LVGs of RWP and DWP
+with two different configurations of common flow up and common
+flow down in a rectangular channel has been performed at various Reynolds
+numbers. </p>
+
+<p align="justify" style="text-indent:19.85pt;">The
+following conclusions are made regarding the results of the flow structure and
+the heat transfer characteristics obtained from simulations.</p>
+
+<p align="justify" style="text-indent:19.85pt;">The
+longitudinal vortex generators significantly increase the circulation in the
+channel flow. The generated vortices by winglets changed the velocity and
+temperature distributions in channels. The magnitude of the velocity vector of
+the secondary flow and the strength of the primary vortices decrease as the
+vortices develop in downstream region of the winglets, and the shape of primary
+vortices are maintained over a long distance in downstream. Also, channel walls
+influence on vortical structures.</p>
+
+<p align="justify" style="text-indent:19.85pt;">The
+use of longitudinal vortex generators increases the pressure drop in channel
+flow. The pressure drop for channels with RWP is more than channels equipped by
+DWP and the pressure drop of the channel with common flow down
+configuration is smaller than that of common flow up
+configuration. The results of simulation indicate that by increasing the
+Reynolds number, the friction factor decreases; while, in higher Reynolds
+number the friction factor ratios of each configuration is more than flat
+plate.</p>
+
+<p align="justify" style="text-indent:19.85pt;">The
+longitudinal vortices improve the convective heat transfer not only in the
+region near LVGs but also in the large region downstream. So the LVs have
+ability to enhance the global heat transfer of channel.</p>
+
+<p align="justify" style="text-indent:19.85pt;">The
+performance of the heat exchangers can obviously enhance by mounting vortex
+generators on the surfaces of gas side. Vortex generators cause an augmentation
+in heat transfer of the channel. For the channel with RWP the mean Nusselt
+number is increased by 8.4-45.7% and for the channel with DWP is increased by
+3.3-25.7% in the whole range of Reynolds number of the present study. Nusselt
+number of common flow down configuration is lower than that of common flow up configuration
+for the channel with RWP or DWP.</p>
+
+<p align="justify" style="text-indent:19.85pt;">The
+overall performance of the channels equipped by DWP is better than channels
+with RWP. The difference between different configurations for channels with DWP
+is very slight. Overall performance of common flow down configuration is better
+than common flow up configuration for channels with RWP.</p>
+
+
+
+
+<img src="images/line.png" width="100&#37;" height="1" />
+<H2><a name="references">References</a></H2>
+
+
+
+<p> Biswas, G., Torii, K., Fujii, D., Nishino, K. (1996). Numerical and experimental determination of flow structure and heat transfer effects of longitudinal vortices in a channel flow. International Journal of Heat and Mass Transfer 39, 3441-3451. <a href="http://dx.doi.org/10.1016/0017-9310(95)00398-3 " target="_blank">View Article</a></p>
+
+<p> Chunhua, M., Chengying, Q., Xiangfei, K., Jiangfeng, D. (2010), Experimental study of rectangular channel with modified rectangular longitudinal vortex generators. International Journal of Heat and Mass Transfer 53, 3023-3029. <a href="http://dx.doi.org/10.1016/j.ijheatmasstransfer.2010.03.026" target="_blank">View Article</a></p>
+
+<p> Deb, P., Biswas, G., Mitra, N. K. (1995). Heat transfer and flow structure in laminar and turbulent flows in a rectangular channel in longitudinal vortices. International Journal of Heat and Mass Transfer 38, 2427-2444. <a href="http://dx.doi.org/10.1016/0017-9310(94)00357-2 " target="_blank">View Article</a></p>
+
+<p>Edwards, F. J., Alker, G. J. R. (1974). The improvement of forced convection surface heat transfer using surface protrusions in the form of (a) cubes and (b) vortex generators. Proceedings of the Fifth International Heat Transfer Conference Tokyo 2, 2244-2248.</p><p> Ferrouillat, S., Tochon, P., Garnier, C., Peerhossaini, H. (2006). Intensiﬁcation of heat-transfer and mixing in multifunctional heat exchangers by artiﬁcially generated stream- wise vorticity. Applied Thermal Engineering 26, 1820-1829. <a href="http://dx.doi.org/10.1016/j.applthermaleng.2006.02.002 " target="_blank">View Article</a></p>
+
+<p> Fiebig, M. (1995). Embedded vortices in internal ﬂow: heat transfer and pressure loss enhancement. International Journal of Heat and Fluid Flow 16, 376-388. <a href="http://dx.doi.org/10.1016/0142-727X(95)00043-P" target="_blank">View Article</a></p>
+
+<p> Fiebig, M., Brockmeier, U., Mitra, N. K., Guntermann, T. (1989). Structure of velocity and temperature fields in laminar channel flows with longitudinal vortex generators. Numerical Heat Transfer A-15, 281-302. <a href="http://dx.doi.org/10.1080/10407788908944689 " target="_blank">View Article</a></p>
+
+<p> Fiebig, M., Kallweit, P., Mitra, N. K., Tiggelbeck, S. (1991). Heat transfer enhancement and drag by longitudinal vortex generators in channel flow. Experimental Thermal and Fluid Science 4, 103-114. <a href="http://dx.doi.org/10.1016/0894-1777(91)90024-L " target="_blank">View Article</a></p>
+
+<p> Gentry, M. C., Jacobi, A. M. (1997). Heat transfer enhancement by delta-wing vortex generators on a ﬂat plate: vortex interactions with the boundary layer. Experimental Thermal and Fluid Science 14, 231-242. <a href="http://dx.doi.org/10.1016/S0894-1777(96)00067-2" target="_blank">View Article</a></p>
+
+<p> Gentry, M. C., Jacobi, A. M., (2002). Heat transfer enhancement by delta-wing-generated tip vortices in ﬂat-plate and developing channel ﬂows. ASME Journal of Heat Transfer 124, 1158-1168. <a href="http://cat.inist.fr/?aModele=afficheN&cpsidt=14424658 " target="_blank">View Article</a></p>
+
+<p> He, Y. L., Han, H., Tao, W. Q., Zhang, Y. W., (2012). Numerical study of heat-transfer enhancement by punched winglet-type vortex generator arrays in fin-and-tube heat exchangers, International Journal of Heat and Mass Transfer 55, 5449–5458 <a href="http://dx.doi.org/10.1016/j.ijheatmasstransfer.2012.04.059 " target="_blank">View Article</a></p>
+
+<p> Henze, M., Wolfersdorf, J. V., (2011). Flow and heat transfer characteristics behind vortex generators-A benchmark dataset, International Journal of Heat and Fluid Flow 32, 318-328. <a href="http://dx.doi.org/10.1016/j.ijheatfluidflow.2010.07.005 " target="_blank">View Article</a></p>
+
+<p> Hiravennavar, S. R., Tulapurkara, E. G., Biswas, G. (2007). A note on the ﬂow and heat transfer enhancement in a channel with built-in winglet pair, International Journal of Heat and Fluid Flow 28, 299-305. <a href="http://dx.doi.org/10.1016/j.ijheatfluidflow.2006.03.030 " target="_blank">View Article</a></p>
+
+<p> Jacobi, A. M., Shah, R. K. (1995). Heat transfer surface enhancement through the use of longitudinal vortices: A review of recent progress, Experimental Thermal and Fluid Science, 11,295-309. <a href="http://dx.doi.org/10.1016/0894-1777(95)00066-U " target="_blank">View Article</a></p>
+
+<p> Jasak, H. (2006). Multi-Physics Simulations in Continuum Mechanics, 5th International Congress of Croatian Society of Mechanics, September, 21-23, 2006, Trogir/Split, Croatia. <a href="http://powerlab.fsb.hr/ped/kturbo/openfoam/papers/ICCSM5.pdf " target="_blank">View Article</a></p>
+
+<p>Johnson, T. R., Joubert, P. N. (1969). The inﬂuence of vortex generators on drag and heat transfer from a circular cylinder normal to an airstream. ASME Journal of Heat Transfer 91, 91-99.</p><p> Katoaka, K., Doi, H., Komai, T. (1977). Heat/mass transfer in Taylor vortex flow with constant axial flow rates. International Journal of Heat and Mass Transfer 20, 57-63. <a href="http://dx.doi.org/10.1016/0017-9310(77)90084-9 " target="_blank">View Article</a></p>
+
+<p> Lau, S., Meiritz, K., Vasanta Ram, V. I. (1999). Measurement of momentum and heat transport in the turbulent channel ﬂow with embedded longitudinal vortices, International Journal of Heat and Fluid Flow 20, 128-141. <a href="http://dx.doi.org/10.1016/S0142-727X(98)10052-8 " target="_blank">View Article</a></p>
+
+<p> Lee, S. H., Ryou, H. S., Choi, Y. K. (1999). Heat transfer in a three-dimensional turbulent boundary layer with longitudinal vortices. International Journal of Heat and Mass Transfer 42, 1521-1534. <a href="http://dx.doi.org/10.1016/S0017-9310(98)00290-7" target="_blank">View Article</a></p>
+
+<p> Liou, T. M., Chen, C. C., Tsai, T. W. (2000). Heat transfer and ﬂuid ﬂow in a square duct with 12 different shaped vortex generators, ASME Journal of Heat Transfer 122, 327-335. <a href="http://cat.inist.fr/?aModele=afficheN&cpsidt=1416000 " target="_blank">View Article</a></p>
+
+<p> Liu, C., Teng, J., Chu, J., Chiu, Y., Huang, S., Jin, S., Dang, T., Greif, R., Pan, H. (2011). Experimental investigations on liquid flow and heat transfer in rectangular microchannel with longitudinal vortex generators. International Journal of Heat and Mass Transfer 54, 3069-3080. <a href="http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.02.030" target="_blank">View Article</a></p>
+
+<p> Schubauer, G. B., Spangenberg, W. G. (1960). Forced mixing in boundary layers. Journal of Fluid Mechanics 8, 10-31. <a href="http://dx.doi.org/10.1017/S0022112060000372 " target="_blank">View Article</a></p>
+
+<p> Sinha, A., Raman, K. A., Chattopadyay, H., Biswas, G., (2013). Effects of different orientations of winglet arrays on the performance of plate-fin heat exchangers, International Journal of Heat and Mass Transfer 57, 202-214. <a href="http://dx.doi.org/10.1016/j.ijheatmasstransfer.2012.10.034 " target="_blank">View Article</a></p>
+
+<p>Sohankar, A., Davidson, L., (2003). Numerical study of heat and fluid flow in a plate-fin heat exchanger with vortex generators. Turbulence Heat and Mass Transfer 4, 1155-1162.</p><p> Sohankar, A. (2007), Heat transfer augmentation in a rectangular channel with a vee-shaped vortex generator, International Journal of Heat and Fluid Flow 28, 306-317. <a href="http://dx.doi.org/10.1016/j.ijheatfluidflow.2006.03.002" target="_blank">View Article</a></p>
+
+<p> Wu, J. M., Tao, W. Q. (2012). Effect of longitudinal vortex generator on heat transfer in rectangular channels. Applied Thermal Engineering 37, 67-72.  <a href="http://dx.doi.org/10.1016/j.applthermaleng.2012.01.002 " target="_blank">View Article</a></p>
+
+<p>Webb, R. L. (1994). Principles of Enhanced Heat Transfer. John Wiley & Sons, Chichester, UK.</p><p> Yang, J. S., Seo, J. K., Lee, K. B. (2001). A numerical analysis on ﬂow ﬁeld and heat transfer by interaction between a pair of vortices in rectangular channel ﬂow. Current Applied Physics 1, 393-405. <a href="http://dx.doi.org/10.1016/S1567-1739(01)00042-6 " target="_blank">View Article</a></p>
+
+<p> Yang, J. S., Lee, D. W., Choi, G. M. (2008). Numerical investigation of fluid flow and heat transfer characteristics by common ﬂow up, International Journal of Heat and Mass Transfer 51, 6332-6336. <a href="http://dx.doi.org/10.1016/j.ijheatmasstransfer.2008.07.001 " target="_blank">View Article</a></p>
+
+<p> Zhu, J. X., Fiebig, M., Mitra, N. K. (1995). Numerical investigation of turbulent ﬂows and heat transfer in a rib-roughened channel with longitudinal vortex generators. International Journal of Heat and Mass Transfer 38, 495-501. <a href="http://dx.doi.org/10.1016/0017-9310(94)00177-W " target="_blank">View Article</a></p>
+
+<div class="clearfix"></div>
+  </div>
+<div class="clearfix"></div>
+  </div>
+<div class="clearfix"></div>
+  </div>
+
+  
+
+  <div class="footer">
+
+  <div class="container">
+
+  <div class="col-sm-7 footer-link">
+
+    <p><a href="http://avestia.com">Avestia Publishing</a></p>
+    <p><a href="../register/">Subscribe to our Mailing List</a></p>
+    <p><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://avestia.com/feedback?refURL=' + refURL+'">Feedback</a>');</script></p>
+    <p><a href="../terms/">Terms of Use</a></p>
+		<p><a href="../sitemap/">Sitemap</a></p>
+
+  </div>
+  <div class="col-sm-5 footer-txt">
+    <p>Avestia Publishing, International ASET Inc. </p>
+    <p>Unit No. 417, 1376 Bank St. </p>
+    <p>Ottawa, Ontario, Canada </p>
+    <p>Postal Code: K1H 7Y3</p>
+    <p>Phone Number: 1-613-695-3040</p>
+
+  </div>
+
+  </div>
+
+  </div>
+
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+</body>
+
+</html>

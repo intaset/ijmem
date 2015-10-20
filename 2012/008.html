@@ -1,0 +1,1259 @@
+﻿<!DOCTYPE html>
+
+<html lang="en"><head>
+
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IJMEM - A Simple Algorithm to Relate Measured Surface Roughness to Equivalent Sand-grain Roughness</title>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+
+<link href='http://fonts.googleapis.com/css?family=Antic+Slab:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+
+<link rel="stylesheet" href="../css/style.css" />
+
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../images/icon.ico" rel="shortcut icon" type="image/x-icon">
+
+<!--Goole Analytics Most Visited Article Code-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-45437411-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<!-- Include Most Visited Articles JS Code -->
+<script type="text/javascript" src="mostvisited.js"></script>
+
+<!-- Include SHARE THIS js sources -->
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "8f49e037-5155-4595-abc0-d069deae6488", doNotHash: true, doNotCopy: false, hashAddressBar: false, onhover:false});</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <div class="header">
+
+    <div class="container">
+
+      <div class="row">
+
+        <header id="header">
+          <div class="logo col-sm-4"><a href="http://avestia.com"><img src="/images/logo.png" alt="Journal" class="img" /></a></div>
+          <div class="threemenu col-sm-5">
+            <div class="row"><a class="link col-sm-4" href="http://avestia.com"><img src="/images/home.jpg" class="img"></a> <a class="link col-sm-4" href="http://avestia.com/journals/"><img src="/images/journals.jpg" class="img"></a> <a class="link col-sm-4" href="http://amss.avestia.com"><img src="/images/submit.jpg" class="img"></a></div>
+          </div>
+          <div class="searching col-sm-3">
+<div class="sharethis">Share this page:<br/>
+<span class='st_email'></span>
+<span class='st_facebook'></span>
+<span class='st_twitter'></span>
+<span class='st_googleplus'></span>
+<span class='st_linkedin'></span>
+</div>
+            
+         <div class="search_wrapper">
+         <form class="search" action="../results" method="get">
+              <fieldset>
+                <span class="text">
+                <input name="q" id="q" type="text" value="" placeholder="Search..." /><button class="search_top_button">GO</button>
+                </span>
+
+              </fieldset>
+            </form>
+            
+            </div>
+          </div>
+          <div class="col-lg-12"><div class="avada-row">
+
+            <nav id="nav" class="nav-holder">
+
+              <div role="navigation" class="navbar navbar-default">
+
+                <div class="container-fluid">
+
+                  <div class="navbar-header">
+                  
+                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<span class="navbar-brand" href="#">Menu</span>
+                  </div>
+
+                  <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav">			
+						<li><a href="/">Journal Home</a></li><span class="menu-line">|</span>
+                        <li><a href="../aims/">Aims and Scopes</a></li><span class="menu-line">|</span>
+                        <li><a href="../charges/">Article Processing Charges</a></li><span class="menu-line">|</span>
+                        <li><a href="../guidelines/">Author Guidelines</a></li><span class="menu-line">|</span>
+                        <li><a href="../board/">Editorial Board</a></li><br>
+                        <li><a href="../volumes/">Past Volumes</a></li><span class="menu-line">|</span>
+                        <li><a href="../current/">Current Volume</a></li><span class="menu-line">|</span>
+                        <li><a href="../propose/">Propose a Special Topic</a></li><span class="menu-line">|</span>
+                        <li><a href="../register/">Receive Updates</a></li><span class="menu-line">|</span>
+                        <li><a href="../contact/">Contact Us</a></li>
+
+
+
+
+                    </ul>
+
+                  </div>
+
+                  <!--/.nav-collapse -->
+
+                </div>
+
+                <!--/.container-fluid -->
+
+              </div>
+
+            </nav>
+
+            </div>
+
+          </div>
+          <div class="clearfix"></div>
+
+        </header>
+
+      </div>
+
+    </div>
+<div class="clearfix"></div>
+  </div>
+
+  <div class="slider">
+
+  <div class="container">
+
+  <div class="row"><div class="col-lg-12"><img class="img2" src="../images/international.jpg" alt="img"></div></div>
+
+  </div>
+
+  </div>
+
+  <div class="container">
+  <div class="clearfix"></div>
+  <div class="row">
+
+  <div class="col-lg-12 text"><div align=center>
+<div class="table">
+
+    <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 style='border:none; width: 100%'>
+         <tr>
+                <td>Volume 1, Issue 2 - Year 2012 - Pages 66-71</td>
+                <td align="right"><a href="PDF/008.pdf">View PDF (Full-text)</a></td>
+        </tr>
+         <tr>
+                <td>DOI: 10.11159/ijmem.2012.008</td>
+                <td align="right"><a href="#references">Linked References</a></td>
+        </tr>
+		<tr>
+	<td colspan="2">ISSN: 1929-2724</td>
+	</tr>
+     </table>
+     
+</div>
+</div>
+
+<br>
+
+<p align="center" style="font-size:22pt;">A Simple Algorithm to Relate Measured Surface Roughness to Equivalent Sand-grain Roughness</p>
+	<p align="center"><strong>Thomas Adams&sup1;, Christopher Grant&sup1;, Heather Watson&sup2;</strong>
+    	<br>&sup1;Rose-Hulman Institute of Technology, Department of Mechanical Engineering
+5500 Wabash Ave., Terre Haute, Indiana, USA<br>
+adams1@rose-hulman.edu; grantcl@rose-hulman.edu<br>
+&sup2;James Madison University, School of Engineering
+801 Carrier Drive, Harrisonburg, Virginia, USA<br>
+watsonhl@jmu.edu
+
+</p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<p align="justify"><i><strong>Abstract- </strong> One of the most important resources available in the field of fluid mechanics, the Moody Chart gives Darcy friction factor as a function of Reynolds number and relative roughness. The experimentalists who generated the data correlated in the Moody Chart, however, roughened pipe surfaces by coating their internal surfaces with a monolayer of sand, the pipe wall roughness being defined as the average diameter of the sand grains. Thus, the sand-grain roughness values required for use with the Moody Chart are not derived from any direct measure of roughness using modern surface characterization equipment, such as an optical profilometer. Using direct measurements of surface roughness in fluid flow calculations may therefore result in significant error. In this paper we present a simple algorithm with which various measured surface roughness parameters can be converted to equivalent sand-grain roughness. For nearly every surface roughness value converted to equivalent sand-grain roughness using the algorithm, better agreement with fluid flow experiments is seen over using the raw roughness value.</i></p>
+
+<p align="left"><i><strong>Keywords:</strong></i> Surface Roughness, Sand-Grain Roughness, Moody Chart, Darcy Friction Factor  </span></p>
+<p>&nbsp;</p>
+<p align="justify">  © Copyright 2012 Authors - This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/2.0" target="_blank">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
+
+<img src="../images/line.png" width="100%;" height="1" />
+<h2>1. Introduction</h2> 
+
+Chart (Moody, 1944) represents one of the most widely used resources in fluid
+mechanics. Relating Darcy friction factor to Reynolds number and relative
+roughness, the Moody Chart correlates extensive experimental data obtained
+earlier by Nikuradse (1933), in which pipe surfaces
+were roughened by coating their internal surfaces with a layer of sand. Pipe
+wall roughness, <i>&#949;</i>, was thus
+defined as the average diameter of a sand grain. Actual pipe surfaces, however,
+do not have such a regular surface geometry as that created by a monolayer of
+sand grains. Rather, they are replete with hills and valleys of various sizes
+and shapes. Thus, direct measurements of surface roughness may not be
+appropriate for fluid flow calculations and could lead to significant error.
+And though profilometry techniques for measuring
+surface roughness represent a mature technology, the algorithms employed for
+calculating an average roughness do not coincide with the idea of sand-grain
+roughness.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Values of
+roughness reported in tables in fluid mechanics texts and handbooks typically
+reflect an "equivalent sand-grain" idea of roughness, having been
+back-calculated by comparing pressure drop data from fluid flow experiments to the
+Moody Chart. These equivalent sand-grain roughness values do not result from
+any direct measurement of surface roughness using standard surface
+characterization equipment and the various definitions of surface roughness
+thereof. When encountered with a pipe surface for which no such data exist,
+especially when utilizing new materials and/or fabrication techniques, one
+usually measures surface roughness directly using any number of available profilometers. A link between measured surface roughness
+and the sand-grain roughness required for friction factor purposes would
+therefore be highly useful.</p>
+
+<p align="justify" style="text-indent:19.85pt;">A number of
+researchers have recognized the shortcomings of using measured surface
+roughness parameters in conjunction with the Moody Chart. The work of Kandlikar et al. (2005) was partly motivated by the very
+large relative roughnesses (up to 14%) encountered in
+microchannels. They re-plotted the Moody Chart using
+the idea of a constricted flow diameter. Bahrami et
+al. (2005) assumed pipe wall roughness to have a Gaussian distribution, and
+found frictional resistance using the standard deviation in the roughness
+profile. Pesacreta and Farshad
+(2003) showed that measured peak-to-valley roughness, <i>R<sub>zd</sub></i>, better represent
+sand-grain roughness than the more common arithmetic average roughness, <i>R<sub>a</sub></i>. Taylor et al. (2005)
+gives an excellent review of much of this work.</p>
+
+<h2>2. Proposed Roughness Conversion Algorithm</h2>
+
+<p align="justify" style="text-indent:19.85pt;">A simple
+solution to the problem or relating surface measurements to sand grain
+roughness is to calculate the roughness of a hypothetical surface assuming it
+to be made up of a uniform monolayer of same-diameter spheres while employing
+the same integration techniques as in standard profilometer
+software. The resulting algebraic expressions can then be inverted and solved
+for sphere diameter in terms of "measured" roughness. When applied to actual
+surface roughness measurements, these expressions give an approximate value for
+equivalent sand-grain roughness.</p>
+
+<h4>
+2. 1. Measured Surface Roughness Parameters</h4>
+
+<p align="justify" style="text-indent:19.85pt;">A number of different parameters have
+been defined to characterize the roughness of surface such as that illustrated
+in Fig. 1. By far the most common is the arithmetic average of absolute values,</p>
+
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="008_files/image002.png" class="img"></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(1)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<p align="justify" style="text-indent:.pt;">where <i>y<sub>i</sub></i> is
+the distance from the average height of a profile (the mean line) for
+measurement <i>i</i>,
+and <i>n</i> is the number of measurements.
+Two other parameters considered in the present work are the root mean squared
+and the peak-to-valley values:</p><br />
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="008_files/image004.png" class="img"></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(2)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="008_files/image006.png" class="img"></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(3)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<p align="justify" style="text-indent:19.85pt;">In the
+peak-to-valley parameter <i>R<sub>pi</sub></i>
+and <i>R<sub>vi</sub></i>
+refer to the largest distances above and below the mean line for one of five
+measurements, all of equal scan length in the <i>x</i>-direction. </p>
+
+<figure>
+<img src="008_files/image007.png" class="img"/>
+
+<figcaption>
+Figure 1. A rough surface of arbitrary
+profile.</figcaption>
+</figure>
+<br>
+
+
+<h4>
+2. 2. Illustration of Conversion Algorithm</h4>
+
+<p align="justify" style="text-indent:19.85pt;">Figure 2 gives
+a schematic diagram of a single row of spheres of diameter <i>&#949;</i> on a flat surface as viewed from the side. For a scan in the
+<i>x</i>-direction across the tops of the
+spheres, the surface as seen by a profilometer would
+appear as a uniform row of half-circles (Fig. 3). In the limit as the number of
+measurements goes to infinity, (1) becomes the integral</p><Br />
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="008_files/image009.png" class="img"></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(4)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<p align="justify" style="text-indent:19.85pt;">For the
+profile in Fig. 3</p><Br />
+
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="008_files/image011.png" class="img"></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(5)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+
+<p align="justify" style="text-indent:0pt;">and</p>
+
+<div align=center>
+
+
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="008_files/image013.png" class="img"></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(6)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+<p align="justify" style="text-indent:19.85pt;">Substituting
+
+(5) and (6) into (4) and performing the integration gives</p><Br />
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="008_files/image015.png" class="img"></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(7)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<p align="justify" style="text-indent:19.85pt;">Solving (7)
+for <i>&#949;</i> and simplifying gives</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'>ε = 11.03R<sub>a</sub></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(8)</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+<p align="justify" style="text-indent:19.85pt;">Equation (8) shows that if a profilometer were used to measure <i>R<sub>a</sub></i> for a surface consisting of a layer of spheres of
+diameter <i>&#949;</i>, the resulting value
+of <i>R<sub>a</sub></i> could be as much as
+an order of magnitude smaller than sand-grain roughness appropriate for
+friction factor calculations.</p>
+
+<figure>
+<img src="008_files/image016.png" class="img"/>
+
+<figcaption>
+Figure 2. A row of uniform spheres on a
+flat surface.</figcaption>
+</figure>
+<br>
+
+<figure>
+<img src="008_files/image017.png" class="img"/>
+
+<figcaption>
+Figure 3. The surface as seen by a profilometer.</figcaption>
+</figure>
+<br>
+<h2>3. Generalized Algorithm</h2>
+
+<p align="justify" style="text-indent:19.85pt;">It is highly
+unlikely that a profilometer measuring the roughness
+of a surface comprised of a monolayer of uniform spheres would scan atop the
+peak of each sphere. Therefore, a more sophisticated model in which integrals
+of the type given in (4) can be performed for different scan directions was
+developed using the software package MATLAB. Fig. 4 shows a model of
+hexagonally packed spheres created in MATLAB for this purpose. </p>
+
+<figure>
+<img src="008_files/image019.png" class="img"/>
+
+<figcaption>
+Figure 4. Model of hexagonally packed
+spheres created in MATLAB.</figcaption>
+</figure>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">Using the
+algorithm outlined in 2.2, the MATLAB model was used to relate <i>R<sub>a</sub></i>, <i>R<sub>RMS</sub></i>, and <i>R<sub>zd</sub></i> as given in (1)-(3) to the diameter of the
+spheres, <i>&#949;</i>. For each parameter
+the MATLAB model averaged scans made in three directions: atop the peaks of
+each sphere, over the points of contact between the spheres (the lowest point),
+and midway between those two directions. The results are given in Table 1.</p>
+
+
+<div class="widetable">
+<table>
+<caption>Table 1. Estimated sand-grain roughness based
+on measured surface roughness parameters.</caption>
+<thead>
+ <tr>
+  <td style='border:solid windowtext 1.0pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:29.2pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Roughness parameter</p>
+  </td>
+  <td style='border:solid windowtext 1.0pt;border-left:none;mso-border-left-alt:
+  solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:29.2pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Estimated sand-grain roughness, <i>&#949;</i></p>
+  </td>
+ </tr>
+ </thead>
+ <tbody>
+ <tr style='mso-yfti-irow:1;height:14.8pt'>
+  <td style='border:solid windowtext 1.0pt;border-top:none;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:14.8pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'><i>R<sub>a</sub></i></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.8pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'><i>&#949;</i>= 5.863<i>R<sub>a</sub></i></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:13.0pt'>
+  <td style='border:solid windowtext 1.0pt;border-top:none;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:13.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'><i>R<sub>RMS</sub></i></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'><i>&#949;</i> = 3.100<i>R<sub>RMS</sub></i></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes;height:13.0pt'>
+  <td style='border:solid windowtext 1.0pt;border-top:none;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:13.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'><i>zd</sub></i></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'><i>&#949;</i> = 0.978<i>R<sub>zd</sub></i></p>
+  </td>
+ </tr>
+ <tbody>
+</table>
+
+</div>
+<h2>4. Experimental Validation</h2>
+<p align="justify" style="text-indent:19.85pt;">In order to
+validate the estimates of <i>&#949;</i> given
+in Table 1, a A Zygo NewView 6300 interferometer
+was used to measure <i>R<sub>a</sub></i>, <i>R<sub>RMS</sub></i>, and <i>R<sub>zd</sub></i> for pipes of
+several different materials, including copper, aluminium, steel, and galvanized
+steel. The values were then converted to their respective sand-grain roughness
+estimates given in Table 1 and then compared to equivalent sand-grain roughness
+values obtained from turbulent fluid flow experiments performed on the same
+length of pipe.</p>
+
+<h4>4. 1. Fluid Flow Experiments</h4>
+
+<p align="justify" style="text-indent:19.85pt;">Experimental
+values for equivalent sand-grain roughness were obtained for the various pipes
+via fluid flow experiments. In effect, measured values of head loss and flow
+rate were used to calculate experimental values of friction factor and Reynolds
+number, which in turn were used in the equation developed by Haaland (1983) to estimate equivalent sand-grain roughness:.</p>
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="008_files/image021.png" class="img"></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(9)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+
+<p align="justify" style="text-indent:19.85pt;">The Haaland equation was used rather than other curve fits for
+the Moody Chart since the equation can be explicitly solved for <i>&#949;</i>.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Figure 5
+gives a schematic diagram of the flow apparatus itself along with the
+physically measured parameters. The various pipe materials and dimensions are
+given in Table 2, and typical values of the other measurands
+are given in Table 3. Water at room temperature was used in all experiments.</p>
+
+
+<figure>
+<img src="008_files/image022.png" class="img"/>
+
+<figcaption>
+Figure 5. Fluid flow experiment to measure
+equivalent sand-grain roughness. A measured volume of water discharged to the
+atmosphere along with time measurements yielded flow rates.</figcaption>
+</figure>
+<br>
+<div class="widetable">
+<table>
+<caption>Table 2.
+Pipe materials and dimensions.</caption>
+<thead>
+ <tr>
+  <td style='border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:29.2pt; width:100pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Material</p>
+  </td>
+  <td style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;
+  height:29.2pt; width:100pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Length, L
+  </p>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>(cm)</p>
+  </td>
+  <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:29.2pt; width:100pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Diameter,
+  <i>D</i> </p>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>(cm)</p>
+  </td>
+ </tr>
+ </thead>
+ <tbody>
+ <tr style='height:14.8pt'>
+  <td style='border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;
+  height:14.8pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Copper</p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:14.8pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>62.5</p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:14.8pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>2.05</p>
+  </td>
+ </tr>
+ <tr style='height:13.0pt'>
+  <td style='border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;
+  height:13.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Copper</p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>62.5</p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>1.44</p>
+  </td>
+ </tr>
+ <tr style='height:13.0pt'>
+  <td style='border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;
+  height:13.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Aluminium</p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>62.5</p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>4.22</p>
+  </td>
+ </tr>
+ <tr style='height:13.0pt'>
+  <td style='border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;
+  height:13.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Steel</p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>62.5</p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>1.55</p>
+  </td>
+ </tr>
+ <tr style='height:13.0pt'>
+  <td style='border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;
+  height:13.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Galvanized
+  steel (smooth)</p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>62.5</p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>2.10</p>
+  </td>
+ </tr>
+ <tr style='height:13.0pt'>
+  <td style='border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;
+  height:13.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Galvanized
+  steel (rough)</p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>62.5</p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>1.57</p>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+
+<div class="widetable">
+<table>
+<caption>Table 3. Typical
+measure and values for fluid flow experiments.</caption>
+<thead>
+ <tr>
+  <td width=146 style='width:109.45pt;border:solid windowtext 1.0pt;padding:
+  0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Pipe
+  material</p>
+  </td>
+  <td width=145 style='width:108.4pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Copper</p>
+  </td>
+ </tr>
+ </thead>
+ <tbody>
+  <tr>
+  <td width=146 style='width:109.45pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Length, <i>L</i></p>
+  </td>
+  <td width=145 style='width:108.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>0.625 m</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=146 style='width:109.45pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Pipe
+  Diameter<i>, D</i></p>
+  </td>
+  <td width=145 style='width:108.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>0.02 m</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=146 style='width:109.45pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Head
+  loss, <i>h<sub>L</sub></i></p>
+  </td>
+  <td width=145 style='width:108.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>0.08 m</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=146 style='width:109.45pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Volume, <img width=16 height=17
+  src="008_files/image024.png"></p>
+  </td>
+  <td width=145 style='width:108.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>0.0222 m<sup>3</sup></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=146 style='width:109.45pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Time, <i>t</i></p>
+  </td>
+  <td width=145 style='width:108.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>30 sec</p>
+  </td>
+ </tr>
+</tbody>
+</table>
+</div>
+
+
+<p align="justify" style="text-indent:19.85pt;">In order to reduce
+the data to find equivalent sand-grain roughness, experimental values of
+friction factor and Reynolds number were determined first. Equations (10) and
+(11) give the familiar relations for head loss in terms of friction factor and
+Reynolds number, respectively:</p>
+
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><img src="008_files/image026.png" class="img"></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(10)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><img src="008_files/image028.png" class="img"></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(11)</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+
+
+
+
+<p align="justify" style="text-indent:0pt;">where <i>f</i> is friction factor, <i>&#1009;</i>, is density, and <i>&#956;</i> is viscosity. In terms of the measurands given in Tables 2 and 3, (10) and (11) can be rearranged
+to give the data reduction equations for <i>f</i>
+and <i>Re</i> as</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="008_files/image030.png" class="img"></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(12)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="008_files/image032.png" class="img"></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(13)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+<p align="justify" style="text-indent:19.85pt;">These values
+were then used in the friction factor equation given in (9) and back-solved for
+<i>&#949;</i> to give the experimental value
+of sand-grain roughness:</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="008_files/image034.png" class="img"></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(14)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+
+<h4>4. 2. Results and Discussion</h4>
+
+<p align="justify" style="text-indent:19.85pt;">Figure 6
+gives a comparison of the various roughness values for the 2.05-cm diameter
+copper pipe obtained from the optical profilometer, the
+estimated sand-grain roughness based on those values using the algorithm, and
+the value of equivalent sand-grain roughness found from the fluid flow
+experiments. Circles represent roughness values obtained from the profilometer, with filled-in circles giving the
+corresponding estimated sand-grain roughness using the algorithm. The shaded
+grey region on either side of the measured sand-grain roughness indicates its
+experimental uncertainty. The measured value of equivalent sand-grain roughness
+from the fluid flow experiments is considered the true value. Table 4 gives the
+corresponding numerical values. Standard uncertainty propagation techniques
+were used to estimate all experimental uncertainties.</p>
+
+
+<figure>
+<img src="008_files/image036.jpg" class="img"/>
+
+<figcaption>
+Figure 6. Comparison of measured surface
+roughness, estimated sand-grain roughness obtained via the algorithm, and
+equivalent sand-grain roughness obtained from fluid flow experiments for
+2.05-cm diameter copper pipe</figcaption>
+</figure>
+<br>
+<div class="widetable">
+<table>
+<caption>Table 4.
+Comparison of various roughness values.</caption>
+<thead>
+ <tr>
+  <td style='width:150.0pt;border:solid windowtext 1.0pt;padding:
+  0cm 5.4pt 0cm 5.4pt;height:51.25pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Roughness
+  parameter</p>
+  </td>
+  <td width=140 style='border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:51.25pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Measured
+  value (&#956;m)</p>
+  </td>
+  <td width=150 style='border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:51.25pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Estimated
+  sand-grain roughness (&#956;m)</p>
+  </td>
+ </tr>
+ </thead>
+ <tbody>
+ <tr style='height:24.25pt'>
+  <td width=141 style='width:106.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:24.25pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Arithmetic
+  average, <i>R<sub>a</sub></i></p>
+  </td>
+  <td width=77 style='width:58.1pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:24.25pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>0.204</p>
+  </td>
+  <td width=102 style='width:76.75pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:24.25pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>1.2 ± 0.1</p>
+  </td>
+ </tr>
+ <tr style='height:22.0pt'>
+  <td width=141 style='width:106.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Root mean
+  square, <i>R<sub>RMS</sub></i></p>
+  </td>
+  <td width=77 style='width:58.1pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:22.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>0.269</p>
+  </td>
+  <td width=102 style='width:76.75pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>0.8 ± 0.1</p>
+  </td>
+ </tr>
+ <tr style='height:17.05pt'>
+  <td width=141 style='width:106.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:17.05pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>eak-to-valley,
+  <i>R<sub>zd</sub></i></p>
+  </td>
+  <td width=77 style='width:58.1pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:17.05pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>1.89</p>
+  </td>
+  <td width=102 style='width:76.75pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:17.05pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>1.85 ± 0.09</p>
+  </td>
+ </tr>
+ <tr style='height:45.4pt'>
+  <td width=141 style='width:106.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:45.4pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>Equivalent
+  sand-grain roughness from fluid flow experiment, <i>&#949;<sub>exp</sub></i></p>
+  </td>
+  <td width=77 style='width:58.1pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:45.4pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>1.78 ±
+  0.08</p>
+  </td>
+  <td width=102 style='width:76.75pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:45.4pt'>
+    <p class=MsoNormalCxSpMiddle style='text-align:center;'>—</p>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+
+<p align="justify" style="text-indent:19.85pt;">Figure 6 and Table 4 show that of
+the measured roughness parameters, <i>R<sub>a</sub></i>
+does the worst job of estimating equivalent sand-grain roughness and <i>R<sub>zd</sub></i> does
+the best. Once the algorithm is applied to a surface measurement, <i>R<sub>RMS</sub></i> does the worst job of
+estimating <i>&#949;</i>, whereas <i>R<sub>zd</sub></i>
+again performs the best. The superior estimate of <i>&#949;</i> resulting from the use of <i>R<sub>zd</sub></i><i> </i>is consistent with previous research.
+By comparison, the expected value for equivalent sand-grain roughness for
+copper as given in Binder (1973) is 1.5 &#956;m.</p>
+
+<p align="justify" style="text-indent:19.85pt;">In all cases, however, it should
+be noted that the converted roughness values always come closer to the true
+value of sand-grain roughness than the raw measured values, with the converted
+value of <i>R<sub>zd</sub></i>
+falling within the range of experimental uncertainty of the true value. </p>
+
+<p align="justify" style="text-indent:19.85pt;">Figures 7-11 show the same
+comparisons for the remaining pipe materials and dimensions. The figures appear
+in order of increasing sand-grain roughness as obtained via experiment.</p>
+
+<figure>
+<img src="008_files/image038.jpg" class="img"/>
+
+<figcaption>
+Figure 7. Comparison of roughness values
+for 1.44-cm copper pipe.</figcaption>
+</figure>
+<br>
+
+<figure>
+<img src="008_files/image040.jpg" class="img"/>
+
+<figcaption>
+Figure  8. Comparison of roughness values
+for 4.22-cm aluminium pipe.</figcaption>
+</figure>
+<br>
+
+
+<figure>
+<img src="008_files/image042.jpg" class="img"/>
+
+<figcaption>
+Figure 9. Comparison of roughness values
+for 1.55-cm steel pipe.</figcaption>
+</figure>
+<br>
+
+<figure>
+<img src="008_files/image044.jpg" class="img"/>
+
+<figcaption>
+Figure 10. Comparison of roughness values
+for 2.10-cm galvanized steel pipe. </figcaption>
+</figure>
+<br>
+
+
+<figure>
+<img src="008_files/image046.jpg" class="img"/>
+
+<figcaption>
+Figure 11. Comparison of roughness values
+for 1.57-cm galvanized steel pipe.</figcaption>
+</figure>
+<br>
+<p align="justify" style="text-indent:19.85pt;">Figures 7-11 all show the same
+trends as does Fig. 6 in terms of raw measured surface parameters; that is, <i>R<sub>a</sub></i> does the worst job of
+estimating sand-grain roughness whereas <i>R<sub>zd</sub></i> does the best. Furthermore, the estimated
+values of sand-grain roughness found by applying the algorithm to <i>R<sub>a</sub></i> and <i>R<sub>RMS</sub></i> always come closer to <i>&#949;</i> than do the raw values, with the converted <i>R<sub>a</sub></i> consistently outperforming
+the converted <i>R<sub>RMS</sub></i>.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Less consistent, however, are
+trends in <i>R<sub>zd</sub></i>.
+At lower values of sand-grain roughness <i>R<sub>zd</sub></i> under predicts <i>&#949;</i>, whereas at higher roughnesses <i>R<sub>zd</sub></i>
+over predicts <i>&#949;</i>. As the
+conversion factor for estimating <i>&#949;</i>
+based on <i>R<sub>zd</sub></i>
+is less than one, the converted <i>R<sub>zd</sub></i> value therefore does a better job of
+estimating <i>&#949;</i> at low roughnesses than does the raw measured value, but a worse
+job at high roughnesses. And at the two highest
+sand-grain roughnesses tested, the converted <i>R<sub>a</sub></i> value actually slightly
+outperforms both the measured and converted <i>R<sub>zd</sub></i> values.</p>
+<p align="justify" style="text-indent:19.85pt;">Also seen in Figs. 6-11 is that
+the conversion algorithm generally does the best job of estimating <i>&#949;</i> at the lowest roughness values.
+That is, the rougher the surface, the less benefit there is in applying the
+algorithm. These trends can also be inferred from Fig. 12, in which a
+comparison of all measured and converted roughness parameters is given for all
+pipe materials and dimensions.</p>
+
+<figure>
+<img src="008_files/image048.jpg" class="img"/>
+
+<figcaption>
+Figure 12. Comparison of normalized
+roughness values for all geometries and materials. The normalized roughness on
+the vertical axis is a given roughness parameter divided by equivalent
+sand-grain roughness, so that a perfect estimate of <i>&#949;</i> has a normalized roughness of one.</figcaption>
+</figure>
+<br>
+<p align="justify" style="text-indent:19.85pt;">It is seen, then, that when the
+only available information regarding surface roughness consists of profilometer-obtained values of <i>R<sub>a</sub></i> and/or <i>R<sub>RMS</sub></i>,
+the two most common surface roughness measurements, a correction should always be applied. This ensures a better
+estimate sand-grain roughness over the raw value, the converted <i>R<sub>a</sub></i> value being the preferred
+parameter. When <i>R<sub>zd</sub></i>
+information is also available, however, the algorithm may be of less benefit.
+This stems from both the correction factor for <i>R<sub>zd</sub></i> being
+close to unity as well as the uncertain trends of <i>R<sub>zd</sub></i> over large ranges
+of roughness.</p>
+
+<h2>5. Conclusion</h2>
+
+<p align="justify" style="text-indent:19.85pt;">A simple
+algorithm to convert various measured surface roughness parameters to
+sand-grain roughness has been developed. The algorithm assumes that the relationship
+between measured surface roughness parameters and sand-grain roughness can be
+approximated by applying roughness parameter definitions to a hypothetical
+surface consisting of a monolayer of spheres of uniform diameter. Based on
+fluid flow experiments, arithmetic average, root mean square, and
+peak-to-valley surface roughness parameters almost always better approximate
+equivalent sand-grain roughness after the algorithm has been applied.</p>
+
+<h2>Acknowledgements</h2>
+
+<p align="justify" style="text-indent:19.85pt;">The authors
+wish to thank Drs. Scott Kirkpatrick and Azad Siahmakoun of the Department of Physics and Optical
+Engineering at Rose-Hulman Institute of Technology
+for their support in this work.</p>
+
+
+
+
+<img src="images/line.png" width="100&#37;" height="1" />
+<H2><a name="references">References</a></H2>
+
+<p> Bahrami, M., Yovanovich, M. M., Cullham, J. R. (2005). Pressure drop of fully-developed laminar flow in rough microtubes, Third International Conference on Microchannels and Minichannels ICCMM 2005-75108. <a href="http://www.mhtl.uwaterloo.ca/pdf_papers/mhtl05-4.pdf " target="_blank">View Article</a></p>
+
+<p> Binder, R. C. (1973). "Fluid Mechanics" Prentice-Hall. </p>
+
+
+<p> Farshad, F. F., Rieke, H. H., (2005). Technology innovation for determining surface roughness in pipes, Journal of Petroleum Technology, 57 (10), 82-86. <a href="http://dx.doi.org/10.2118/79123-MS " target="_blank">View Article</a></p>
+
+<p> Haaland, S. E. (1983). Simple and explicit formulas for the friction factor in turbulent flow, Journal of Fluids Engineering No. 103 (5), 89-90. <a href="http://dx.doi.org/10.1115/1.3240948" target="_blank">View Article</a></p>
+
+<p> Kandlikar, S. G., Schmitt, D., Carrano, A. L., Taylor, J. B. (2005). Characterization of surface roughness effects on pressure drop in single-phase flow in minichannels, Physics of Fluids, 17 (10). <a href="http://dx.doi.org/10.1063/1.1896985 " target="_blank">View Article</a></p>
+
+<p> Moody, L. F. (1944). Friction factors for pipe flow. Transactions ASME., 66, 671–683.  <a href="http://www.chem.mtu.edu/~fmorriso/cm310/MoodyLFpaper1944.pdf " target="_blank">View Article</a></p>
+
+<p> Nikuradse, J. (1937). Laws of flow in rough pipes, NACA Technical Memorandum 1292. <a href="http://digital.library.unt.edu/ark:/67531/metadc63009/m2/1/high_res_d/19930093938.pdf " target="_blank">View Article</a></p>
+
+<p> Pesacreta, C., Farshad, F. (2003). Coated Pipe Interior Surface Roughness as Measured by Three Scanning Probe Instruments, Anti-Corros. Methods and Materials 50, 6. <a href="http://dx.doi.org/10.1108/00035590310456243" target="_blank">View Article</a></p>
+
+<p> Taylor, J. B., Carrano, A. L., Kandlikar, S. G., (2006). Characterization of the effect of surface roughness and texture on fluid flow: past, present, and future. International Journal of Thermal Sciences, 45, 962–968. <a href="http://dx.doi.org/10.1016/j.ijthermalsci.2006.01.004 " target="_blank">View Article</a></p>
+
+<div class="clearfix"></div>
+  </div>
+<div class="clearfix"></div>
+  </div>
+<div class="clearfix"></div>
+  </div>
+
+  
+
+  <div class="footer">
+
+  <div class="container">
+
+  <div class="col-sm-7 footer-link">
+
+        <p><a href="http://avestia.com">Avestia Publishing</a></p>
+        <p><a href="../register/">Subscribe to our Mailing List</a></p>
+        <p><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://avestia.com/feedback?refURL=' + refURL+'">Feedback</a>');</script></p>
+        <p><a href="../terms/">Terms of Use</a></p>
+		<p><a href="../sitemap/">Sitemap</a></p>
+
+      </div>
+      <div class="col-sm-5 footer-txt">
+        <p>Avestia Publishing, International ASET Inc. </p>
+        <p>Unit No. 417, 1376 Bank St. </p>
+        <p>Ottawa, Ontario, Canada </p>
+        <p>Postal Code: K1H 7Y3</p>
+        <p>Phone Number: 1-613-695-3040</p>
+
+  </div>
+
+  </div>
+
+  </div>
+
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+</body>
+
+</html>
+

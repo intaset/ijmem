@@ -1,0 +1,1675 @@
+﻿<!DOCTYPE html>
+
+<html lang="en"><head>
+
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IJMEM - Application of CFD and Phenomenological Models in Studying Interaction of Two Turbulent Plane Jets</title>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+
+<link href='http://fonts.googleapis.com/css?family=Antic+Slab:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+
+<link rel="stylesheet" href="../css/style.css" />
+
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../images/icon.ico" rel="shortcut icon" type="image/x-icon">
+
+<!--Goole Analytics Most Visited Article Code-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-45437411-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<!-- Include Most Visited Articles JS Code -->
+<script type="text/javascript" src="mostvisited.js"></script>
+
+<!-- Include SHARE THIS js sources -->
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "8f49e037-5155-4595-abc0-d069deae6488", doNotHash: true, doNotCopy: false, hashAddressBar: false, onhover:false});</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <div class="header">
+
+    <div class="container">
+
+      <div class="row">
+
+        <header id="header">
+          <div class="logo col-sm-4"><a href="http://avestia.com"><img src="/images/logo.png" alt="Journal" class="img" /></a></div>
+          <div class="threemenu col-sm-5">
+            <div class="row"><a class="link col-sm-4" href="http://avestia.com"><img src="/images/home.jpg" class="img"></a> <a class="link col-sm-4" href="http://avestia.com/journals/"><img src="/images/journals.jpg" class="img"></a> <a class="link col-sm-4" href="http://amss.avestia.com"><img src="/images/submit.jpg" class="img"></a></div>
+          </div>
+          <div class="searching col-sm-3">
+<div class="sharethis">Share this page:<br/>
+<span class='st_email'></span>
+<span class='st_facebook'></span>
+<span class='st_twitter'></span>
+<span class='st_googleplus'></span>
+<span class='st_linkedin'></span>
+</div>
+            
+         <div class="search_wrapper">
+         <form class="search" action="../results" method="get">
+              <fieldset>
+                <span class="text">
+                <input name="q" id="q" type="text" value="" placeholder="Search..." /><button class="search_top_button">GO</button>
+                </span>
+
+              </fieldset>
+            </form>
+            
+            </div>
+          </div>
+          <div class="col-lg-12"><div class="avada-row">
+
+            <nav id="nav" class="nav-holder">
+
+              <div role="navigation" class="navbar navbar-default">
+
+                <div class="container-fluid">
+
+                  <div class="navbar-header">
+                  
+                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<span class="navbar-brand" href="#">Menu</span>
+                  </div>
+
+                  <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav">			
+						<li><a href="/">Journal Home</a></li><span class="menu-line">|</span>
+                        <li><a href="../aims/">Aims and Scopes</a></li><span class="menu-line">|</span>
+                        <li><a href="../charges/">Article Processing Charges</a></li><span class="menu-line">|</span>
+                        <li><a href="../guidelines/">Author Guidelines</a></li><span class="menu-line">|</span>
+                        <li><a href="../board/">Editorial Board</a></li><br>
+                        <li><a href="../volumes/">Past Volumes</a></li><span class="menu-line">|</span>
+                        <li><a href="../current/">Current Volume</a></li><span class="menu-line">|</span>
+                        <li><a href="../propose/">Propose a Special Topic</a></li><span class="menu-line">|</span>
+                        <li><a href="../register/">Receive Updates</a></li><span class="menu-line">|</span>
+                        <li><a href="../contact/">Contact Us</a></li>
+
+
+
+
+                    </ul>
+
+                  </div>
+
+                  <!--/.nav-collapse -->
+
+                </div>
+
+                <!--/.container-fluid -->
+
+              </div>
+
+            </nav>
+
+            </div>
+
+          </div>
+          <div class="clearfix"></div>
+
+        </header>
+
+      </div>
+
+    </div>
+<div class="clearfix"></div>
+  </div>
+
+  <div class="slider">
+
+  <div class="container">
+
+  <div class="row"><div class="col-lg-12"><img class="img2" src="../images/international.jpg" alt="img"></div></div>
+
+  </div>
+
+  </div>
+
+  <div class="container">
+  <div class="clearfix"></div>
+  <div class="row">
+
+  <div class="col-lg-12 text"><div align=center>
+<div class="table">
+
+    <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 style='border:none; width: 100%'>
+         <tr>
+                <td>Volume 1, Issue 2 - Year 2012 - Pages 36-49</td>
+                <td align="right"><a href="PDF/005.pdf">View PDF (Full-text)</a></td>
+        </tr>
+         <tr>
+                <td>DOI: 10.11159/ijmem.2012.005</td>
+                <td align="right"><a href="#references">Linked References</a></td>
+        </tr>
+		<tr>
+	<td colspan="2">ISSN: 1929-2724</td>
+	</tr>
+     </table>
+     
+</div>
+</div>
+
+<br>
+
+<p align="center" style="font-size:22pt;">Application of CFD and Phenomenological Models in Studying Interaction of Two Turbulent Plane Jets</p>
+	<p align="center"><strong>Ehsan Faghani, Steven N. Rogak</strong>
+    	<br>Department of Mechanical Engineering, University of British Columbia
+6250 Applied Sciences Lane, Vancouver, BC V6T 1Z4<br>
+ehsan.faghani@alumni.ubc.ca; rogak@mail.ubc.ca
+
+
+</p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<p align="justify"><i><strong>Abstract- </strong> This paper presents a numerical and analytical study of structure and flow development in planar (2-dimensional) turbulent jets. The numerical results are used to develop a phenomenological solution, here referred as Bending Model, for twin turbulent plane jets. The effects of nozzle-nozzle spacing and injection angle are emphasized in numerical study. This study includes a wide range of nozzle- nozzle spacing, 4.25, 9 and 18.25 and injection angle between -20 to 20. In the farfield, the k–ε model predicts the velocity of the jet higher than the experimental results; however, the overall performance of k–ε model is acceptable in the prediction of velocity field. Mean velocity and static pressure fields are presented. The Bending Model can predict the attachment of two plane jets for a wide range of nozzle-nozzle spacing and injection angle. Based on the model and modified Reichardt's hypothesis, the flow field in the domain is predicted. The results are compared with the numerical simulation of the k-є model and previous experimental results. The results show encouraging agreement with the numerical and experimental results.</i></p>
+
+
+<p align="left"><i><strong>Keywords:</strong></i> Turbulent Jet, Twin Plane Nozzle, Interaction, k–ε model, Bending Model </p>
+<p>&nbsp;</p>
+<p align="justify">  © Copyright 2012 Authors - This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/2.0" target="_blank">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0cm 5.4pt 0cm 5.4pt;mso-border-insideh:none;mso-border-insidev:none'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><b>Nomenclature</b></p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>cp</p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Combined point</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>d<sub>0</sub></p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Nozzle diameter</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><i>I</i></p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Turbulence intensity</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><i>K<sub>a</sub></i></p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Axial velocity decay rate constant</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><i>K<sub>r</sub></i></p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>spread rate constant</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>L<sub>x</sub></p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Domain length in x-direction</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>L<sub>y</sub></p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Domain width in y-direction</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>M</p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Total momentum</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>M<sub>0</sub></p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Total momentum at nozzle exit</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>M<sub>f</sub></p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Momentum of  combined jet
+  at farfield</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>M(x)</p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Total momentum at location x</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>mp</p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Merging point (also called confluence point)</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>P</p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Static pressure</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>S</p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Nozzle-nozzle spacing</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>u<sub></sub></p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Velocity magnitude</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>U<sub>0</sub></p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Velocity magnitude at the nozzle exit</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>u<sub>c</sub></p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Velocity at symmetry line (y=0)</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:18'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>u<sub>m</sub></p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Maximum velocity in each cross section</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:19'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>u<sub>s1</sub>, u<sub>s2</sub></p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Velocity profile single jets 1 and 2.</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:20'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>x,y</p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Coordinate system</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:21'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>x<sub>mp</sub></p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Length of converging region</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:22'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>x<sub>cp</sub></p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Length of converging region plus merging region</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:23'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>y<sub>0</sub></p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Position of zero velocity in recirculation zone; representative of shear layer boundary between jets</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:24'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>y<sub>c</sub></p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Centerline distance from coordinate in y direction</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:25'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Greek</p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:26'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>&#945;</p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Constant equal to 0.693</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:27'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>&#952;</p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Angle relative to x-axis </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:28'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>&#952; <sub>0</sub></p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Angle between two jets at the nozzle exit</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:29'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>&#952;(x)</p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Angle relative to x-axis in location x</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:30'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>&#961;<sub></sub></p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>density</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:31'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>subscript</p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:32'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>0</p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>At nozzle exit</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:33'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>1</p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>First jet here referred to upper jet </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:34;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>2</p>
+  </td>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Second jet here referred to lower jet</p>
+  </td>
+ </tr>
+</table>
+
+<img src="../images/line.png" width="100%;" height="1" />
+<h2>1. Introduction</h2> 
+
+
+
+<p align="justify" style="text-indent:19.85pt;">Turbulent twin jets have numerous industrial
+applications including in burners, boilers, gas turbine, combustion chambers
+and fuel injection systems. Performance of these processes can be improved
+through a better understanding of the twin jets and can consequently decrease
+the impact of exhaust pollutants. In the previous studies, multiple jet
+performance have been compared with single jets, and many advantages over
+single jets, such as better mixing and noise reduction,have been noticed (Raghunathan
+and Reid, 1981). In
+most of the industrial applications, multiple circular jets are used; however,
+considering plane twin jets is important from an academic point of view.</p>
+
+
+<p align="justify" style="text-indent:19.85pt;">Three relevant regions of the flow field are
+identified in figure 1. The converging region begins at the nozzle exit and
+extends to the point where the inside shear layers of the jets merge at the
+merging point (mp) and <i>x<sub>mp</sub></i> shows the length of the converging zone. Miller and Comings (1960) showed
+that the convergence of two jets is due to the sub-atmospheric region near the
+symmetry line. The merging point can be identified by the velocity on the
+symmetry plane being equal to zero. Beyond the merging point, two jets start
+integration and the velocity in the symmetry line increases to a maximum value.
+In this region the velocity profile is bimodal. The combined point is defined
+as that point along the symmetry plane at which the velocity is maximum. The
+merging region is defined between the merging point and the combined point.
+Finally, the combined region is downstream of the combined point where the two
+jets begin to resemble a self-similar single jet. The general characteristics
+of the flow field are illustrated in figure 1.</p>
+
+
+<p align="justify" style="text-indent:19.85pt;">Measurements of the force-momentum fields in a
+dual-jet flow were reported by Miller
+and Comings (1960). Two regions of sub-atmospheric and super-atmospheric static
+pressures are reported in the flow field of plane jets. The negative pressure
+will cause converging curvature of the individual jets and non-conservation of <i>x</i>-momentum. Tanaka (1970, 1974)
+studied two parallel plane jets including the basic flow pattern and
+entrainment. Elbanna et al. (1983) compared parallel jets and a single jet at
+the region downstream from the combined point. In that region, the mean
+velocity decay matched that of a single jet, although the magnitude of the
+velocity was higher for the parallel jets. Also, the jet spreading reported as
+a linear function with an angle slightly lower than that of the single jet. </p>
+
+
+<p align="justify" style="text-indent:19.85pt;">Lin and Sheu (1990,
+1991) used hot-wire anemometry to measure mean
+velocity in both the merging and combined regions of plane jets. Measurements
+also indicated that the entrainment and the spreading rates in the combined
+region were greater than those in a single jet flow. Nasr and Lai (1997)
+compared parallel plane jets and offset jets. In offset jets, flow issues from
+a nozzle parallel to a wall. It is mentioned that the symmetry plane that
+exists between two parallel plane jets may appear to affect the flow field in
+much the same way as a solid wall does in a reattaching offset jet. Anderson
+and Spall (2001) evaluated the ability of the standard <i>k-&#949;</i> model
+and a Reynolds stress transport model (RSM) in prediction of parallel plane
+jets. The numerical and experimental results are compared over a range of
+nozzle-nozzle spacings, 9&lt;<i>S</i>/<i>d<sub>0</sub></i>&lt;18.25. The
+results also compared with a single jet. As a result of their work, the <i>k-&#949;</i>
+model shows deviation from the experimental results, RSM model is suggested for
+simulation of twin jets. </p>
+
+
+<p align="justify" style="text-indent:19.85pt;">In industrial applications twin jets may not be
+parallel. Researchers studied converging and diverging twin jets in burners
+(Boushaki and Sautet, 2010) and combustion engines (Nishida et al., 2009). The
+injection angle is adjusted to control flame stability, and to reduce pollutant
+emissions. In some applications (Nishida et al., 2009) the penetration rates of
+unsteady state jets </p>
+
+<figure>
+<img src="005_files/image002.jpg" class="img"/>
+
+<figcaption>
+Figure 1. Schematic diagram
+  of a twin jet.</figcaption>
+</figure>
+<br>
+
+
+<p align="justify" style="text-indent:0pt;">are important. The penetration rate of
+turbulent jets is directly related to the momentum of the jet (Ouellette and
+Hill, 2000). Using paired nozzle instead of traditional single jets might
+change the momentum of the resulting jet and change penetration rate of the
+jet.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Twin plane jets
+present a special case of shear flow with sub-atmospheric zone,
+super-atmospheric zone, recirculation zone and flow curvature. This type of
+flow presents an interesting case for turbulence modeling and theoretical
+studies. </p>
+
+<p align="justify" style="text-indent:19.85pt;">Schlichting (1968) presented the analytical solution
+of single plane and circular jets. Rajaratnam (1976) reviewed most of the
+analytical solutions for different kind of jets including plane jet, circular
+jet, wall jet, round jet and confined jet. In a free plane jet, the solution is
+based on conservation of momentum, and the pressure term is neglected. It is
+mathematically shown by Rajaratnam (1976) that for a confined jet, the momentum
+plus pressure is constant in <i>x</i>-direction
+and the pressure term cannot be neglected. However no analytical solution has
+been introduced for confined jets, yet. </p>
+
+<p align="justify" style="text-indent:19.85pt;">Reichardt (1943)
+introduced the turbulent momentum transfer hypothesis for multiple free jets.
+Pani (1980-1983) extended the
+Reichardt's hypothesis for the case of
+single and multiple three-dimensional free jets. The main concept arriving at
+the solution is that the momentum profiles across a single jet can be
+superimposed to predict the velocity profiles for flow from multiple nozzles.
+Pani (1983) compared the theory with the experimental data for three
+dimensional jets and the theory could predict the distribution of velocity in
+the domain. In these cases the Reichardt's hypothesis is applied for the
+cases in which pressure term does not play a major role thus the centerlines of
+the jets remain at the injection line. Moreover the performance of Reichardt's
+hypothesis in the case of converging or diverging twin jets has not been
+reviewed yet.</p>
+
+
+<p align="justify" style="text-indent:19.85pt;">In the present study the mean velocity and
+static pressure field is presented for turbulent twin jets from the numerical
+study.The current study considers
+nozzle-nozzle spacings of <i>S/d<sub>0</sub></i>=4.25, 9 and 18.25. These
+nozzle-nozzle spacings are selected according to the experiments of plane jets
+in literature by Nasr and Lai (1997) and Anderson and Spall (2001). The numerical results are compared
+with these experimental results. Injection angle (figure 2b), which is defined as the angle between velocity
+vectors of two nozzles, are set to <i>&#1138;<sub>0</sub></i>=-20, 0 and 20. The performance of the
+standard <i>k–&#949; </i>turbulence model is evaluated for all three zones
+(converging zone, merging zone and combined zone). Special attention is paid to
+the momentum changes in <i>x</i>-direction which is important in the prediction
+of the penetration rate of transient jets (Ouellette and Hill, 2000), and will
+help us establish a solution for twin plane jets. </p>
+
+
+<p align="justify" style="text-indent:19.85pt;">In the current study we introduce theBending Model which can be used to
+predict the interaction of twin plane jets. Beside this solution, a numerical
+simulation (CFD) of twin plane jets is performed and presented, in order to
+support the bending model results.The
+Bending Model is based on three steps:</p>
+
+
+<ul><li>1.   Pressure plus momentum constant: It is analytically shown that the pressure plus momentum is constant in x-direction for twin plane jets. Numerical results support this concept too.</li>
+<li>2.   Equation of jet centerline location: This equation is a simple ODE which has been obtained by writing y-momentum equation. The Bending Model is based on the concept that the negative pressure will cause curvature in the flow field of individual jets and non-conservation of x-momentum.</li>
+<li>3.   By using modified Reichardt's hypothesis and the results of centerline velocity location, y<sub>c</sub>, the velocity field in the domain is predicted. The results are compared with the numerical and experimental data.</li></ul>
+
+
+<p align="justify" style="text-indent:0pt;">The present solution can be used for converging
+and diverging twin plane jets too.The
+same concept might be used for flow near the wall or other objects.</p>
+
+<h2>2. Numerical Simulation</h2>
+<h4>2. 1. Numerical Details</h4>
+
+<p align="justify" style="text-indent:19.85pt;">A non-uniform mesh of 150×190 is adopted for
+discretization of the flow domain. Structured grids are shown in figure 2a.
+These computations were performed using ANSYS FLUENT 12.1. The geometry under
+consideration, together with the coordinate system, is shown in Figure 2b. A
+turbulent free jet discharges from a vent of dimension (<i>d<sub>0</sub></i>)
+issued to a stagnant background. Because of symmetry, only one half of the jet
+domain is modeled in this study. The value of <i>Lx</i> is 100 times greater
+than hydraulic diameter.Two other
+domain lengths are considered with <i>Lx</i>=200 and 400 in order to ensure that
+the jet flow is unaffected by the location of the pressure outlet boundary. The
+velocity field remains unchanged except for insignificant changes at downstream
+of the flow. The value of <i>Ly</i>, for an acceptable boundary condition, was
+selected 30 times longer than hydraulic diameter in <i>y</i>-direction. On the
+inlet region, uniform velocity profile with a turbulence intensity <i>I=3.6%</i>
+is used according to Anderson and Spall (2001). More on the effect of inlet
+turbulence intensity can be found in the paper by Faghani et al (2010).The value of the Reynolds number in the
+present numerical study is <i>Re</i>= 69,000
+for all the cases. Mesh independence tests are performed using a mesh of
+300×380. The maximum difference in the centerline velocity (along the x-axis)
+between the coarse and fine grids was 0.5%. The working fluid in all of the
+cases is air.</p>
+
+<p align="justify" style="text-indent:19.85pt;">In addition to residual convergence of
+continuity, two more criteria have been selected: maximum velocity at the
+symmetry line and mass flow rate at the exhaust (x=Lx). Figure 3 shows the
+convergence history for the case of S/d<sub>0</sub>=9. Maximum velocity at the
+symmetry line and mass flow rate at the exhaust are representative of
+near-field and far-field convergence respectively. As you can see here, after
+sufficient number of iterations both near-field and far-field flow will
+converge to final solution.</p>
+
+<figure>
+<img src="005_files/image004.png" class="img"/>
+
+<figcaption>
+Figure 2. Mesh and geometry.</figcaption>
+</figure>
+<br>
+
+
+<figure>
+<img src="005_files/image008.png" class="img"/>
+
+<figcaption>
+Figure 3. Convergence history.</figcaption>
+</figure>
+<br>
+
+<h4>2.2. Validation of CFD
+Simulation</h4>
+
+<p align="justify" style="text-indent:19.85pt;">In order to validate
+the numerical simulation, the current results are compared with the experiment
+of Anderson and Spall (2001) on plane jets with similar parameters. First order
+and second order upwind are employed in this part, as one can see from figure
+4; using higher order in the discretization of convective term does not make a
+significant change in simulation of single jets. However switching from the
+first order upwind to the second order upwind changes the velocity in the
+symmetry line between two jets in the merging zone and the start of the
+combined zone. For the rest of the current paper, second order upwind is used. </p>
+
+<p align="justify" style="text-indent:19.85pt;">In the previous
+experiments, it is shown that static pressure of single free jets is constant
+in entire domain, except for jet in confined space, close to wall or impinging
+jets. However, in twin plane jets there is a sub-atmospheric pressure zone, a
+super-atmospheric static pressure zone, a recirculation zone and flow
+curvature. Centerline velocity for different nozzle spacing and radial
+distribution of velocity is also compared with experimental results and it is
+shown later in the current paper.</p>
+
+<figure>
+<img src="005_files/image010.png" class="img"/>
+
+<figcaption>
+Figure 4. Velocity at symmetry line for different convective discretization schemes.</figcaption>
+</figure>
+<br>
+
+<h4>2.3 Configuration of Flow in
+Domain</h4>
+<p align="justify" style="text-indent:19.85pt;">In figure 5 <i>x</i>-velocity,
+static pressure and streamlines are shown for the near field. Three different
+regions which have been explained earlier can easily be seen in figure 5a. <i>x</i>-velocity is normalized by U<sub>0</sub>
+which is the velocity at the nozzle exit. Potential core which can be noticed
+as a region with a velocity equal or greater than nozzle exit is clear in
+figure 5a. Mean static pressure contours are shown in figure 5b. Static pressure is normalized by<img width=28 height=22
+src="005_files/image012.png" v:shapes="_x0000_i1025">. Streamlines
+combined with static pressure are shown in figure5c to make it possible to see
+the effect of pressure on the flow direction.</p>
+
+<figure>
+<img src="005_files/image013.png" class="img"/>
+
+<figcaption>
+Figure 5. configuration of flow in domain.</figcaption>
+</figure>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">The recirculation
+zone can be noticed clearly in figure 5c, which is limited to the converging
+zone. In the converging zone, the sub-atmospheric static pressure region cause
+change in the flow direction and converging of two jets. It is consistent with
+the concept of Miller
+and Comings (1960) that the convergence of two jets is due to the
+sub-atmospheric region near the symmetry line. The vortex center and
+the merging point are located in the converging zone before the
+super-atmospheric zone.</p>
+
+<h4>2. 4. Effect of Jet Spacing</h4>
+
+<p align="justify" style="text-indent:19.85pt;">In this part, we will compare the results of
+different nozzle-nozzle spacings. A special case of twin jets is studied when <i>S/d<sub>0</sub></i>=1
+or in other words, twin jets are attached together and form a single jet. In
+this particular case, <i>d<sub>0</sub></i> is half of the hydraulic diameter.
+The authors believe that for performance comparison between twin and single
+jets, single jet should be considered as a special case of twin jet when S/d<sub>0</sub>=1;
+by this consideration, the mass flow rate and momentum of the jets would be the
+same at the nozzle exit. In all discussions of this part, injection angle is
+equal to zero.</p>
+
+<p align="justify" style="text-indent:19.85pt;">In figure 6 velocities at the symmetry line for
+different nozzle spacings are shown. The current numerical results are compared
+with the experimental results. In the combined region, the numerical model
+predicts <i>u<sub>c</sub></i> higher
+than the experimental results. The same difference has been noticed in previous
+studies e.g. Anderson and Spall (2001).In the converging zone the agreement between numerical and experimental
+results is acceptable. The deviation between the numerical and experimental
+results will increase by decreasing nozzle spacing value. On the other hand, it
+should be noticed that the experimental results of S/d<sub>0</sub>=4.25 (Nasr
+and Lai, 1997) do not follow the trend of the other nozzle-nozzle spacing. In
+general, it could be mentioned that the numerical results of k<i>-&#949;</i> model show good agreement with
+experimental results for the converging and merging zones, but slightly
+overpredict velocity in combined zone.</p>
+
+<figure>
+<img src="005_files/image020.png" class="img"/>
+
+<figcaption>
+Figure 6. Velocity at symmetry line for different nozzle spacings.</figcaption>
+</figure>
+<br>
+
+<h4>2. 5. Integral of Momentum Equation</h4>
+
+<p align="justify" style="text-indent:19.85pt;">The Momentum of the free jets
+is constant in streamwise direction (Rajaratnam, 1976) and (Schlichting, 1968).
+For confined jets where the changes in the pressure field are not negligible,
+integral of "pressure plus momentum" is constant in every cross section
+(Rajaratnam, 1976). We examined the above hypothesis for twin jets in the
+current study. Figure 7 shows the results of momentum and pressure integrals.
+In this figure M<sub>f</sub> is momentum of each jet in farfield. The accuracy
+of this hypothesis compared with <i>k-&#949;</i>
+model simulation; the maximum error in calculation was 2%. As the nozzle
+spacing increases (from 4.25 to 18.25), the momentum in the combined zone will
+decrease (from 0.84 to 0.69 of total inlet momentum), which causes lower
+penetration rate in transient jets. From this figure, it is also can be found
+that if pressure is atmospheric in the domain (after combined point), momentum
+will be constant too. </p>
+
+<figure>
+<img src="005_files/image022.png" class="img"/>
+
+<figcaption>
+Figure  7. Variation of Integral of momentum and pressure terms in x-direction.</figcaption>
+</figure>
+<br>
+
+
+
+<h2>3. Analytical Expressions</h2>
+
+<h4>3.1.
+Equation of Motion</h4>
+
+<p align="justify" style="text-indent:19.85pt;">The
+continuity and momentum equation for twin jets are written in a similar fashion
+as for single plane jets. The complete set of equations for single plane jet
+can be found in Rajaratnam (1976). After simplifications, the important conclusion
+can be written as</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files/image028.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(1)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+
+<p align="justify" style="text-indent:0pt;">which states that pressure plus momentum is
+preserved in the axial direction. In this equation, <span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>r</span> and p are density and pressure respectively
+and x and y are the axial and lateral directions. The accuracy of equation (1)
+has been compared with the <i>k-&#1108;</i>
+model simulations for wide range of nozzle-nozzle spacing(<i>S/d<sub>0</sub></i>)
+using CFD. The maximum error in calculation was 2%. </p>
+
+<h4>3. 2. Model Implementation for Jet Centerline Location</h4>
+
+
+<p align="justify" style="text-indent:19.85pt;">TheBending
+Model is introduced here to predict the curvature of twin jets and the
+position where they merge.This model is
+based on the idea that the low pressure region between the jets will cause
+curvature of flow and reduce the <i>x</i>-momentum. The schematic figure of the
+implementation the model for a control volume of the flow is shown in figure 8.
+In this figure M(x) is momentum of the jet at location x, <span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>q</span>  (x) is the angle between x axis and the jet at
+location x and p is pressure.</p><br />
+
+<figure>
+<img src="005_files/image0001.png" class="img"/>
+
+<figcaption>
+Figure 8. Schematic diagram of a control volume.</figcaption>
+</figure>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">By considering the momentum
+equation in <i>y</i>-direction for the
+control volume of figure 8; finally, we will reach to the equation of jet
+centerline location. The derivation of equation (2) with details can be found
+in Appendix A.</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files/image032.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(2)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<p align="justify" style="text-indent:19.85pt;">In this equation y<sub>c </sub>is
+the centerline location of jet and <i>M(x)</i> is the total momentum of each
+jet as a function of <i>x</i>. It has been shown from the numerical simulation
+that the momentum will be constant in the farfield region of the jets
+(downstream of combined point), <i>M<sub>f</sub></i>shows the farfield momentum of each
+jet.</p>
+
+<h2>>4. Prediction of the Attachment of Two Jets by <i>Bending Model</i></h2>
+
+<p align="justify" style="text-indent:19.85pt;">As it can be seen from
+equation (2); M(x) is needed in order to solve the equation. In order to simplify
+the solution and reduce dependency on numerical solution we use momentum of the
+jet at the nozzle instead of M(x). A simple finite difference code is written
+to solve equation (3).</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files/image034.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(3)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+
+<p align="justify" style="text-indent:19.85pt;">By employing this
+modification, having the momentum profile from numerical simulation is not
+necessary; just the farfield momentum value is enough. The results of the
+modified equation in comparison with the numerical simulation are presented in
+figure 9. TheBending Model
+prediction for y<sub>c</sub> is following the trend of y<sub>c</sub> from the
+numerical simulation. In this figure <i>y<sub>0</sub></i> is the position of
+zero velocity between two jets in each cross section.The results of the model show good agreement
+with numerical simulation. Moreover the model shows the same trend in
+decreasing y<sub>c</sub> which supports the concept of Bending Model. This simple
+model helps us to find the merging point of two plane jets. It should be noted
+that the prediction of y<sub>c</sub> from <i>k&#8208;&#1108;</i> model shows the combined point farther downstream
+than the experimental data. This deviation from experimental data will be
+discussed later in this paper. This solution is valid before the merging point
+where the shear layers of the jets meet at the symmetry line. Beyond the
+merging point the flow field can be found from the Reichardt's hypothesis and
+will be discussed later in this paper. By replacing M(x) with M(x=0), the
+results are still acceptable since in majority of the converging region (where
+this equation is applied) the momentum of the jet is close to inlet momentum.
+The merging point cross section is shown as a dashed line in figure 9.</p>
+
+<figure>
+<img src="005_files/image0222.png" class="img"/>
+
+<figcaption>
+Figure 9. The position of y<sub>c</sub> in comparison with y<sub>max</sub> and y<sub>0</sub> from k-є model. </figcaption>
+</figure>
+
+<h2>5. Prediction of Flow Field by Modified Reichardt's Hypothesis </h2>
+
+<H4>5.1
+Reichardt's Hypothesis</H4>
+
+<p align="justify" style="text-indent:19.85pt;">Reichardt (1943) proposed the
+turbulent momentum transfer hypothesis for prediction of the flow field in
+multiple jets. While applying Reichardt's hypothesis, the square of the
+velocity, <i>u<sup>2</sup></i>, is assumed
+to be self-similar. Pani (1980, 1983) superimposed the momentum of each jet to
+predict the velocity profiles for flow from multiple nozzles. For multiple
+three dimensional jets, it is shown that the total momentum in each cross
+section is the summation of each jet's momentum in that location. </p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files/image036.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(4)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+
+<p align="justify" style="text-indent:19.85pt;">>For the case of two parallel
+jets, the total velocity in the domain can be found as:</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files/image038.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(5)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<p align="justify" style="text-indent:19.85pt;">In equation
+(5), u is total velocity in x-direction from two jets (S1 and S2) and <i>u<sub>s1</sub></i>
+and <i>u<sub>s2</sub></i> can be substituted by single jet profiles. A single
+jet profile, for which the center of nozzle is located at (0, 0), can be
+estimated by the equation (6). </p>
+
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files/image040.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(6)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<p align="justify" style="text-indent:19.85pt;">Where K<sub>a</sub>=2.67, K<sub>r</sub>=0.1
+and &#945;=0.693 (Rajaratnam, 1976)<span lang=EN-US
+style='font-size:12.0pt;font-family:"Cambria","serif";mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin'>. If the nozzle <i>s1</i> is located at <i>y=S/2</i> and the nozzle <i>s2</i>
+is located at <i>y=-S/2</i> then the
+equation (6) can be written as equations (7) and (8).</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files/image042.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(7)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files/image044.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(8)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<p align="justify" style="text-indent:19.85pt;">And finally, the velocity of twin
+jets can be found by substituting equations (7) and (8) into equation (5).</p>
+
+<H4>5.2 Modified
+Reichardt's Hypothesis for Plane Jets</H4>
+
+<p align="justify" style="text-indent:19.85pt;">The concept of modifying the
+Reichardt's hypothesis is that the center of each jet will not remain at the
+injection line since the sub-atmospheric region causes the convergence of two
+jets. Thus the equations (7) and (8) can be modified to: </p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files/image046.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(9)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files/image048.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(10)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<p align="justify" style="text-indent:19.85pt;">In these
+equations, y<sub>c</sub> is the centerline location and be found from solution
+of equation (3). Also the equation (5) will be modified to equation (11) which
+shows the summation of two momentums is not equal to the final momentum due to
+the conservation of pressure plus momentum.</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files/image050.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(11)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<p align="justify" style="text-indent:19.85pt;">Equation (11) is applicable as
+far as the sub-atmospheric pressure is effective. Beyond this region the
+super-atmospheric region changes the direction of the flow to a zero
+angle.It should be noted that the
+phenomenological solution which introduced here is not fully decoupled from the
+numerical simulation since we need M(x) as the input of the model. If instead
+of M(x) we use M<sub>f</sub> , to lessen dependency to numerical simulation,
+then we underestimate the velocity by 25% in converging region and overestimate
+the velocity by 15% in merging zone the worst case (S/d<sub>0</sub>=18.25),
+however the velocity prediction would be the same in combined zone.</p>
+
+<h2>6. Results and Discussion</h2>
+
+
+<p align="justify" style="text-indent:19.85pt;">Figure 10 shows the velocity at the centerline
+for different nozzle-nozzle spacing. The Bending Model results compared with
+numerical simulation of the <i>k-&#1108;</i>
+model and the experimental results. The Bending Model shows good agreement with
+both the numerical and experimental results. The only zone that the Bending
+Model cannot predict is the circulation zone where the <i>x</i>-velocity is negative.The
+numerical simulation of <i>k-&#1108;</i>
+model predicts the velocity at the combined zone higher than the experimental
+data. The results of Bending Model can show the trend of the velocity correctly
+in both merging zone and combined zone. </p>
+
+<figure>
+<img src="005_files/image052.png" class="img"/>
+
+<figcaption>
+Figure  10. Velocity at symmetry line for different nozzle spacings. </figcaption>
+</figure>
+
+<br><p align="justify" style="text-indent:19.85pt;">The results of the Bending Model in the
+centerline and the ability of this model to predict the merging point and
+combined point are presented in figure 10 and 11. The lateral velocity
+distribution of the model should be compared with the numerical and
+experimental results too. Figure 12 presents the results of the Bending Model
+in different streamwise locations and compare it with the <i>k-&#1108;</i> model and the experimental results of Anderson and Spall
+(2001). In figure 12a, velocity from the Bending Model is predicted as a sharp
+step since at x/d<sub>0</sub>=5.26 it is still in the potential core region.
+The locations are selected in order to cover all three zones in twin jet
+domain. Generally the results of the Bending Model follow the velocity profile
+of the <i>k-&#1108;</i> model. </p>
+
+<figure>
+<img src="005_files/image058.png" class="img"/>
+
+<figcaption>
+Figure 11. The comparison of <i>x<sub>mp</sub></i> and <i>x<sub>cp</sub></i> obtained by Bending Model with the other results.</figcaption>
+</figure>
+<br>
+
+
+
+<p align="justify" style="text-indent:19.85pt;">The results of the Bending Model in the centerline and the ability of this model to predict the merging point and combined point are presented in figure 10 and 11. The lateral velocity distribution of the model should be compared with the numerical and experimental results too. Figure 12 presents the results of the Bending Model in different streamwise locations and compare it with the k-є model and the experimental results of Anderson and Spall (2001). In figure 12a, velocity from the Bending Model is predicted as a sharp step since at x/d0=5.26 it is still in the potential core region. The locations are selected in order to cover all three zones in twin jet domain. Generally the results of the Bending Model follow the velocity profile of the k-є model. </p><br />
+
+<figure>
+<img src="005_files/image062.png" class="img"/>
+
+<figcaption>
+Figure 12. streamwise velocity profile at different locations. </figcaption>
+</figure>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">The contour of x-velocity for the Bending Model
+and <i>k-&#1108;</i> model are compared in
+figure 13. There is a recirculation zone in the converging zone which the
+Bending Model cannot predict the negative velocities of this zone. However the
+general agreement between the numerical results and the Bending Model is
+acceptable.</p>
+
+<figure>
+<img src="005_files/image1.png" class="img"/>
+
+<figcaption>
+Figure  13. Velocity contour in domain. </figcaption>
+</figure>
+<br>
+
+<p align="justify" style="text-indent:19.85pt;">It should be noted that analogous concept has
+been applied to circular jets successfully (Faghani and Rogak, 2012) where the
+numerical simulation is fully decoupled from the physical model. The model can
+predict 3D velocity distribution for wide range of parameters.</p>
+
+<h2>7. Conclusion</h2>
+
+<p align="justify" style="text-indent:19.85pt;">The mean velocity and static pressure field is
+presented for turbulent twin jets.Three
+zones can be identified in the flow field: the converging zone, the merging
+zone and the combined zone. Two static pressure zones can be mentioned
+in the domain near the symmetryline: a sub-atmospheric and a super-atmospheric
+region. The convergence of two jets is due to the sub-atmospheric region near
+the symmetric line. The super-atmospheric region causes change in the flow
+direction in the merging zone. </p>
+
+<p align="justify" style="text-indent:19.85pt;">The
+numerical results of <i>k-&#949;</i> model
+are compared with the experimental results. In the combined region the
+numerical model predicts <i>u<sub>c</sub></i>higher than the experimental results. In the converging zone, the
+agreement between the numerical and experimental results is acceptable. </p>
+
+<p align="justify" style="text-indent:19.85pt;">It is also shown that for twin jets integral of "pressure plus
+momentum" is constant in every radial cross section. The accuracy of this
+hypothesis was compared with <i>k-&#949;</i>
+modeling simulation; the maximum error in the calculation was 2%. This
+conclusion is used to present a solution for twin plane jets.</p>
+
+<p align="justify" style="text-indent:19.85pt;">In this study the Bending Model is introduced which can be used to predict the
+interaction of twin jets. </p>
+
+<p align="justify" style="text-indent:0pt;">The Bending Model can predict the position of
+merging point and the combined point close to the numerical and experimental
+results. The model combined with Reichardt's hypothesis is
+capable to prediction velocity distribution. The only zone that the Bending Model cannot
+predict the velocity distribution is the circulation zone where the <i>x</i>-velocity is negative. </p>
+
+
+<p align="justify" style="text-indent:19.85pt;">The model can predict the position of combined
+point appropriately; however, it is still higher than the presented correlation
+equation. It should be noticed that the Bending Model results are based on the
+momentum profile which has been obtained from <i>k-&#1108;</i> model, so it is reasonable that the model follow the
+results of <i>k-&#1108;</i> model rather
+than the experimental results. The phenomenological solution which introduced
+here is not fully decoupled from the numerical simulation since we need M(x) as
+the input of the model. However this paper shows how free jet theories can help
+us in development of a semi-analytical solution. Also by using the
+non-dimensional momentum (Appendix B) we essentially use this curve for all
+other future cases including converging and diverging nozzles, so no further
+CFD simulation is necessary for other cases. In future study we try to decouple
+the physical solution from the numerical simulation. In order to fully decouple
+the model from numerical simulation it is necessary to estimate the pressure
+magnitude between two jets in converging and merging zones. It can be done by
+balancing the entrainment of each jet by the pressure between two jets. A
+similar approach has been successfully applied to circular jets by Faghani and
+Rogak (2012) for all converging, diverging, parallel and non-equal jets.</p>
+
+
+<p align="justify" style="text-indent:19.85pt;">Although the current study is limited to twin
+jets but in future this model can be extended to: non-equal jets,
+diverging/converging jets, jets near the wall or other objects.</p>
+
+
+<h2>Acknowledgements</h2>
+
+<p align="justify" style="text-indent:19.85pt;">The authors would
+like to thank Auto Partnership Canada (APC) and Westport Innovation Inc. for
+funding this project.</p>
+
+
+<img src="images/line.png" width="100&#37;" height="1" />
+<H2><a name="references">References</a></H2>
+
+
+<p> Anderson, E. A., Spall, R. E. (2001). Experimental and Numerical Investigation of Two-Dimensional Parallel Jets, Journal of Fluids Engineering, 123, 401-406. <a href="http://dx.doi.org/10.1115/1.1363701" target="_blank">View Article</a></p>
+
+<p> Boushaki, T., Sautet, J. (2010). Characteristics of flow from an oxy-fuel burner with separated jets: influence of jet injection angle, Experiments in Fluids, 48, 1095–1108. <a href="http://dx.doi.org/10.1007/s00348-009-0788-1 " target="_blank">View Article</a></p>
+
+<p> Elbanna, H., Gahin, S., Rashed, M. I. I. (1983). Investigation of two plane parallel jets. AIAA Journal, 21(7), 986–990. <a href="http://dx.doi.org/10.2514/3.8187 " target="_blank">View Article</a></p>
+
+<p> Faghani, E.,  Faghani, P.,  Eskandari, M. (2010) Numerical investigation of inlet condition effect on thermo-fluid characteristics of turbulent plane jet, IEEE: ITherm12th IEEE Intersociety Conference <a href="http://dx.doi.org/10.1109/ITHERM.2010.5501361" target="_blank">View Article</a></p>
+
+<p> Faghani, E., Rogak, S. (2012) A Phenomenological Model of Two Circular Turbulent Jets, the international Journal of Engine Research. <a href="http://dx.doi.org/ 10.1177/1468087412458267" target="_blank">View Article</a></p>
+
+<p> Lin, Y. F., Sheu, M. J. (1990). Investigation of two plane parallel unventilated jets.  Experiments in Fluids, 10, 17–22. <a href="http://dx.doi.org/10.1007/BF00187867" target="_blank">View Article</a></p>
+
+<p> Lin, Y. F., Sheu, M. J. (1991). Interaction of Parallel Turbulent Plane Jets. AIAA Journal, 29, 1372–1373. <a href="http://dx.doi.org/10.2514/3.10749 " target="_blank">View Article</a></p>
+
+
+<p> Militzer J. (1977). Dual plane parallel jets. Ph.D. thesis, University of Waterloo.</p>
+
+<p> Miller, D. R., Comings, E. W. (1960). Force-momentum fields in a dual-jet flow. Journal of Fluid Mechanics, 7, 237-256. <a href="http://dx.doi.org/10.1017/S0022112060001468 " target="_blank">View Article</a></p>
+
+<p> Murai, K., Taga, M., Akagawa, K. (1976). An Experimental Study on Confluence of Two- Dimensional Jets. Bulletin JSME 19, 956-964. <a href="http://dx.doi.org/10.1299/jsme1958.19.958" target="_blank">View Article</a></p>
+
+<p> Nasr, A., Lai, J. C. S. (1997). Comparison of flow characteristics in the near field of two parallel plane jets and an offset plane jet. Physics of Fluids, 9(10), 2919–2931. <a href="http://dx.doi.org/10.1063/1.869404 " target="_blank">View Article</a></p>
+
+<p> Nishida, K., Tian, J., Sumoto, Y., Long, W., Sato, K., Yamakaw, M. (2009). An experimental and numerical study on sprays injected from two-hole nozzles for DISI engines, Fuel 88, 1634–1642. <a href="http://dx.doi.org/10.1016/j.fuel.2009.01.003  " target="_blank">View Article</a></p>
+
+<p> Ouellette, P., Hill, P. G. (2000). Turbulent Transient Gas Injections. Journal of Fluid Engineering, 122(4), 743-753. <a href="http://dx.doi.org/10.1115/1.1319845" target="_blank">View Article</a></p>
+
+
+<p>Pani, B. S., Dash, R. N. (1980). Application of Reichardt's Inductive Theory to Three-Dimensional Jets. Report No. HYD 2/80, Department of Civil Engineering, Indian Institute of Technology, Bombay, India.</p>
+
+<p> Pani, B. S., Dash, R. N. (1983). Three-dimensional single and multiple free jets. Journal of Hydraulic Engineering, ASCE, 109(2), 254-269 <a href="http://dx.doi.org/10.1061/(ASCE)0733-9429" target="_blank">View Article</a></p>
+
+<p> Raghunathan, S., Reid, I. M. (1981). A study of multiple jet. AIAA Journal, 19, 124–127. <a href="http://dx.doi.org/10.2514/3.7753" target="_blank">View Article</a></p>
+
+
+<p> Rajaratnam, N. (1976) Turbulent Jets, Elsevier Co., New York. <a href="http://books.google.ca/books?hl=en&lr=&id=g3R4gFObzloC&oi=fnd&pg=PP1&dq=Turbulent+Jets&ots=RqEPop9c_4&sig=zD3Gp9aMqlKR3jkMj_vJjAHTuck#v=onepage&q=Turbulent%20Jets&f=false " target="_blank">View Article</a></p>
+
+<p>Reichardt, H. (1943). On a new theory of free turbulence. Journal of the Royal Aeronautical Society, 47, 167-176.</p>
+
+<p> Schlichting, H. (1968) Boundary Layer Theory. McGraw-Hill, New York, 6th edition, 747 pp. <a href="http://www.springer.com/materials/mechanics/book/978-3-540-66270-9 " target="_blank">View Article</a></p>
+
+<p> Tanaka, E. (1970). The interference of two-dimensional parallel jets -1st report, experiments on dual jet. Bulletin JSME, 13(56), 272–280. <a href="http://dx.doi.org/10.1299/jsme1958.13.272 " target="_blank">View Article</a></p>
+
+<p> Tanaka, E. (1974). The interference of two-dimensional parallel jets -2nd report, experiments on the combined flow of dual jet. Bulletin JSME, 17(109),920–927. <a href="http://dx.doi.org/10.1299/jsme1958.17.920 " target="_blank">View Article</a></p>
+
+<Br />
+
+
+<H2>Appendix A</H2>
+
+
+<p align="justify" style="text-indent:19.85pt;">In <i>y</i>-direction
+the momentum equation can be written as:</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files_2/image002.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(A1)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<p align="justify" style="text-indent:0pt;">We assume that the changes for <i>&#1138;</i> are small in a control volume of
+width <i>&#8710;x</i>. So the equation (A1)
+can be rewritten. </p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files_2/image004.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(A2)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<p align="justify" style="text-indent:19.85pt;">Applying Taylor series to approximate the
+function in equation (A2):</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files_2/image006.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(A3)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<p align="justify" style="text-indent:19.85pt;">Final form of the equation for a control volume
+will be in the form of: </p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files_2/image008.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(A4)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+
+<p align="justify" style="text-indent:19.85pt;">If <img width=50 height=22
+src="005_files_2/image010.png" class="img">then:</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files_2/image012.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(A5)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<p align="justify" style="text-indent:19.85pt;">Using the concept of "pressure plus momentum conservation":</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files_2/image014.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(A6)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+
+<p align="justify" style="text-indent:0pt;">In this equation M<sub>f</sub> is the total
+momentum of each jet after combined point. From figure 3 of the current paper
+the static pressure is nonzero just in the zone between two jets, so it is
+reasonable to calculate the average of pressure using y<sub>c</sub>
+which is the location of each jet centerline.</p>
+
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files_2/image016.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(A7)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+
+<p align="justify" style="text-indent:19.85pt;">Substituting equation (A7) into equation (A5): </p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files_2/image018.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(A8)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+
+<p align="justify" style="text-indent:19.85pt;">Replacing <span
+style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>q</span> with <i>y<sub>c</sub></i>derivation:</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files_2/image020.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(A9)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<p align="justify" style="text-indent:19.85pt;">By simplifying the equation (A9), we will find
+the final equation for centerline of the jet.</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="005_files_2/image022.png" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(A10)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<H2>Appendix B</H2>
+
+<p align="justify" style="text-indent:0pt;">Figure B1 shows the results of CFD model which
+present the changes in the momentum in <i>x</i>-direction
+for different nozzle-nozzle spacing. Momentum will be constant for the streamwise locations which are not shown in this figure.</p>
+
+<p align="justify" style="text-indent:0pt;">In order to have a wide-ranging solution, first
+we need to generalize the momentum equation for different S/d<sub>0</sub>.
+Since the only parameter which is different in the geometry of these cases is
+nozzle-nozzle spacing(S/d<sub>0</sub>), the momentum will be generalized
+applying nozzle-nozzle spacing. The results can be found in figure B2. Although
+the momentum equations seem not exactly uniform, this generalized form of
+momentum equation is accurate enough as the input of the Bending Model to
+predict the flow pattern with acceptable error for all S/d<sub>0 </sub>(not
+just for 4.25-18.25) in the current study.</p>
+
+<figure>
+<img src="005_files_2/image024.png" class="img"/>
+
+<figcaption>
+Figure B1. Momentum changes in x-direction for different nozzle-nozzle spacing.</figcaption>
+</figure>
+<br>
+<figure>
+<img src="005_files_2/image026.png" class="img"/>
+
+<figcaption>
+Figure B2. Generalized Momentum changes.</figcaption>
+</figure>
+<br>
+
+
+
+<div class="clearfix"></div>
+  </div>
+<div class="clearfix"></div>
+  </div>
+<div class="clearfix"></div>
+  </div>
+
+  
+
+  <div class="footer">
+
+  <div class="container">
+
+  <div class="col-sm-7 footer-link">
+
+        <p><a href="http://avestia.com">Avestia Publishing</a></p>
+        <p><a href="../register/">Subscribe to our Mailing List</a></p>
+        <p><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://avestia.com/feedback?refURL=' + refURL+'">Feedback</a>');</script></p>
+        <p><a href="../terms/">Terms of Use</a></p>
+		<p><a href="../sitemap/">Sitemap</a></p>
+
+      </div>
+      <div class="col-sm-5 footer-txt">
+        <p>Avestia Publishing, International ASET Inc. </p>
+        <p>Unit No. 417, 1376 Bank St. </p>
+        <p>Ottawa, Ontario, Canada </p>
+        <p>Postal Code: K1H 7Y3</p>
+        <p>Phone Number: 1-613-695-3040</p>
+
+  </div>
+
+  </div>
+
+  </div>
+
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+</body>
+
+</html>

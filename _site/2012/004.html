@@ -1,0 +1,1117 @@
+﻿<!DOCTYPE html>
+
+<html lang="en"><head>
+
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IJMEM - Simulation of a Filtration Process by DEM and CFD</title>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+
+<link href='http://fonts.googleapis.com/css?family=Antic+Slab:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+
+<link rel="stylesheet" href="../css/style.css" />
+
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../images/icon.ico" rel="shortcut icon" type="image/x-icon">
+
+<!--Goole Analytics Most Visited Article Code-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-45437411-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<!-- Include Most Visited Articles JS Code -->
+<script type="text/javascript" src="mostvisited.js"></script>
+
+<!-- Include SHARE THIS js sources -->
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "8f49e037-5155-4595-abc0-d069deae6488", doNotHash: true, doNotCopy: false, hashAddressBar: false, onhover:false});</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <div class="header">
+
+    <div class="container">
+
+      <div class="row">
+        <header id="header">
+          <div class="logo col-sm-4"><a href="http://avestia.com"><img src="/images/logo.png" alt="Journal" class="img" /></a></div>
+          <div class="threemenu col-sm-5">
+            <div class="row"><a class="link col-sm-4" href="http://avestia.com"><img src="/images/home.jpg" class="img"></a> <a class="link col-sm-4" href="http://avestia.com/journals/"><img src="/images/journals.jpg" class="img"></a> <a class="link col-sm-4" href="http://amss.avestia.com"><img src="/images/submit.jpg" class="img"></a></div>
+          </div>
+          <div class="searching col-sm-3">
+<div class="sharethis">Share this page:<br/>
+<span class='st_email'></span>
+<span class='st_facebook'></span>
+<span class='st_twitter'></span>
+<span class='st_googleplus'></span>
+<span class='st_linkedin'></span>
+</div>
+            
+         <div class="search_wrapper">
+         <form class="search" action="../results" method="get">
+              <fieldset>
+                <span class="text">
+                <input name="q" id="q" type="text" value="" placeholder="Search..." /><button class="search_top_button">GO</button>
+                </span>
+
+              </fieldset>
+            </form>
+            
+            </div>
+          </div>
+          <div class="col-lg-12"><div class="avada-row">
+
+            <nav id="nav" class="nav-holder">
+
+              <div role="navigation" class="navbar navbar-default">
+
+                <div class="container-fluid">
+
+                  <div class="navbar-header">
+                  
+                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<span class="navbar-brand" href="#">Menu</span>
+                  </div>
+
+                  <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav">			
+						<li><a href="/">Journal Home</a></li><span class="menu-line">|</span>
+                        <li><a href="../aims/">Aims and Scopes</a></li><span class="menu-line">|</span>
+                        <li><a href="../charges/">Article Processing Charges</a></li><span class="menu-line">|</span>
+                        <li><a href="../guidelines/">Author Guidelines</a></li><span class="menu-line">|</span>
+                        <li><a href="../board/">Editorial Board</a></li><br>
+                        <li><a href="../volumes/">Past Volumes</a></li><span class="menu-line">|</span>
+                        <li><a href="../current/">Current Volume</a></li><span class="menu-line">|</span>
+                        <li><a href="../propose/">Propose a Special Topic</a></li><span class="menu-line">|</span>
+                        <li><a href="../register/">Receive Updates</a></li><span class="menu-line">|</span>
+                        <li><a href="../contact/">Contact Us</a></li>
+
+
+
+
+                    </ul>
+
+                  </div>
+
+                  <!--/.nav-collapse -->
+
+                </div>
+
+                <!--/.container-fluid -->
+
+              </div>
+
+            </nav>
+
+            </div>
+
+          </div>
+          <div class="clearfix"></div>
+
+        </header>
+
+      </div>
+
+    </div>
+<div class="clearfix"></div>
+  </div>
+
+  <div class="slider">
+
+  <div class="container">
+
+  <div class="row"><div class="col-lg-12"><img class="img2" src="../images/international.jpg" alt="img"></div></div>
+
+  </div>
+
+  </div>
+
+  <div class="container">
+  <div class="clearfix"></div>
+  <div class="row">
+
+  <div class="col-lg-12 text"><div align=center>
+<div class="table">
+
+    <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 style='border:none; width: 100%'>
+         <tr>
+                <td>Volume 1, Issue 2 - Year 2012 - Pages 28-35</td>
+                <td align="right"><a href="PDF/004.pdf">View PDF (Full-text)</a></td>
+        </tr>
+         <tr>
+                <td>DOI: 10.11159/ijmem.2012.004</td>
+                <td align="right"><a href="#references">Linked References</a></td>
+        </tr>
+		<tr>
+	<td colspan="2">ISSN: 1929-2724</td>
+	</tr>
+     </table>
+     
+</div>
+</div>
+
+<br>
+
+<p align="center" style="font-size:22pt;">Simulation of a Filtration Process by DEM and CFD</p>
+	<p align="center"><strong>Stein S&ouml;ren, Tomas J&uuml;rgen</strong>
+    	<br>Otto-von-Guericke University Magdeburg, Institute for Process Engineering
+Universitätsplatz 2, 39106 Magdeburg, Germany<br>
+soeren.stein@ovgu.de; juergen.tomas@ovgu.de
+
+
+</p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<p align="justify"><i><strong>Abstract- </strong> The solid-liquid separation process by filtration is one of the fundamental processes of mechanical process engineering. In aqueous media, particles form agglomerates within the micron range. In this range of particle sizes, solid–liquid separation is influenced by interfacial effects of the agglomerates rather than by size of the primary particles. With the knowledge of interaction forces, one is able to intensify the filtration process. The aim is to predict the filtration behaviour by modelling the process and simulate it coupling Computational Fluid Dynamics (CFD) and Discrete Element Method (DEM). In this work simulations of flocculated and non-flocculated particle suspensions have been done for pressures between p=200 – 1000kPa. Filtration and consolidation experiments were used to compare and validate the simulation results. The flow rate during generation and compression of the porous ultrafine particle packings were simulated within the micron range. The decreasing filtration times of flocculated suspensions could be confirmed with the simulations. </span></i></p>
+
+<p align="left"><i><strong>Keywords:</strong></i> Filtration, CFD, DEM, Simulation, Modelling</span></p>
+
+<p>&nbsp;</p>
+<p align="justify">  © Copyright 2012 Authors - This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/2.0" target="_blank">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
+
+
+<img src="../images/line.png" width="100%;" height="1" />
+<h2>1. Introduction</h2> 
+
+<p align="justify" style="text-indent:19.85pt;">Depending on the dewatering apparatus the expression process can be distinguished into the filtration sub-process and the consolidation sub-process. The whole process is referred to gauging or dewatering process, which is usually realised in the praxis in the so called press-filters (Alt, 1976). The compressible cake consists of fine particles which are more or less compressible dependent mainly on the particle contact stiffness. The cake height h<sub>F</sub> increases during the filtration time. After filtration it is convenient to consolidate the cake by applying a mechanical pressure in this second stage so that the cake height h<sub>c</sub> decreases. The decreasing volume of the cake leads to a minimum amount of water in the pores. As a result, a very dense particle packing saturated with liquid is obtained. </p>
+
+<p align="justify" style="text-indent:19.85pt;">In aqueous media the particles form aggregates within the micron range. In this range of particle size solid–liquid separation is influenced by interfacial effects of the aggregates rather than by the size of the primary particles (Gösele, 1995). The change of electrostatic repulsive and van-der-Waals attractive interactions between particles may result in the flocculation of the particles and lead to a formation of flocs and produce a good separation. One of the well known physical models of colloid stability is known by the DLVO-Theory (Derjaguin, 1941; Verwey, Amsterdam 1948).</p>
+
+<p align="justify" style="text-indent:19.85pt;">The flow rate during generation and compression of the poros ultrafine particle packings can be simulated coupling the discrete element method and fluid dynamics within the micron range.</p>
+
+<p align="justify" style="text-indent:19.85pt;">The fluid coupling is done by implementation of a "fixed course-grid fluid scheme" in the DEM-software. The scheme solves the locally averaged, two-phase (fluid and solid) mass and momentum equations for the fluid velocities and pressures (Bouillard, 1989), which can be considered a generalized form of the Navier-Stokes equation for a fluid interacting with a solid phase. The fluid solver uses the SIMPLE scheme (Patankar, 1980) for incompressible viscous or inviscid flow on a fixed rectangular geometry aligned with the Cartesian axes. The internal discretization is fixed and regular. The underlying coupling formulation assumes that the particle radius is small compared to the length of a single fluid element. There is no interaction with walls, and no turbulence terms are added at any Reynolds number. Fluid boundary conditions may be applied at the outside of the fixed rectangular geometry. The available conditions are fixed normal velocity or fixed pressure, and fixed or free shear velocity. The earliest work in this method of particle/fluid interaction was done by Tsuji (Tsuji. Y, 1993; Kawaguchi, 1992), and the current implementation is discussed in Shimizu (Shimizu, 2004). This approach does not include a mechanism for generation of pore pressure under strain (Itasca Consulting Group Inc., 2008).</p>
+
+<p align="justify" style="text-indent:19.85pt;">Within the DEM-software the solution is "Pseudo-3D." The Navier-Stokes equation is solved in two dimensions, but the porosity is calculated in terms of the volume of spheres. This is because the 2D area of the circles would underestimate the porosity and overestimate the particle forces compared to 3D observations.</p>
+
+<p align="justify" style="text-indent:19.85pt;">For the purpose of the porosity calculation, the particles are spheres, and the cells are assumed to have an out-of-plane length of the maximum particle diameter in the model. The volume of particles with a diameter smaller than the maximum particle diameter is scaled by a factor of (d<sub>max</sub> / d<sub>particle</sub>) to maintain the Pseudo-3D geometry (for the porosity calculation only) (Itasca Consulting Group Inc., 2008).</p>
+
+<p align="justify" style="text-indent:19.85pt;">Actual publications researching the influence of the agglomeration, caused by DLVO interactions, on the filter cake generation are for example (Schafer et. Al, 2010). The authors suggest a combined calculation method, where the cake generation is simulated with a stochastic rotation dynamic (SRD) and a molecular dynamic method. They established the dependency of permeability of the particle size and porosity and therewith of the agglomeration of the particles. Keller et al. (Keller, 2010) presented a numerical simulation study based on a superposed grid technique, which includes the diverse microscopic effects of the double layer interaction for a small particle number. For larger particle numbers a combination of SRD and DEM is used to simulate the agglomeration- and cake generation process. Peng et al. (Peng, 2008) developed a DEM based model, which considers the Brownian motion and external movement due to electrophoresis as driving forces for the particle transport in colloidal suspensions. The researched the influence of the pH-value and volume concentration on the formation of alumina agglomerates using the DLVO theory. Dong et al. (Dong, 2009) studied by DEM the filter cake generation and the filter cake growth. They considered the van-der-Waals attraction and simulated the influences of material properties of particle and fluid as well as external conditions.</p>
+
+<p align="justify" style="text-indent:19.85pt;">This study makes a contribution to better understand the influence of interparticle interaction forces like van-der-Waals attraction and electrostatic repulsion on the generation of a filter cake. The two extremal cases of maximum agglomeration and absolute stable suspension were simulated and compared. The focus of the simulation results are the micro glass spheres, although lime stone and titanium particles were simulated as well.</p>
+
+<h2>2. Simulation Model</h2>
+<h4>2.1	Discrete Element Method (DEM)</h4>
+
+<p align="justify" style="text-indent:19.85pt;">The discrete element method was introduced by Cundall (Cundall, 1971) for the analysis of rock mechanics problems and then applied to soils by Cundall and Struck (Cundall, 1979) in 1979.</p>
+
+<p align="justify" style="text-indent:19.85pt;">The model is composed of discrete particles that displace independent of one another, and interact only at contacts or interfaces between the particles. The particles are assumed to be rigid, and the behavior of the contacts is characterized using a soft contact approach. A finite normal stiffness is taken to represent the measurable stiffness that exists at a contact and the mechanical behavior of such a system is described in terms of the movement of each particle and the inter-particle forces acting at each contact point. The laws of motion provide the fundamental relationships between particle motion and the forces causing that motion (Itasca Consulting Group Inc., 2008). In DEM simulation, a particle possesses the translational and rotation motion which can be described by the mass m of a particle i, the particle velocity v<i>i</i> or particle angular velocity ω<sub>i</sub>, the force F<sub>i</sub> and the momentum T<sub>i</sub>.</p>
+
+<div align=center>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="004_files/Eqn001.gif" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(1)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="004_files/Eqn002.gif" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(2)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+
+<p align="justify" style="text-indent:19.85pt;">In order to describe the particle particle or particle wall interactions the contact model according to Hertz and Mindlin is often used. It consists of many known material parameters and describes the normal and tangential forces acting on a particle within the contact zone. The normal force can be calculated with equation (3), where E<sub>M,ij</sub> is the average Young's modulus of particle i and j, r<sub>P,M</sub> is the average particle radius and s<sub>N</sub> is the ovelap of the particles vertical to the contact surface.</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="004_files/Eqn003.gif" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(3)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<p align="justify" style="text-indent:19.85pt;">The damping force F<sub>N,D</sub>, which considers the energy dissipation, depends on the particle mass m<sub>P</sub>, the coefficient of restitution and the relative velocity of the contact point in normal direction.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Regarding the Coulomb law fully-developed friction between 2 particles is taken into account.</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="004_files/Eqn004.gif" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(4)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<p align="justify" style="text-indent:19.85pt;">The used program PFC calculates the contact force in normal direction according to a parallel connection of a spring- and dashpot element and an adhesive or repulsive force as a result of surface charges of the particle. The contact force in tangential direction results from the parallel connection of a spring- and dashpot element and their series connection with a friction element. Figure 1 shows this arrangement graphically.</p>
+
+<figure>
+<img src="004_files/image001.jpg" class="img"/>
+
+<figcaption>
+Figure 1. Contact law</figcaption>
+</figure>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">The resulting contact force in normal direction F<sub>k,N</sub> is the sum of the spring force F<sub>spring</sub>, damping force F<sub>damp</sub> and the adhesive or repulsive force. Because of the surface charge F<sub>surface</sub>.</p>
+
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="004_files/Eqn005.gif" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(5)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<p align="justify" style="text-indent:19.85pt;">These forces can be calculated by equations 6 - 8.</p>
+
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="004_files/Eqn006.gif" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(6)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="004_files/Eqn007.gif" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(7)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="004_files/Eqn008.gif" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(8)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<p align="justify" style="text-indent:19.85pt;">The adhesive force is the van der Waals force between 2 particles and can be calculated with the Hamaker constant C<sub>H</sub>. </p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="004_files/Eqn009.gif" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(9)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<
+<p align="justify" style="text-indent:19.85pt;">The repulsive force is a function of the electrolyte concentration c in the suspension, particle radius r, Avogadro constant N<sub>A</sub>, Boltzman constant K<sub>B</sub>, absolute temperature T, the Debye Hückel parameter κ and the Zeta-potential ζ.</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="004_files/Eqn010.gif" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(10)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="004_files/Eqn011.gif" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(11)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<p align="justify" style="text-indent:19.85pt;">Combining equations 8-11 the surface force can be treated as the product of a specific surface energy, which consist of the mentioned parameters, and the particle diameter d. </p>
+
+<p align="justify" style="text-indent:19.85pt;">Additionally to the contact law the critical time step is necessary to get a stable simulation. The critical time step is calculated from the oscillation of a one dimensional massless spring with stiffness k and a connected mass point with mass m. This results to the critical time step for the translation:</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="004_files/Eqn012.gif" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(12)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+
+<p align="justify" style="text-indent:19.85pt;">From equation (12) one can see, that for ultrafine particles (d&lt;10&mu;m) the critical time step can reach values of Δt<sub>crit</sub> &lt; 10<sup>-9</sup>s. The limiting CPU capacity makes real time simulations of such systems impossible. That's why the model size is much smaller than the experimental size.</p>
+
+<h4>2.2. Coupled DEM and CFD</h4>
+
+<p align="justify" style="text-indent:19.85pt;">To couple the DEM with the fluid dynamics the so called fixed coarse-grid fluid flow scheme is introduced in the DEM-software. As aforementioned the scheme solves the locally averaged, two-phase mass and momentum equations for the fluid velocities and pressures, which can be considered a generalized form of the Navier-Stokes equation for a fluid interacting with a solid phase. The fluid solver uses SIMPLE scheme (Patankar, 1980) for incompressible viscous or inviscid flow on a fixed rectangular geometry aligned with the Cartesian axes (Itasca Consulting Group Inc., 2008).</p>
+
+<p align="justify" style="text-indent:19.85pt;">The Navier-Stokes equations for incompressible viscous flow can be modified to include the effect of a particulate solid phase mixed into the fluid. Assuming the focus on average effects over many particles, one can characterize the effects in terms of porosity, &#949;, and a coupling force, f<sub>b</sub> (Bouillard, 1989).</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="004_files/Eqn013.gif" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(13)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="004_files/Eqn014.gif" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(14)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+
+<p align="justify" style="text-indent:19.85pt;">where f<sub>b</sub> is a body force per unit volume. The fluid velocity is denoted as <img src="004_files/Eqn015.gif" />. In porous flow, there are two velocities: the quantity <img src="004_files/Eqn016.gif" /> is the intersticial or pore velocity, and the quantity <img src="004_files/Eqn017.gif" /> is the macroscopic, empty tube or Darcy velocity. This pore velocity is the effective velocity within the fluid elements when it moves through the pore space. The averaged macroscopic velocity is equivalent to the volumetric flow rate per unit cross-sectional area and equals the empty tube flow rate (Itasca Consulting Group Inc., 2008).</p>
+
+
+<p align="justify" style="text-indent:19.85pt;">The drag force applied by the particles to the fluid in each fluid element is defined as</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="004_files/Eqn018.gif" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(15)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<p align="justify" style="text-indent:19.85pt;">where <img src="004_files/Eqn019.gif" /> is the fluid velocity and <img src="004_files/Eqn020.gif" /> is the average velocity of all particles in a given fluid element.</p>
+
+<p align="justify" style="text-indent:19.85pt;">The coefficient 	&#946; is calculated in one of two ways, depending on the porosity of the fluid element. For low values of porosity (&#949;&lt;0.8) the ERGUN relation (Ergun, 1952) is used.</p>
+
+
+<div align=center>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="004_files/Eqn021.gif" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(16)</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+
+<p align="justify" style="text-indent:19.85pt;">For higher values of porosity (&#949;&gt;0.8), &#946; is derived from the corrected nonlinear drag force exerted on a spherical particle by a fluid (Wen, 1966).</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="004_files/Eqn022.gif" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(17)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<p align="justify" style="text-indent:19.85pt;">where C<sub>d</sub> is a turbulent drag coefficient defined in terms of the particle Reynolds number:</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="004_files/Eqn023.gif" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(18)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<p align="justify" style="text-indent:19.85pt;">Where Re<sub>p</sub> is:</p>
+
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="004_files/Eqn024.gif" class="img"></span></p>
+  </td>
+  <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right'>(19)</p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+<h2>3. Experimental</h2>
+<h4>3.1 Material</h4>
+
+
+<p align="justify" style="text-indent:19.85pt;">The samples used in the filtration experiments were limestone, titanium dioxide and micro glassspheres with average particle sizes d<sub>50</sub> of 1.2, 0.6 and 5.8 &mu;m respectively. The properties are shown in table 1. The suspensions were prepared with distilled water and solid to reach 13% volume fraction. To test the influence of electrolytes on the filtration process a 0.1 M suspension of sodium chloride, calcium chloride and aluminium chloride was produced. The pH-value was changed between 2 and 12 by addition of nitric acid and caustic soda solution to control the Zeta-potential.</p>
+
+
+<div class="widetable">
+<table>
+<caption>Table 1. Properties of the samples.</caption>
+<thead>
+ <tr>
+  <td width=194 valign=top style='width:145.6pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>&nbsp;</p>
+  </td>
+  <td width=67 style='width:50.3pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>CaCO<sub>3</sub></p>
+  </td>
+  <td width=80 style='width:60.3pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>TiO<sub>2</sub></p>
+  </td>
+  <td width=115 style='width:86.25pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>Glass (SiO<sub>2</sub>)</p>
+  </td>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+  <td width=194 style='width:145.6pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>Solid density <span style='font-family:Symbol'>r</span>s
+  in kg/m³</p>
+  </td>
+  <td width=67 style='width:50.3pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>2740</p>
+  </td>
+  <td width=80 style='width:60.3pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>3708</p>
+  </td>
+  <td width=115 style='width:86.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>2500</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=194 style='width:145.6pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>Particle size d<sub>50</sub> in &Mu;m</p>
+  </td>
+  <td width=67 style='width:50.3pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>1.2</p>
+  </td>
+  <td width=80 style='width:60.3pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>0.6</p>
+  </td>
+  <td width=115 style='width:86.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>5.8</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=194 style='width:145.6pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>Zetapotential &#950; in mV</p>
+  </td>
+  <td width=67 style='width:50.3pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>-40</p>
+  </td>
+  <td width=80 style='width:60.3pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>-50</p>
+  </td>
+  <td width=115 style='width:86.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>-41</p>
+  </td>
+ </tr>
+ <tr>
+  <td  style='border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>Hamaker-Constant C<sub>H,sls</sub> in 10<sup>-20</sup>
+  J</p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>3.6</p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>5.42 (Fernandez-Varea, 2000)</p>
+  </td>
+  <td  style='border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>0.43 (Fernandez-Varea, 2000)</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=194 style='width:145.6pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>Solubility in Water at 25°C in mol/l</p>
+  </td>
+  <td width=67 style='width:50.3pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>5.8·10<sup>-5</sup></p>
+  </td>
+  <td width=80 style='width:60.3pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>-</p>
+  </td>
+  <td width=115 style='width:86.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>-</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=194 style='width:145.6pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>BET-Surface in m<sup>2</sup>/g</p>
+  </td>
+  <td width=67 style='width:50.3pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>6.1</p>
+  </td>
+  <td width=80 style='width:60.3pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>9.38</p>
+  </td>
+  <td width=115 style='width:86.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>3.9</p>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+<h4>3.2 Test Device</h4>
+
+<p align="justify" style="text-indent:19.85pt;">To evaluate the model, the experimentally measurement of material properties as the packing density &#949;<sub>s,0</sub> and permeability k<sub>0</sub> at p<sub>s</sub> = 0, compressibility index &#946;, permeability fitting constant &#948;, isostatic tensile strength p<sub>a</sub>, lateral pressure ratio 	&#955;<sub>w</sub>, wall friction angle &#966;<sub>W</sub> and the filter medium resistance of pure medium R<sub>FM,0</sub> is necessary. These parameters were determined using the Press-Shear-Cell (Reichmann, 2000) (Figure 2). It is a combination of a laboratory filter, a compression-permeability cell and a medium pressure ring shear cell. Filtration experiments and in-situ shear experiments with the filter cakes can be carried out after the expression. This test apparatus is suitable to be applied on filtration processes at constant pressure. Compression-permeability tests are used to determine the packing density &#949;s and the permeability k. By compression experiments, filtration and consolidation dynamics can be evaluated. </p>
+
+<figure>
+<img src="004_files/image002.jpg" class="img"/>
+
+<figcaption>
+Figure 2. Press-Shear-Cell.</figcaption>
+</figure>
+<br>
+
+<h2>4. Results and Discussion</h2>
+
+<p align="justify" style="text-indent:19.85pt;">In the present work, all particles are randomly located having a starting velocity of v=0 without overlapping of particles for the initial setting. The filtration pressure during the simulation is p=200 kPa , the particle number depends on the model size to reach 13% volume fraction. The volume flow rate of the filtrate is calculated during each time step with the Darcy equation. Therewith the time depending filtrate volume can be calculated for each time step. The simulation ends, if all particles have been settled for the given pressure. The filter can be simulated with point walls, which are placed in the distance of the minimum particle diameter at the bottom of the model.</p>
+
+<p align="justify" style="text-indent:19.85pt;">To simulate a flocculation of the particles, an attractive force according to the DLVO theory (Derjaguin, 1941; Verwey, Amsterdam 1948) was introduced (equation 12). </p>
+
+<p align="justify" style="text-indent:19.85pt;">The tables and figures shown below explain the results for the micro glass particles. The simulations of the limestone and titaniumdioxide particles were made in the same way.</p>
+
+<p align="justify" style="text-indent:19.85pt;">As mentioned in the theoretical part, DEM simulations with ultrafine particles are very time consuming. The simulation time is governed mainly by the critical time step and the particle number. Two simplifications were made to save CPU time: The simulations were made only in two dimensions because the change of porosity and filter cake resistance during the filtration process depends mainly on the height of the filter cake. The figures shown below can be understood as a cutting plane through the generated three dimensional filter cake. In order to simulate real particle sizes but safe additional computational time, the particle number can be decreased, guaranteeing representative simulation results. This is the second simplification. Therefore the particle number was decreased as long as the porosity of the filter cake could be represented (Figure 3). The critical model size, which was found, is 0.5 x 0.5 mm<sub>2</sub> with a minimum number of 1800 particles.</p>
+
+<figure>
+<img src="004_files/image003.jpg" class="img"/>
+
+<figcaption>
+Figure 3. Researching the representative volume element size and minimum particle number.</figcaption>
+</figure>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">Figure 4 shows the visualization of the 2D-model. The fluid behaviour is computed within a fixed, orthogonal grid oriented parallel with the global coordinate system. Around the model there are additional fluid cells introduced considering the boundary conditions. </p>
+
+<figure>
+<img src="004_files/image004.jpg" class="img"/>
+
+<figcaption>
+Figure 4. Visualization of 2D-model. </figcaption>
+</figure>
+<br>
+
+<p align="justify" style="text-indent:19.85pt;">The aim of the simulations is to show and understand the differences of the structure of filter cakes, which are generated from a stable or flocculated suspension.</p>
+
+<p align="justify" style="text-indent:19.85pt;">If large repulsive interactions are dominant (stable suspension) the particles are completely dispersed and deposit as single particles. Those suspensions produce a compact filter cake (figure 5 (a)) with large cake resistances and poor permeabilities.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Assuming that only attractive forces appear between the ultrafine particles within the suspension (comparable to the isoelectric point) the flocculation reaches its maximum value. Large flocs deposit very fast and produce a loose unconformable structure (figure 5 (b)) which shows a large compressibility. Due to the flocculation the filtration time can be decreased.</p>
+
+<div class="widetable">
+<table>
+<caption>Table 2. Results of DEM simulation for glass spheres, experimental
+(Exp.) and simulation (Sim.).</caption>
+<thead>
+ <tr>
+  <td width=202 valign=top style='width:151.75pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>&nbsp;</p>
+  </td>
+  <td width=159 style='width:118.9pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>Stabilized</p>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>Exp.             
+  Sim.</p>
+  </td>
+  <td width=159 style='width:119.2pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>Flocculated</p>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>Exp.        
+       Sim.</p>
+  </td>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+  <td width=202 style='width:151.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>Filtration
+  time reduction by flocculation</p>
+  </td>
+  <td width=159 style='width:118.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>  -                       -</p>
+  </td>
+  <td width=159 style='width:119.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>-51%                  -43%</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=202 style='width:151.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>Average
+  porosity &#949;</p>
+  </td>
+  <td width=159 style='width:118.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>0.43                  0.449</p>
+  </td>
+  <td width=159 style='width:119.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>0.601                0.654</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=202 style='width:151.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>Permeability
+  k in 10<sup>-14</sup> m²</p>
+  </td>
+  <td width=159 style='width:118.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>2.47                     3.0</p>
+  </td>
+  <td width=159 style='width:119.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+        <p class=MsoNormalCxSpMiddle style='text-align:center;'>13.8                   23.6</p>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+
+<p align="justify" style="text-indent:19.85pt;">Table 2 shows the results of the DEM simulation compared to the experimental results. Due to the flocculation a time reduction of 43% could be achieved. The differences of porosity and permeability of simulation and experiment have different reasons. They appear because of the limited representative volume element size (real size is because of limited CPU capacity not possible) on the one hand. On this account the upper filter cake layers are missing, which cause an additional compression of the filter cake layers at the bottom. Furthermore the limited particle size distribution causes higher porosities as well as the 2D-simulation itself, although the solution is "Pseudo-3D".</p>
+
+<figure>
+<img src="004_files/image005.jpg" class="img"/>
+
+<figcaption>
+Figure  5. Result of simulation: (a) stable suspension, (b) flocculated suspension.</figcaption>
+</figure>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">The smaller the particle size, the higher is the influence of attractive van-der-Waals and repulsive electrostatic forces. And the more particles agglomerate because of the van-der-Waals attraction, the higher is the compressibility of the filter cake. This results in high porosities along the filter cake height at the end of the cake formation. This well known behaviour could be observed during the simulation of the filtration process of the flocculated suspensions. </p>
+
+<p align="justify" style="text-indent:19.85pt;">The time dependent curves of the porosity within the lowest fluid cell was recorded and compared for the two conditions. Figure 6 shows that the cake porosity decreased quickly at the beginning and then approached equilibrium values. The equilibrium state is reached faster in the case of a flocculated suspension, the porosity is much higher.</p>
+
+<figure>
+<img src="004_files/image006.jpg" class="img"/>
+
+<figcaption>
+Figure 6. Porosity of lowest fluid cell vs. time.</figcaption>
+</figure>
+<br>
+
+
+
+<p align="justify" style="text-indent:19.85pt;">After the filtration process a consolidation of the developed filter cake is attached. Therefore a horizontal wall above the highest particle is introduced. The wall moves downwards with decreasing velocity until an equilibrium state between constant wall pressure and increasing solid pressure within the filter cake is reached. The consolidation pressure of the wall is increased stepwise between p=200 – 1000 kPa. To predict the dependency of the filter cake structure on the applied pressure, the packing density &#949;<sub>s</sub> for the different consolidation pressures p<sub>s</sub> were adapted by the compression function</p>
+
+<div align=center>
+
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt;'><img src="004_files/Eqn025.gif" class="img"></span></p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+
+<p align="justify" style="text-indent:0pt;">where &#946; is the compressibility index and p0 the compression modulus. </p>
+
+<figure>
+<img src="004_files/image007.jpg" class="img"/>
+
+<figcaption>
+Figure 7. Packing density &#949;<sub>s</sub> vs filtration pressure p<sub>s</sub>.</figcaption>
+</figure>
+<br>
+
+
+
+<p align="justify" style="text-indent:19.85pt;">Figure 7 shows the packing densities of the filter cake for the given consolidation pressures. By logarithmic plotting of ln εs versus ln(1+p<sub>s</sub>/p<sub>0</sub>) the compressibility index can be achieved. The results in figure 7 show, that larger pressures lead to more compact filter cakes. The compressibility of the flocculated cake (slope of the curve) is higher compared to the stable suspension and can be categorized as very compressible. The simulation results agree quantitatively with the experimental values.</p>
+
+<p align="justify" style="text-indent:19.85pt;">The contact forces during filtration and consolidation are computed for every time step. Because of the decreasing number of particle contacts in a flocculated filter cake the contact force is ca. 70% higher. The average contact force after the filtration process for a filtration pressure of p=200kPa is F<sub>K</sub>=3.06&mu;N for the stable case and F<sub>K</sub>=5.27&mu;N in the flocculated case. The porous solid matrix of the flocculated filter cake is preserved due to the adhesive surface forces.</p>
+
+<h2>5. Conclusion</h2>
+
+
+<p align="justify" style="text-indent:19.85pt;">In this work the expression dynamics of ultrafine limestone suspensions with and without electrolyte were determined using a dynamic process model. The model results were compared with the experimental tests. A Press-Shear-Cell was used to investigate the expression behaviour of the consolidated particle packings and to measure the most important material properties, i.e. packing density &#949;s, permeability k and filter cake resistance &#945; for different filter cakes.</p>
+
+<p align="justify" style="text-indent:19.85pt;">It was shown that the time dependency of specific filtrate volume and cake height for the flocculated and non-flocculated suspension can be predicted by DEM-CFD simulation. It is observed that a flocculation causes an increase in porosity and permeability of the filter cake. The filtration times are decreasing. Due to the flocculation the particles are coagulating and interfere themselves so that no dense packing can be developed. That's why the filtration resistance and packing density are reaching the lowest values. The flow rate during generation and compression of the porous ultrafine particle packings were simulated within the micro range. After the filtration process the filter cake was consolidated stepwise between p=200-1000 kPa. By fitting the compressibility index was achieved. The compressibility of the flocculated filter cakes is much higher compared to the stable suspensions and can be categorized as very compressible.</p>
+
+<p align="justify" style="text-indent:19.85pt;">The difference between simulation and experimental results of the porosity (4-9% higher porosities in simulation) is mainly caused by the 2D-simulation. A 3D-simulation can minimize the computational error, which is an objective for the future.</p>
+
+<h2>Acknowledgements</h2>
+
+
+<p align="justify" style="text-indent:19.85pt;">The authors would like to thank the German Research Foundation (DFG) for financial support.</p>
+
+<img src="images/line.png" width="100&#37;" height="1" />
+<H2><a name="references">References</a></H2>
+
+<p> Alt C. (1976) Schlammentwässerung mit Preßfiltern, Chemie Ingenieur Technik 48.- Vol. 2. - pp. 115-124. <a href="http://dx.doi.org/10.1002/cite.330480209" target="_blank">View Article</a></p>
+
+<p> Bouillard, J. X., Lyczkowski, R.W., and Gidaspow, D. (1989) Porosity Distributions in a Fluidized Bed with an Immersed Obstacle AIChE Journal 6 : Vol. 35. - pp. 908-922. <a href="http://dx.doi.org/10.1002/aic.690350604" target="_blank">View Article</a></p>
+
+<p> Cundall, P. A., Strack, O. D. L. (1979) A discrete numerical model for granular assemblies // Géotechnique 1 : Vol. 29. - pp. 47-65. <a href="http://dx.doi.org/10.1680/geot.1979.29.1.47" target="_blank">View Article</a></p>
+
+<p> 
+Cundall, P.A. A (1971) Computer Model for Simulating Progressive Large Scale Movements in Blocky Rock Systems Proceedings of the Symposium of the International Society of Rock Mechnics, Vol. 1, Paper No. II-8. - 1971.
+</p>
+
+
+<p> Derjaguin, B., Landau, L. (1941) Theory of the stability of strongly charged lyophobic sols and of the adhesion of strongly charged particles in solutions of electrolytes Academy of Sciences of the USSR 14- p. 633. <a href="http://dx.doi.org/10.1016/0079-6816(93)90013-L" target="_blank">View Article</a></p>
+
+<p> Dong, K. J., Zou, R.P., Yang, R.Y., and Yu, A.B. (2009) DEM simulation of cake formation in sedimentation and filtration. ISSN 0892-6875, Vol. 22, Nr. 11. S. 921-931. <a href="http://dx.doi.org/10.1016/j.mineng.2009.03.018" target="_blank">View Article</a></p>
+
+<p> 
+Ergun, S. (1952) Fluid Flow through Packed Columns Chemical Engineering Progress- pp. 89-94.
+</p>
+
+<p> Fernandez-Varea Garcia-Molina (2000) Hamaker Constants of Systems Involving Water Obtained from a Dielectrical Function that fulfills the f Sum Rule. Journal of Colloid and Interface Science Vol. 231. - pp. 394-397. <a href="http://dx.doi.org/10.1006/jcis.2000.7140" target="_blank">View Article</a></p>
+
+<p> 
+Gösele, W. (1995) Grenzflächenkräfte und Fest-Flüssig-Trennung - was der Praktiker davon wissen sollte Filtrieren und Separieren 9- pp. 14-22.</p>
+
+<p> 
+Itasca Consulting Group Inc. (2008) PFC2D, Particle Flow Code in 2 Dimensions [Book]. - Minneapolis </p>
+
+<p> 
+Kawaguchi, T., et. Al (1992) Numerical Simulation of Fluidized Bed Using the Discrete Element Method (the Case of Spouting Bed) JSME B 551 : Vol. 58. - pp. 79-85.</p>
+
+<p> Keller, F., Eichholz, C. und Schäfer, B., Nirschl, H. (2011) Numerical Simulation of Agglomaration and filtration of colloidal suspensions. FILTECH 2011 Proceedings Vol. 1. S.570-577. <a href="http://www.afssociety.org/spring2010/proceedings/presentations/012_Hermann_afs.pdf " target="_blank">View Article</a></p>
+
+
+<p> 
+Mladenchev, T. (2007) Modellierung des Filtrations- und Fließverhaltens von ultrafeinen, kompressiblen flüssigkeitsgesättigten Partikelpackungen, Dissertation, Uni Magdeburg [Book]</p>
+
+
+<p> 
+Patankar, S. V. (1980) Numerical Heat Transfer and Fluid Flow Hemisphere Publishing
+ </p>
+
+<p> Reichmann, B. and Tomas, J. (2001) Expression behaviour of fine particle suspensions and the consolidated cake strength Powder Technology 2-3 : Vol. 121. - pp. 182-189. <a href="http://www.mvt.ovgu.de/mvt_media/Vortr%C3%A4ge/article.pdf " target="_blank">View Article</a></p>
+
+<p> Reichmann B. and Tomas, J. (2000)  Expression dynamics of finest particle suspensions Filtration & Separation 5 : Vol. 37. - pp. 45-49. <a href="http://dx.doi.org/10.1016/S0015-1882(00)88905-3" target="_blank">View Article</a></p>
+
+
+<p> 
+Reichmann B. (1999) Modellierung der Filtrations- und Konsolidierungsdynamik beim Auspressen feindisperser Partikelsysteme, Dissertation, Universität Magdeburg [Book] </p>
+ 
+<p> Santiwong, SR, Guan, J. and TD, Waite. (2008) Effect of ionic strength and pH on hydraulic prperties and structure of accumulating solid assemblages during microfiltration and montmorillonite suspensions. Journal of Colloid & Interface Science, 317(1). S. 214-27. <a href="http://dx.doi.org/10.1016/j.jcis.2007.09.052" target="_blank">View Article</a></p>
+
+<p> Schafer, B., Hecht, M., Harting, J., Nirschl, H. (2010) Agglomaration and filtration of colloidal suspensions with DLVO interactions in simulation and experiment. Journal of Colloid & Interface Science, 349(1). S. 186-95. <a href="http://arxiv.org/ftp/arxiv/papers/0907/0907.1551.pdf" target="_blank">View Article</a></p>
+
+
+<p> 
+Shimizu, Y., Hart, R., and Cundal, P.A. (2004) Fluid Coupling in PFC2D and PFC3D Numerical Modeling in Micromechanics via Particle Methods (Proceedings of the 2nd International PFC Symposium, Kyoto, Japan, 2004).- pp. 281-287. </p>
+
+
+<p> 
+Shirato, M. and Tiller (1987), F. M. Fitlration in the Chemical Process Industry, Chapter 6 Filtration-Principles and Practices / ed. Inc. Marcel Dekker. - New York : [s.n.]</p>
+
+<p> Shirato, M., Murase, T., and Iwata, M. (1986), M. Deliquoring by Expression - Theory and Practice Progress in Filtration and Separation Vol. 4. - Amsterdam  <a href="http://cat.inist.fr/?aModele=afficheN&cpsidt=8491054 " target="_blank">View Article</a></p>
+
+<p> Tsuji, Y T., Kawaguchi, T., and Tanaka, T. (1993) Discrete Particle Simulation of Two-Dimensional Fluidized Bed Powder Tech., 77- pp. 79-87. <a href="http://dx.doi.org/10.1016/0032-5910(93)85010-7" target="_blank">View Article</a></p>
+
+<p> 
+Verwey, E. J. W., Overbeek, J. T. G. (1948) Theory of the stability of lyophilic colloids. The interaction of sol particles having an electrical double layer Elsevier. – Amsterdam</p>
+
+<p> 
+Wen C.Y. and Yu, Y. H. (1966) Mechanics of Fluidiszation Chemical Engineering Progress Symposium series 62- pp. 100-111./span></p></p>
+<div class="clearfix"></div>
+  </div>
+<div class="clearfix"></div>
+  </div>
+<div class="clearfix"></div>
+  </div>
+
+  
+
+  <div class="footer">
+
+  <div class="container">
+
+  <div class="col-sm-7 footer-link">
+
+        <p><a href="http://avestia.com">Avestia Publishing</a></p>
+        <p><a href="../register/">Subscribe to our Mailing List</a></p>
+        <p><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://avestia.com/feedback?refURL=' + refURL+'">Feedback</a>');</script></p>
+        <p><a href="../terms/">Terms of Use</a></p>
+		<p><a href="../sitemap/">Sitemap</a></p>
+
+      </div>
+      <div class="col-sm-5 footer-txt">
+        <p>Avestia Publishing, International ASET Inc. </p>
+        <p>Unit No. 417, 1376 Bank St. </p>
+        <p>Ottawa, Ontario, Canada </p>
+        <p>Postal Code: K1H 7Y3</p>
+        <p>Phone Number: 1-613-695-3040</p>
+
+  </div>
+
+  </div>
+
+  </div>
+
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+</body>
+
+</html>
