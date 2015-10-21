@@ -1769,7 +1769,7 @@ h2 {
   .j-header {
     background-color: #F48120;
     min-height: 430px;
-    background: url(../img/journals/j-ijmem.jpg) center center;
+    background: url(../img/journals/j-ijmem.jpg) top;
     background-size: cover;
   }
   .name {
