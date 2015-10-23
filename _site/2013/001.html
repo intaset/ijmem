@@ -1,222 +1,195 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en"><head>
-
-<meta charset="utf-8">
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive">
+<meta name="description" content="The Volume 1, Issue 1 published for IJMEM Journal.">
+<meta name="keywords" content="avestia, publishing, journals, papers, science, renewable energy">
 <title>IJMEM -  A Miniature Legged Hexapod Robot Controlled by a FPGA</title>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
 
-<link href='http://fonts.googleapis.com/css?family=Antic+Slab:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+<meta name="handheldfriendly" content="true">
+<meta name="mobileoptimized" content="240">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="../css/style.css" />
+<link href="../css/avestia.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
+<!--[if IE-9]><html lang="en" class="ie9"><![endif]-->
 
-<link href="../css/bootstrap.css" rel="stylesheet">
-<link href="../images/icon.ico" rel="shortcut icon" type="image/x-icon">
+<script src="../js/modernizr.custom.63321.js"></script>
+<script type="text/javascript" src="../mostvisited.js"></script> 
+<script type="text/javascript" src="../mostvisitedExt.js"></script> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<!--Goole Analytics Most Visited Article Code-->
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-45437411-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  ga('create', 'UA-68628727-1', 'auto');
+  ga('send', 'pageview');
 
 </script>
+<script>
+  (function() {
+    var cx = '016656741306535874023:f_iiykae6ri';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+</head>
+<body class="loading">
+<nav id="slide-menu">
+  <h1>Avestia Publishing</h1>
+  <ul>
+    <li><a href="about">About Us</a></li>
+    <li><a href="ethics">Ethics in Publishing</a></li>
+    <li><a href="openaccess">Open Access</a></li>
+    <li><a href="editor">Become a Reviewer or an Editor</a></li>
+    <li><a href="publishing">Your Publishing Needs</a></li>
+    <li><a href="proceedings">Conference Proceedings</a></li>
+    <li><a href="news">Latest News</a></li>
+    <li><a href="guidelines">Author Guidelines</a></li>
+    <li><a href="journals">Journals</a></li>
+    <li><a href="http://amss.avestia.com/">Submission</a></li>
+    <li><a href="copyright">Copyright</a></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+</nav>
 
+<div id="content">
+  <div class="desktop">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
 
-<!-- Include Most Visited Articles JS Code -->
-<script type="text/javascript" src="mostvisited.js"></script>
-
-
-<!-- Include SHARE THIS js sources -->
-<script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "8f49e037-5155-4595-abc0-d069deae6488", doNotHash: true, doNotCopy: false, hashAddressBar: false, onhover:false});</script></head>
-
-<body>
-
-<div class="wrapper">
-
-  <div class="header">
-
-    <div class="container">
-
-      <div class="row">
-
-        <header id="header">
-          <div class="logo col-sm-4"><a href="http://avestia.com"><img src="/images/logo.png" alt="Journal" class="img" /></a></div>
-          <div class="threemenu col-sm-5">
-            <div class="row"><a class="link col-sm-4" href="http://avestia.com"><img src="/images/home.jpg" class="img"></a> <a class="link col-sm-4" href="http://avestia.com/journals/"><img src="/images/journals.jpg" class="img"></a> <a class="link col-sm-4" href="http://amss.avestia.com"><img src="/images/submit.jpg" class="img"></a></div>
-          </div>
-          <div class="searching col-sm-3">
-<div class="sharethis">Share this page:<br/>
-<span class='st_email'></span>
-<span class='st_facebook'></span>
-<span class='st_twitter'></span>
-<span class='st_googleplus'></span>
-<span class='st_linkedin'></span>
-</div>
-            
-         <div class="search_wrapper">
-         <form class="search" action="../results" method="get">
-              <fieldset>
-                <span class="text">
-                <input name="q" id="q" type="text" value="" placeholder="Search..." /><button class="search_top_button">GO</button>
-                </span>
-
-              </fieldset>
-            </form>
-            
-            </div>
-          </div>
-          <div class="col-lg-12">
-
-          <div class="avada-row">
-
-            <nav id="nav" class="nav-holder">
-
-              <div role="navigation" class="navbar navbar-default">
-
-                <div class="container-fluid">
-
-                  <div class="navbar-header">
-                  
-                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-<span class="navbar-brand" href="#">Menu</span>
-                  </div>
-
-                  <div class="navbar-collapse collapse">
-
-                    <ul class="nav navbar-nav">			
-						<li><a href="/">Journal Home</a></li><span class="menu-line">|</span>
-                        <li><a href="../aims/">Aims and Scopes</a></li><span class="menu-line">|</span>
-                        <li><a href="../charges/">Article Processing Charges</a></li><span class="menu-line">|</span>
-                        <li><a href="../guidelines/">Author Guidelines</a></li><span class="menu-line">|</span>
-                        <li><a href="../board/">Editorial Board</a></li><br>
-                        <li><a href="../volumes/">Past Volumes</a></li><span class="menu-line">|</span>
-                        <li><a href="../current/">Current Volume</a></li><span class="menu-line">|</span>
-                        <li><a href="../propose/">Propose a Special Topic</a></li><span class="menu-line">|</span>
-                        <li><a href="../register/">Receive Updates</a></li><span class="menu-line">|</span>
-                        <li><a href="../contact/">Contact Us</a></li>
-
-
-
-                    </ul>
-
-                  </div>
-
-                  <!--/.nav-collapse -->
-
-                </div>
-
-                <!--/.container-fluid -->
-
-              </div>
-
-            </nav>
-
-            </div>
-
-          </div>
-          <div class="clearfix"></div>
-
-        </header>
-
-      </div>
-
+    <div class="nav1">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
     </div>
-<div class="clearfix"></div>
+
+    <div class="search-menu">
+      <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
+      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+    </div>
+
+    <div class="nav2">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
+    </div>
   </div>
-
-  <div class="slider">
-
-  <div class="container">
-
-  <div class="row"><div class="col-lg-12"><img class="img2" src="../images/international.jpg" alt="img"></div></div>
-
-  </div>
-
-  </div>
-
-  <div class="container">
-  <div class="clearfix"></div>
-  <div class="row">
-
-  <div class="col-lg-12 text"><div align=center>
-<div class="table">
-
-    <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 style='border:none; width: 100%'>
-         <tr>
-                <td>Volume 1, Issue 2 - Year 2013 - Pages 1-6</td>
-                <td align="right"><a href="PDF/001.pdf">View PDF (Full-text)</a></td>
-        </tr>
-         <tr>
-                <td>DOI: 10.11159/ijmem.2013.001/td>
-                <td align="right"><a href="#references">Linked References</a></td>
-        </tr>
-		<tr>
-	<td colspan="2">ISSN: 1929-2724</td>
-	</tr>
-     </table>
-     
 </div>
+  </div>
+
+  <header>
+    <div class="mobile">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
+          <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+      </div>
+      <div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
+          <div class="menu-trigger"></div>
+      </div>
+  </div>
+</div>
+      <div class="bg">
+        <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+      </div>
+    </div> <!--Mobile -->
+  </header>
+
+  <div class="j-header-article">
+  <div class="name">
+    <h1>International Journal of Mechanical Engineering and Mechatronics (IJMEM)<br>
+    <p class="body">ISSN: 1929-2724</p></h1>
+    <div class="oalink">
+    <a href="/openaccess" target="blank" title="Avestia's Open Access">
+          <img src="../img/j-oa.png" border="0" onmouseover="this.src='../img/j-oa-hover.png'" onmouseout="this.src='../img/j-oa.png'" class="j-oa">
+    </a>
+  </div>
+  </div>
 </div>
 
-<br>
+  <div role="navigation" class="navbar navbar-default">
+  <ul>
+    <li><a href="">Journal Home</a></li>
+    <li><a href="aims">Aims & Scopes</a></li>
+    <li><a href="fee">Publishing Fee</a></li>
+    <li><a href="board">Editorial Board</a></li>
+    <li><button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">Volumes</button></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="volume1/issue1">Volume 1, Issue 1</a></li>
+      <li><a href="volume2">Volume 2</a></li>
+      <li><a href="current">Current Volume</a></li>
+    </ul>
+  </div><!--/.nav-collapse -->
+</div>
 
-<p align="center" style="font-size:22pt;">A Miniature Legged Hexapod Robot Controlled by a FPGA</p>
-		<p align="center"><strong>Ausama Ahmed, Michael Henrey, Pavel Bloch, Pranav Gupta, Cristian Panaitiu, Daniel Naaykens, Stefan Strbac, Lesley Shannon, and Carlo Menon</strong><br>
-Simon Fraser University, School of Engineering Science
+<div class="grid">
+<div class="unit unit-s-1 unit-m-1 unit-l-1">
+  <div class="main-content j-home">
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2">
+      <p class="body">
+      Volume 1, Issue 2 - Year 2013 - Pages 1-6<br>
+      DOI: 10.11159/ijmem.2013.001</p>
+    </div>
+
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2 a-link">
+        <a href="PDF/001.pdf" class="body-link" class="body-link">View PDF (Full-text)</a><br>
+      <a href="#references" class="body-link">Linked References</a>
+    </div>
+
+    <h3 class="center">A Miniature Legged Hexapod Robot Controlled by a FPGA</h3>
+
+    <p class="body-bold center">Ausama Ahmed, Michael Henrey, Pavel Bloch, Pranav Gupta, Cristian Panaitiu, Daniel Naaykens, Stefan Strbac, Lesley Shannon, and Carlo Menon</p>
+
+    <p class="body center">Simon Fraser University, School of Engineering Science
 8888 University Dr., Burnaby, British Columbia, Canada<br>
-cmenon@sfu.ca
+cmenon@sfu.ca</p>
 
+    <p class="body"><b>Abstract</b> - <i>The preliminary design of a robot for future planetary space applications is presented. This hexapod robot has legs inspired by the spider, which it uses to manoeuvre across horizontal surfaces. Designed as a scientific platform for future research, mechanically, this robot is lightweight, compact and modular. A Field Programmable Gate Array (FPGA) is used as a controller, with one soft processor controlling each leg, adding additional modularity. This robot is shown to be capable of walking across horizontal surfaces, and future versions will be capable of climbing vertically, using bio-inspired dry adhesives.</i></p>
 
+    <p class="body"><b><i>Keywords:</i></b> Legged robot, hexapod, FPGA, gait.</p>
 
+    <p class="body">© Copyright 2015 Authors This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/3.0" class="body-link" target="_blank" class="body-link">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
 
-</p>
-
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-
-<p align="justify"><i><strong>Abstract- </strong> The preliminary design of a robot for future planetary space applications is presented. This hexapod robot has legs inspired by the spider, which it uses to manoeuvre across horizontal surfaces. Designed as a scientific platform for future research, mechanically, this robot is lightweight, compact and modular. A Field Programmable Gate Array (FPGA) is used as a controller, with one soft processor controlling each leg, adding additional modularity. This robot is shown to be capable of walking across horizontal surfaces, and future versions will be capable of climbing vertically, using bio-inspired dry adhesives.  </i></p>
-
-<p align="left"><i><strong>Keywords:</strong></i> Legged robot, hexapod, FPGA, gait. </span></p>
-
-<p>&nbsp;</p>
-<p align="justify">  © Copyright 2013 Authors - This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/2.0" target="_blank">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
-
-<p>&nbsp;</p>
-
-<p>
-
-
-Date Received: 2013-08-30 <br />
+    <p class="body">Date Received: 2013-08-30 <br />
 
 Date Accepted: 2013-11-03  <br />
 
 Date Published: 2013-11-20</p>
 
+  <div class="border"></div>
 
-<img src="../images/line.png" width="100%;" height="1" />
-<h2>1. Introduction</h2> 
+  <div class="indent">
+<h4>1. Introduction</h4> 
 
-<p align="justify" style="text-indent:19.85pt;">Legged robots can be
+<p class="body">Legged robots can be
 dexterous, and are capable of complex motions. Robots using other locomotion
 mechanisms, for example wheel-legs, [1, 2], or tank-tracked systems [3, 4] are
 often limited in the environments that they may traverse. Applications of
 legged robots include working in environments that are unsafe for humans.</p>
 
-<p align="justify" style="text-indent:19.85pt;">The level of autonomy in
+<p class="body">The level of autonomy in
 legged robots varies. Some legged robots have no electronics on board [5] while
 others employ microcontrollers [6] onboard real time systems [7], off board
 control [8, 9] or a combination of the preceding systems [10]. Robots with
@@ -224,14 +197,14 @@ on-board control systems have potential for more autonomy, and could be used in
 applications where response time is critical or communication rates are too
 slow to allow off-board control.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Sizes of legged robots
+<p class="body">Sizes of legged robots
 vary from millirobot [11] to a bigger than real sized dog [12]. Robots with up
 to 16 legs have been reported [5]. Robots with more legs may have a higher
 factor of safety, for example if one leg fails or is unable to contact the
 surface, the other legs can support the robot [10]. However a robot with more
 legs requires a more complex control system.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Some legged robots are
+<p class="body">Some legged robots are
 also capable of climbing. To climb, the robot must adhere to a wall. Some
 common adhesives are dry adhesives, [6],  spines or claws , [7] [8, 10, 13],
 magnets [14, 15] and suction [16, 17]. Independently of the adhesion mechanism,
@@ -241,17 +214,16 @@ respectively equal to 8kg, 2kg, 3.8kg, and 16.4 kg), which limits the robots' ag
 In this work, a new approach is proposed to design a compact and lightweight
 legged robot towards the future development of a novel climbing platform.  </p>
 
-<p align="justify" style="text-indent:19.85pt;">This paper is presented
+<p class="body">This paper is presented
 in the following manner: A system overview is given in Section II, the
 subsystem-level design of the robot is presented in Section III, the completed
 prototype and its capabilities are discussed in Section IV and this paper
 concludes with some future perspectives for this robot in Section V.</p>
 
-<h2>2. System Overview</h2>
+<h4>2. System Overview</h4>
 
-<p align="justify" style="text-indent:19.85pt;">This robot was designed
-in a modular and hierarchical manner. A block diagram of the robot is given in <span
-class=IEEEcaptionChar><span style='font-family:"Cambria","serif"'>Figure
+<p class="body">This robot was designed
+in a modular and hierarchical manner. A block diagram of the robot is given in Figure
 1, showing the processing, electronic and mechanical layers. The processing
 layer was implemented on a Field Programmable Gate Array (FPGA). This layer was
 responsible for high-level robot decisions and contains low-level control
@@ -268,7 +240,7 @@ then three legs always remain on the ground. While climbing, a more
 conservative pentapedal gait is possible, which keeps a larger area of adhesive
 on the climbing surface. </p>
 
-<p align="justify" style="text-indent:19.85pt;">The modular and
+<p class="body">The modular and
 hierarchical design maximized flexibility. Upgrading any of the processing,
 electronic or mechanical layers (for example selecting new motors or changing
 the leg design) could be done independently of the other layers, as long as the
@@ -278,33 +250,33 @@ in the function executed by the main processor (synchronizing between 7 instead
 of 6 processors), and a set of interface components to be added in the
 electronics layer (a more difficult change).</p>
 
-<p align="justify" style="text-indent:19.85pt;">The body and frame are
+<p class="body">The body and frame are
 printed on a 3D printer (InVision HR 3D printer). This allowed rapid iterations
 of the mechanical design, as well as new parts to be printed when mechanical
 failure occurred. The 3D printer material is lightweight, and helped keep the
 mass low at 548&nbsp;g. The robot was also compact, capable of fitting in a cuboid
 of 16 cm x 16 cm x 12 cm.</p>
 
-<p align="justify" style="text-indent:19.85pt;">The robot was designed
+<p class="body">The robot was designed
 to be capable of walking, rotating, and in the future climbing and transferring
 from a horizontal to vertical surface.</p>
 
 
 <figure>
-<img src="001_files/image001.png" class="img"/>
+<img src="001_files/image001.png" class="article-img">
 
 <figcaption>
 Figure 1.  Diagram of the robot.</figcaption>
 </figure>
-<br>
 
 
-<h2>3. Robot Design</h2>
 
-<h4> 3. 1. Mechanical Design </h4>
+<h4>3. Robot Design</h4>
+
+<p class="subhead"> 3. 1. Mechanical Design </p>
 
 
-<p align="justify" style="text-indent:19.85pt;">Each
+<p class="body">Each
 leg of the robot was designed to be fabricated using a three-dimensional (3D)
 printer, with 3 degree-of-freedom (DOF) each. The schematic of one leg is shown
 in Figure 2. Link 1 is 3&nbsp;cm in length and link 2 is 3.5&nbsp;cm. The range
@@ -312,49 +284,51 @@ of the joints is given in Table 1.</p>
 
 
 <figure>
-<img src="001_files/image002.png" class="img"/>
+<img src="001_files/image002.png" class="article-img">
 
 <figcaption>
 Figure 2. Schematics of one leg, where link 1 is 3 cm and link 2 is 3.5 cm.</figcaption>
 </figure>
-<br>
 
+<center>
 <div class="widetable">
+  <p class="body">Table 1. Joints' range for the
+joints of the leg.</p>
 <table>
-<caption>Table1. Joints' range for the
-joints of the leg.</caption>
 <thead>
  <tr>
   <td width=82 style='width:61.4pt;border-top:double windowtext 2.25pt;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  border-bottom:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
   <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>Joint</p>
   </td>
   <td width=132 style='width:98.75pt;border-top:double windowtext 2.25pt;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  border-bottom:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt;height:22.0pt'>
   <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>Range
   (degree)</p>
   </td>
  </tr>
+</thead>
+<tbody>
  <tr style='height:11.95pt'>
-  <td width=82 style='width:61.4pt;border:none;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width=82 style='width:61.4pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:11.95pt'>
   <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>Joint
   1</p>
   </td>
-  <td width=132 style='width:98.75pt;border:none;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width=132 style='width:98.75pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:11.95pt'>
   <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>180&deg;</p>
   </td>
  </tr>
  <tr style='height:11.95pt'>
-  <td width=82 style='width:61.4pt;border:none;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width=82 style='width:61.4pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:11.95pt'>
   <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>Joint
   2</p>
   </td>
-  <td width=132 style='width:98.75pt;border:none;padding:0cm 5.4pt 0cm 5.4pt;
+  <td width=132 style='width:98.75pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:11.95pt'>
   <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>135&deg;</p>
   </td>
@@ -362,68 +336,68 @@ joints of the leg.</caption>
  </thead>
  <tbody>
  <tr style='height:11.95pt'>
-  <td width=82 style='width:61.4pt;border:none;border-bottom:double windowtext 2.25pt;
+  <td width=82 style='width:61.4pt;border-bottom:double windowtext 2.25pt;
   padding:0cm 5.4pt 0cm 5.4pt;height:11.95pt'>
   <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>Joint
   3</p>
   </td>
-  <td width=132 style='width:98.75pt;border:none;border-bottom:double windowtext 2.25pt;
+  <td width=132 style='width:98.75pt;border-bottom:double windowtext 2.25pt;
   padding:0cm 5.4pt 0cm 5.4pt;height:11.95pt'>
   <p class=MsoNormal align=center style='text-align:center;text-indent:0cm;
   page-break-after:avoid'>110&deg;</p>
   </td>
  </tr>
+</tbody>
 </table>
+</div></center>
 
-</div>
 
-<p>&nbsp;</p>
 
-<p align="justify" style="text-indent:19.85pt;">Depending on the range of one
+<p class="body">Depending on the range of one
 leg, the workspace is shown in Figure 3, which was obtained by using the
 methodology presented in [18].</p>
 
 <figure>
-<img src="001_files/image003.png" class="img"/>
+<img src="001_files/image003.png" class="article-img">
 
 <figcaption>
 Figure 3. Workspace of one leg.</figcaption>
 </figure>
-<br>
 
 
-<p align="justify" style="text-indent:19.85pt;">The workspace of the legs allows
+
+<p class="body">The workspace of the legs allows
 the robot to have a maximum height of 4&nbsp;cm. The robot can also go over
 obstacles up to 4&nbsp;cm in height.</p>
 
-<p align="justify" style="text-indent:19.85pt;">The frame of
+<p class="body">The frame of
 the robot (chassis) can be chosen to be in any shape, our current one is chosen
 to distribute the legs around the FPGA board, although our design allows us to
 use any shape to arrange the legs with. To decrease the stress on the frame and
 the weight, two thin frames with a separator are used instead of one solid
 thick frame.</p>
 
-<p align="justify" style="text-indent:19.85pt;">The motors
+<p class="body">The motors
 used for each joint were the 150:1 Micro Metal Gearmotor HP (Pololu). A DC
 gearmotor was chosen over other actuator types for its high torque to mass
 ratio, fast response time and small size. This specific motor was the smallest
 one we found which also had sufficient torque to lift the robot up a wall
 during climbing.</p>
 
-<p align="justify" style="text-indent:19.85pt;">The design of
+<p class="body">The design of
 the robot allows the use of different legs with different configurations, which
 allows it to mimic the insects in nature; also the legs are distributed around
 the body in pattern similar to spiders.</p>
 
-<h4> 3. 2. Electronic Design </h4>
+<p class="subhead"> 3. 2. Electronic Design </p>
 
-<p align="justify" style="text-indent:19.85pt;">The
+<p class="body">The
 electronics layer distributed power to the FPGA, motors and sensors, and
 provided an interface between the FPGA and the sensors and actuators. The FPGA
 and electronics were designed as separate layers, stacked on each other, so
 that either the FPGA or electronics could be replaced with a new version. </p>
 
-<p align="justify" style="text-indent:19.85pt;">Motor control
+<p class="body">Motor control
 is accomplished using Pulse Width Modulation (PWM) signals from the FPGA,
 through motor drivers (MPC17550, Freescale). A PWM frequency of 20&nbsp;kHz was
 used. Position feedback was obtained from potentiometers (SV01L, Murata)
@@ -440,59 +414,57 @@ is given in Figure 4.</p>
 
 
 <figure>
-<img src="001_files/image004.png" class="img"/>
+<img src="001_files/image004.png" class="article-img">
 
 <figcaption>
 Figure 4.  Block diagram of electronics system.</figcaption>
 </figure>
-<br>
 
+<p class="subhead"> 3.3. Control System and
+Software </p>
 
-<h4> 3.3. Control System and
-Software </h4>
-
-<p align="justify" style="text-indent:19.85pt;">The high-level and
+<p class="body">The high-level and
 low-level control systems were implemented on an FPGA (Spartan 3A, Humandata).
 The processing layer closely paralleled the electrical and mechanical layers of
 the robot. Each leg had a processor (MicroBlaze, Xilinx) responsible for the low-level
 control of that leg, and one additional processor was responsible for the high
 level control of the robot.</p>
 
-<p align="justify" style="text-indent:19.85pt;">An FPGA was chosen over
+<p class="body">An FPGA was chosen over
 other computing systems because of its flexibility. If a higher power computing
 system is needed, a newer generation FPGA could be used, for example one with
 an ARM processor. If additional legs are added to the robot, because of the
 parallel design, the low-level control system update frequency is not reduced.</p>
 
-<h2>4. Results and Testing</h2>
+<h4>4. Results and Testing</h4>
 
-<h4> 4.1. Implemented
-Prototype </h4>
+<p class="subhead"> 4.1. Implemented
+Prototype </p>
 
-<p align="justify" style="text-indent:19.85pt;">A photo of the robot with its
+<p class="body">A photo of the robot with its
 legs extended is shown in Figure 5. The wires connected to the robot are the
 power and JTAG cables. The robot walking with 2 legs forward gait is shown in Figure
 6.</p>
 
 
 <figure>
-<img src="001_files/image005.png" class="img"/>
+<img src="001_files/image005.png" class="article-img">
 
 <figcaption>
 Figure 5.  The robot with legs extended.</figcaption>
 </figure>
-<br>
+
 
 <figure>
-<img src="001_files/image006.jpg" class="img"/>
+<img src="001_files/image006.jpg" class="article-img">
 
 <figcaption>
 Figure 6. The robot with 2 legs at time gait, (a) robot initial position, (b) moving front left and right rear legs, (c) moving front right and rear left legs, (d) moving the middle right and middle left legs and (e) bringing all the body forward.</figcaption>
 </figure>
-<br>
 
 
-<p align="justify" style="text-indent:19.85pt;">The robot in Figure 5 and Figure
+
+<p class="body">The robot in Figure 5 and Figure
 6 has the PCB board mounted below Joint 1, which takes 1.3cm from the maximum
 height of the robot to become 2.7cm. Maximum height is the maximum distance
 between the tip of the leg and the lowest point of the robot's body. The PCB is
@@ -500,9 +472,9 @@ mounted a bit lower to bring the centre of gravity closer to the ground which
 gives more stability to the robot. Mounting the PCB higher does not provide
 much difference in stability while walking.</p>
 
-<h4> 4.2. Robot Capabilities </h4>
+<p class="subhead"> 4.2. Robot Capabilities </p>
 
-<p align="justify" style="text-indent:19.85pt;">The robot has an open-loop
+<p class="body">The robot has an open-loop
 walking mechanism. It uses pre calculated trajectories to move its legs. It was
 given a set of trajectories to execute, in order to display its capabilities.
 The robot can walk using different gaits and with its legs attached to the body
@@ -514,33 +486,31 @@ and configurations (c and f) have legs on only 2 sides of the body. All of
 these arrangements use a square body frame, which can easily be realized with a
 chassis with mounting spaces along its outer circumference.</p>
 
-<p align="justify" style="text-indent:19.85pt;">The robot was tested in walking
-on a horizontal surface with different gaits and fixed speed. Time required <span
-class=MsoCommentReference>for each gait is shown in Table II. The legs
+<p class="body">The robot was tested in walking
+on a horizontal surface with different gaits and fixed speed. Time required for each gait is shown in Table II. The legs
 of the robot are numbered as shown in Figure 8. The front left leg is numbered
 as 1, front right leg as 2, middle right leg as 3, rear right leg as 4, rear
 left leg as 5 and the middle left leg as 6.</p>
 
 
 <figure>
-<img src="001_files/image007.png" class="img"/>
+<img src="001_files/image007.png" class="article-img">
 
 <figcaption>
 Figure  7. Different possible legs' arrangement for the robot.</figcaption>
 </figure>
-<br>
 
 
 <figure>
-<img src="001_files/image008.png" class="img"/>
+<img src="001_files/image008.png" class="article-img">
 
 <figcaption>
 Figure 8.  Legs' numbering.</figcaption>
 </figure>
-<br>
 
 
-<p align="justify" style="text-indent:19.85pt;">1-leg forward gait is moving one
+
+<p class="body">1-leg forward gait is moving one
 leg at a time; it starts with moving leg 1 then moving the following legs in
 order, 2, 3, 4, 5 and 6. The 2-legs forward gait is moving 2 legs at a time, it
 is implemented by moving two legs across, it starts with moving legs 1 and 4,
@@ -550,34 +520,35 @@ step (moving all the legs to the original position at the same time to bring
 the body to its initial position) is not included in the schematic row in
 Table2.</p>
 
+<center>
 <div class="widetable">
+  <p class="body">Table 2. Steps for The Different Tested
+Gaits.</p>
 <table>
-<caption>Table 2. Steps for The Different Tested
-Gaits.</caption>
 <thead>
  <tr>
-  <td style='border-top:double windowtext 1.5pt;border-left:none;border-bottom:
-  solid windowtext 1.0pt;border-right:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <td style='border-top:double windowtext 1.5pt;border-bottom:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>Configuration
   Name</p>
   </td>
-  <td valign=top style='border-top:double windowtext 1.5pt;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <td valign=top style='border-top:double windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>1-leg</p>
   <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>forward</p>
   </td>
-  <td valign=top style='border-top:double windowtext 1.5pt;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <td valign=top style='border-top:double windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>2-legs</p>
   <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>forward</p>
   </td>
-  <td valign=top style='border-top:double windowtext 1.5pt;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <td valign=top style='border-top:double windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>3-legs
   forward</p>
   </td>
-  <td valign=top style='border-top:double windowtext 1.5pt;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <td valign=top style='border-top:double windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center;text-indent:1.7pt'>3-legs
   rotation</p>
   </td>
@@ -585,43 +556,43 @@ Gaits.</caption>
  </thead>
  <tbody>
  <tr>
-  <td style='border:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>Schematic</p>
   </td>
-  <td style='border:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><img
   width=57 height=312 id="Picture 5" src="001_files/image009.png"></p>
   </td>
-  <td valign=top style='border:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><img
   width=57 height=163 id="Picture 4" src="001_files/image010.png"></p>
   </td>
-  <td valign=top style='border:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><img
   width=57 height=110 id="Picture 3" src="001_files/image011.png"></p>
   </td>
-  <td valign=top style='border:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <td valign=top style='padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><img
   width=57 height=109 id="Picture 2" src="001_files/image012.png"></p>
   </td>
  </tr>
  <tr>
-  <td style='border:none;border-bottom:double windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <td style='border-bottom:double windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal style='text-indent:0cm'>Elapsed Time (s)</p>
   </td>
-  <td valign=top style='border:none;border-bottom:double windowtext 1.5pt;
+  <td valign=top style='border-bottom:double windowtext 1.5pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'>6.0</p>
   </td>
-  <td valign=top style='border:none;border-bottom:double windowtext 1.5pt;
+  <td valign=top style='border-bottom:double windowtext 1.5pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'>4.2</p>
   </td>
-  <td valign=top style='border:none;border-bottom:double windowtext 1.5pt;
+  <td valign=top style='border-bottom:double windowtext 1.5pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'>2.8</p>
   </td>
-  <td valign=top style='border:none;border-bottom:double windowtext 1.5pt;
+  <td valign=top style='border-bottom:double windowtext 1.5pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center;page-break-after:
   avoid'>2.8</p>
@@ -629,25 +600,24 @@ Gaits.</caption>
  </tr>
  </tbody>
 </table>
-
 </div>
+</center>
 
-<p>&nbsp;</p>
 
-<p align="justify" style="text-indent:19.85pt;">The fastest gait observed was
+<p class="body">The fastest gait observed was
 when 3 legs were moved at a time, because of the steps needed to execute that
 gait (4 steps). Depending on the robot's application, choosing a 1 leg forward
 gait is sometimes more suitable especially in case of heavy load, because the
 load will be distributed among five legs minimum instead of three.</p>
 
-<p align="justify" style="text-indent:19.85pt;">The power consumption of the
+<p class="body">The power consumption of the
 robot was also tested using 2 legs forward gait from Table II, with different
 walking speeds. The voltage supplied to the robot was fixed to be 5V, and the
 current was recorded for a few complete walking cycles, and then averaged. The
 power was calculated using the following equation:</p>
 
 
-<div align=center>
+
 
 
 <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
@@ -662,136 +632,229 @@ power was calculated using the following equation:</p>
   </td>
  </tr>
 </table>
+<br>
 
 
-</div>
-
-
-<p align="justify" style='text-indent:0cm'>where P is the power, V the voltage
+<p class="body">where P is the power, V the voltage
 and I the current. The relationship between the power consumption against the
 speed is plotted in Figure 9.</p>
 
 
 <figure>
-<img src="001_files/image014.png" class="img"/>
+<img src="001_files/image014.png" class="article-img">
 
 <figcaption>
 Figure  9. Power consumed by the robot at different speeds. </figcaption>
 </figure>
-<br>
 
 
-<h2>5.
-Conclusion and Future Work</h2>
+<h4>5.
+Conclusion and Future Work</h4>
 
-<p align="justify" style="text-indent:19.85pt;">This robot prototype was a first
+<p class="body">This robot prototype was a first
 step towards developing a climbing robot. It is able to walk in any direction
 and rotate, unlike other walking robots [5, 10], which can walk only in one
 direction. A system capable of traversing horizontal surfaces with a number of
 dexterous motions was been presented. </p>
 
-<p align="justify" style="text-indent:19.85pt;">One future step for this project
+<p class="body">One future step for this project
 will be to use the robot with dry adhesives. This will allow the robot to climb
 vertical surfaces and to transfer from horizontal to vertical surfaces. Changes
 to the mechanical layer include a foot design that holds the adhesive will be
 needed. Determining leg trajectories that allow climbing will be necessary.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Implementing a force controller
+<p class="body">Implementing a force controller
 is another possibility for future work. This could be useful for climbing; if
 forces at the feet can be measured and controlled, detecting potential falls is
 possible, and preventative action can be taken. At the mechanical layer, new
 force sensors will be necessary. At the processing layer, the new controllers will have to be programmed to use the force information.</p>
 
-<img src="images/line.png" width="100&#37;" height="1" />
-<H2><a name="references">References</a></H2>
+<h4 id="references">References</h4>
+<div class="ref">
+<p class="body">[1]  M. P. Murphy, C. Kute, Y. Menguc, M. Sitti, "Waalbot II: Adhesion Recovery and Improved Performance of a Climbing Robot using Fibrillar Adhesives", The International Journal of Robotics Research, 30, 1, 118-133, 2010. <a href="http://dx.doi.org/10.1177/0278364910382862" target="_blank">View Article</a></p>
 
-<p>[1]	M. P. Murphy, C. Kute, Y. Menguc, M. Sitti, "Waalbot II: Adhesion Recovery and Improved Performance of a Climbing Robot using Fibrillar Adhesives", The International Journal of Robotics Research, 30, 1, 118-133, 2010. <a href="http://dx.doi.org/10.1177/0278364910382862" target="_blank">View Article</a></p>
-
-<p>[2]	K. A. Daltorio, A. D. Horchler, S. Gorb, R. E. Ritzmann, R. D. Quinn,  "A small wall-walking robot with compliant, adhesive feet", IEEE/RSJ International Conference on Intelligent Robots and Systems, 3648-3653, Edmonton, Canada: IEEE, 2005. <a href="http://dx.doi.org/10.1109/IROS.2005.1545596 " target="_blank">View Article</a></p>
-
-
-<p>[3]	O. Unver, M. Sitti, "Tankbot: A Palm-size, Tank-like Climbing Robot using Soft Elastomer Adhesive Treads", The International Journal of Robotics Research, 29(14), 1761–1777, 2010. <a href="http://dx.doi.org/10.1177/0278364910380759 " target="_blank">View Article</a></p>
+<p class="body">[2]  K. A. Daltorio, A. D. Horchler, S. Gorb, R. E. Ritzmann, R. D. Quinn,  "A small wall-walking robot with compliant, adhesive feet", IEEE/RSJ International Conference on Intelligent Robots and Systems, 3648-3653, Edmonton, Canada: IEEE, 2005. <a href="http://dx.doi.org/10.1109/IROS.2005.1545596 " target="_blank">View Article</a></p>
 
 
-<p>[4]	J. Krahn, Y. Liu, A. Sadeghi, C. Menon, "A tailless timing belt climbing platform utilizing dry adhesives with mushroom caps", Smart Materials and Structures, 20(11), 115021, 2011. <a href="http://dx.doi.org/10.1088/0964-1726/20/11/115021 " target="_blank">View Article</a></p>
-
-<p>[5]	O., Unver, M. Sitti, "A miniature ceiling walking robot with flat tacky elastomeric footpads", IEEE International Conference on Robotics and Automation, 2276–2281, 2009. <a href=" http://dx.doi.org/10.1109/ROBOT.2009.5152303" target="_blank">View Article</a></p>
-
-<p>[6]	A. Asbeck, S. Dastoor, A. Parness, L. Fullerton, N. Esparza, D. Soto, B. Heyneman, M.  Cutkosky,  "Climbing rough vertical surfaces with hierarchical directional adhesion", IEEE International Conference on Robotics and Automation, 2675–2680, 2009. <a href="http://dx.doi.org/10.1109/ROBOT.2009.5152864 " target="_blank">View Article</a></p>
+<p class="body">[3]  O. Unver, M. Sitti, "Tankbot: A Palm-size, Tank-like Climbing Robot using Soft Elastomer Adhesive Treads", The International Journal of Robotics Research, 29(14), 1761–1777, 2010. <a href="http://dx.doi.org/10.1177/0278364910380759 " target="_blank">View Article</a></p>
 
 
-<p>[7]	A. Parness, "Anchoring foot mechanisms for sampling and mobility in microgravity", IEEE International Conference on Robotics and Automation, 6596–6599, 2011. <a href="http://dx.doi.org/10.1109/ICRA.2011.5980584" target="_blank">View Article</a></p>
+<p class="body">[4]  J. Krahn, Y. Liu, A. Sadeghi, C. Menon, "A tailless timing belt climbing platform utilizing dry adhesives with mushroom caps", Smart Materials and Structures, 20(11), 115021, 2011. <a href="http://dx.doi.org/10.1088/0964-1726/20/11/115021 " target="_blank">View Article</a></p>
+
+<p class="body">[5]  O., Unver, M. Sitti, "A miniature ceiling walking robot with flat tacky elastomeric footpads", IEEE International Conference on Robotics and Automation, 2276–2281, 2009. <a href=" http://dx.doi.org/10.1109/ROBOT.2009.5152303" target="_blank">View Article</a></p>
+
+<p class="body">[6]  A. Asbeck, S. Dastoor, A. Parness, L. Fullerton, N. Esparza, D. Soto, B. Heyneman, M.  Cutkosky,  "Climbing rough vertical surfaces with hierarchical directional adhesion", IEEE International Conference on Robotics and Automation, 2675–2680, 2009. <a href="http://dx.doi.org/10.1109/ROBOT.2009.5152864 " target="_blank">View Article</a></p>
 
 
-<p>[8]	A. Sintov, T. Avramovich, A. Shapiro, "Design and motion planning of an autonomous climbing robot with claws", Robotics and Autonomous Systems,  59(11), 1008–1019, 2011. <a href="http://dx.doi.org/10.1016/j.robot.2011.06.003" target="_blank">View Article</a></p>
+<p class="body">[7]  A. Parness, "Anchoring foot mechanisms for sampling and mobility in microgravity", IEEE International Conference on Robotics and Automation, 6596–6599, 2011. <a href="http://dx.doi.org/10.1109/ICRA.2011.5980584" target="_blank">View Article</a></p>
 
 
-<p>[9]	Y. Li, A. Ahmed, D. Sameoto, C.  Menon, "Abigaille II: toward the development of a spider-inspired climbing robot", Robotica, 1-11, 2011. <a href="http://dx.doi.org/10.1017/S0263574711000373 " target="_blank">View Article</a></p>
-
-<p>[10]	M. Spenko, G. Haynes, J. Saunders, M. Cutkosky, and A. Rizzi,  "Biologically Inspired Climbing with a Hexapedal Robot" Journal of Field Robotics, 25(4-5), 223–242, 2008. <a href="http://dx.doi.org/10.1002/rob.20238" target="_blank">View Article</a></p>
+<p class="body">[8]  A. Sintov, T. Avramovich, A. Shapiro, "Design and motion planning of an autonomous climbing robot with claws", Robotics and Autonomous Systems,  59(11), 1008–1019, 2011. <a href="http://dx.doi.org/10.1016/j.robot.2011.06.003" target="_blank">View Article</a></p>
 
 
-<p>[11]	 N. J. Kohut, A. M. Hoover, K. Y. Ma, S. S. Baek, R. S. Fearing, "MEDIC: A legged millirobot utilizing novel obstacle traversal", IEEE International Conference on Robotics and Automation, 802–808, 2011.<a href="http://dx.doi.org/10.1109/ICRA.2011.5980360 " target="_blank">View Article</a></p>
+<p class="body">[9]  Y. Li, A. Ahmed, D. Sameoto, C.  Menon, "Abigaille II: toward the development of a spider-inspired climbing robot", Robotica, 1-11, 2011. <a href="http://dx.doi.org/10.1017/S0263574711000373 " target="_blank">View Article</a></p>
+
+<p class="body">[10] M. Spenko, G. Haynes, J. Saunders, M. Cutkosky, and A. Rizzi,  "Biologically Inspired Climbing with a Hexapedal Robot" Journal of Field Robotics, 25(4-5), 223–242, 2008. <a href="http://dx.doi.org/10.1002/rob.20238" target="_blank">View Article</a></p>
 
 
-<p>[12]	M. Raibert, K. Blankespoor, G. Nelson, R. Playter, "BigDog , the Rough-Terrain Quaduped Robot", Proceedings of the 17th World Congress, Seoul, Korea, 10822–10825, 2008. <a href="http://www.bostondynamics.com/img/BigDog_IFAC_Apr-8-2008.pdf " target="_blank">View Article</a></p>
+<p class="body">[11]  N. J. Kohut, A. M. Hoover, K. Y. Ma, S. S. Baek, R. S. Fearing, "MEDIC: A legged millirobot utilizing novel obstacle traversal", IEEE International Conference on Robotics and Automation, 802–808, 2011.<a href="http://dx.doi.org/10.1109/ICRA.2011.5980360 " target="_blank">View Article</a></p>
 
 
-<p>[13]	L. R. Palmer III, E. D. Diller, R. D. Quinn, "Design of a Wall-Climbing Hexapod for Advanced Maneuvers" International Conference on Intelignet Robots and Systems, St. Louis, 2009. <a href="http://dx.doi.org/10.1109/IROS.2009.5354753" target="_blank">View Article</a></p>
+<p class="body">[12] M. Raibert, K. Blankespoor, G. Nelson, R. Playter, "BigDog , the Rough-Terrain Quaduped Robot", Proceedings of the 17th World Congress, Seoul, Korea, 10822–10825, 2008. <a href="http://www.bostondynamics.com/img/BigDog_IFAC_Apr-8-2008.pdf " target="_blank">View Article</a></p>
 
 
-<p>[14]	Z. Xu, P.  Ma, "A wall-climbing robot for labelling scale of oil tank's volume", Robotica, 20, 2, 209–212, 2002. <a href="http://dx.doi.org/10.1017/S0263574701003964 " target="_blank">View Article</a></p>
+<p class="body">[13] L. R. Palmer III, E. D. Diller, R. D. Quinn, "Design of a Wall-Climbing Hexapod for Advanced Maneuvers" International Conference on Intelignet Robots and Systems, St. Louis, 2009. <a href="http://dx.doi.org/10.1109/IROS.2009.5354753" target="_blank">View Article</a></p>
 
 
-<p>[15]	W. Shen, J. Gu, Y. Shen, "Permanent magnetic system design for the wall-climbing robot", Applied Bionics and Biomechanics, 3,3, 151–159, 2006. <a href="http://dx.doi.org/10.1109/ICMA.2005.1626883" target="_blank">View Article</a></p>
+<p class="body">[14] Z. Xu, P.  Ma, "A wall-climbing robot for labelling scale of oil tank's volume", Robotica, 20, 2, 209–212, 2002. <a href="http://dx.doi.org/10.1017/S0263574701003964 " target="_blank">View Article</a></p>
 
 
-<p>[16]	N. Elkmann, T. Felsch, M. Sack, T. Böhme, J. Hortig, J. Saenz, "Modular climbing robot for service-sector applications", Industrial Robot: An International Journal, 26, 6, 460–465, 1999. <a href="http://dx.doi.org/10.1108/01439919910296692 " target="_blank">View Article</a></p>
-
-<p>[17]	B. L. Luk, D. S. Cooke, S. Galt, A. A. Collie, S. Chen, "Intelligent legged climbing service robot for remote maintenance applications in hazardous environments", Robotics and Autonomous Systems, 5, 2, 142–152, 2005. <a href="http://eprints.soton.ac.uk/261519/ " target="_blank">View Article</a></p>
-
-<p>[18]	J. A. Hansen, K. C. Gupta, S. M. K. Kazerounian, "Generation and Evaluation of the Workspace of a Manipulator" The International Journal of Robotics Research, 2,3, 22–31, 1983. <a href="http://dx.doi.org/10.1177/027836498300200302" target="_blank">View Article</a></p>
+<p class="body">[15] W. Shen, J. Gu, Y. Shen, "Permanent magnetic system design for the wall-climbing robot", Applied Bionics and Biomechanics, 3,3, 151–159, 2006. <a href="http://dx.doi.org/10.1109/ICMA.2005.1626883" target="_blank">View Article</a></p>
 
 
-<div class="clearfix"></div>
+<p class="body">[16] N. Elkmann, T. Felsch, M. Sack, T. Böhme, J. Hortig, J. Saenz, "Modular climbing robot for service-sector applications", Industrial Robot: An International Journal, 26, 6, 460–465, 1999. <a href="http://dx.doi.org/10.1108/01439919910296692 " target="_blank">View Article</a></p>
+
+<p class="body">[17] B. L. Luk, D. S. Cooke, S. Galt, A. A. Collie, S. Chen, "Intelligent legged climbing service robot for remote maintenance applications in hazardous environments", Robotics and Autonomous Systems, 5, 2, 142–152, 2005. <a href="http://eprints.soton.ac.uk/261519/ " target="_blank">View Article</a></p>
+
+<p class="body">[18] J. A. Hansen, K. C. Gupta, S. M. K. Kazerounian, "Generation and Evaluation of the Workspace of a Manipulator" The International Journal of Robotics Research, 2,3, 22–31, 1983. <a href="http://dx.doi.org/10.1177/027836498300200302" target="_blank">View Article</a></p>
+</div> <!--REF -->
+  </div> <!--INDENT -->
+
+  </div> <!--Main Content -->
+</div>
+</div>
+
+  <footer>
+<div class="grid">
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <ul class="footer-links">
+        <li><a href="/" class="body-link">Avestia Publishing</a></li>
+        <li><a href="journals" class="body-link">Journals</a></li>
+        <li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
+        <li><a href="terms" class="body-link">Terms of Use</a></li>
+        <li><a href="sitemap" class="body-link">Sitemap</a></li>
+      </ul>
+    </div>
   </div>
-<div class="clearfix"></div>
+
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <p class="body">
+        Avestia Publishing,<br>
+        International ASET Inc.<br>
+        Unit 417, 1376 Bank St.<br>
+        Ottawa, ON, Canada, K1H 7Y3<br>
+        +1 613-695-3040<br>
+        <a href="mailto:info@avestia.com" class="body-link">info@avestia.com</a>
+      </p>
+    </div>
   </div>
-<div class="clearfix"></div>
-  </div>
 
-  
-
-  <div class="footer">
-
-  <div class="container">
-
-  <div class="col-sm-7 footer-link">
-
-        <p><a href="http://avestia.com">Avestia Publishing</a></p>
-        <p><a href="../register/">Subscribe to our Mailing List</a></p>
-        <p><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://avestia.com/feedback?refURL=' + refURL+'">Feedback</a>');</script></p>
-        <p><a href="../terms/">Terms of Use</a></p>
-		<p><a href="../sitemap/">Sitemap</a></p>
-
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer social">
+    <form class="subscribe" action="../subscribe.php" method="post">
+            <span id="sprytextfield2"><input name="email" type="text" id="email" value="Join our mailing list"
+              onblur="if (this.value == '') {this.value = 'Join our mailing list';}"
+        onfocus="if (this.value == 'Join our mailing list') {this.value = '';}" ></span>
+      <input type="submit" name="submit" value="Submit" class="form_button" />
+        </form>
+        
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.facebook.com/pages/International-Academy-of-Science-Engineering-and-Technology/207827708283" target="blank" title="International ASET Inc. Facebook Page">
+          <img src="../img/fb.png" border="0" onmouseover="this.src='../img/fb-hover.png'" onmouseout="this.src='../img/fb.png'">
+        </a>
       </div>
-      <div class="col-sm-5 footer-txt">
-        <p>Avestia Publishing, International ASET Inc. </p>
-        <p>Unit No. 417, 1376 Bank St. </p>
-        <p>Ottawa, Ontario, Canada </p>
-        <p>Postal Code: K1H 7Y3</p>
-        <p>Phone Number: 1-613-695-3040</p>
 
-  </div>
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://twitter.com/ASET_INC" target="blank" title="International ASET Inc. Twitter">
+          <img src="../img/twitter.png" border="0" onmouseover="this.src='../img/twitter-hover.png'" onmouseout="this.src='../img/twitter.png'">
+        </a>
+      </div>
 
-  </div>
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.linkedin.com/company/1169039" target="blank" title="International ASET Inc. LinkedIn">
+          <img src="../img/linkedin.png" border="0" onmouseover="this.src='../img/linkedin-hover.png'" onmouseout="this.src='../img/linkedin.png'">
+        </a>
+      </div>
 
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://plus.google.com/u/0/+International-aset/posts" target="blank" title="International ASET Inc. Google+ Page">
+          <img src="../img/google.png" border="0" onmouseover="this.src='../img/google-hover.png'" onmouseout="this.src='../img/google.png'">
+        </a>
+      </div>
+
+      <p class="body">© Copyright 2015, International ASET Inc. – All Rights Reserved.</p>
+    </div>
   </div>
 
 </div>
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.js"></script>
+</footer>
+</div>
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../js/cbpAnimatedHeader.min.js"></script>
+    <script src="../js/SpryValidationSelect.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationTextField.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationConfirm.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationCheckbox.js" type="text/javascript"></script>
+    <script src="../js/SpryValidationTextarea.js" type="text/javascript"></script>
+
+<script src="../js/classie.js"></script>
+<script src="../js/jquery.easing.js"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script defer src="../js/demo.js"></script>
+<script type="text/javascript" src="../css/animate.min.css"></script>
+<script type="text/javascript" src="../js/jnav.js"></script>
+
+<script type="text/javascript">
+<!--
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email");
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
+var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
+var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2", {invalidValue:"-1"});
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
+var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
+var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6");
+//-->
+</script>
+
+    <script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
+
+<script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger-1')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
 </body>
-
 </html>
-

@@ -1,322 +1,295 @@
 ﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive">
+<meta name="description" content="The Volume 1, Issue 1 published for IJMEM Journal.">
+<meta name="keywords" content="avestia, publishing, journals, papers, science, renewable energy">
+<title>IJMEM Kinematic Analysis and Locomotion Strategy of a Pipe Inspection Robot Concept for Operation in Active Pipelines</title>
 
-<html lang="en"><head>
+<meta name="handheldfriendly" content="true">
+<meta name="mobileoptimized" content="240">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="utf-8">
+<link href="../css/avestia.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
+<!--[if IE-9]><html lang="en" class="ie9"><![endif]-->
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="../js/modernizr.custom.63321.js"></script>
+<script type="text/javascript" src="../mostvisited.js"></script> 
+<script type="text/javascript" src="../mostvisitedExt.js"></script> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>IJMEM - Kinematic Analysis and Locomotion Strategy of a Pipe Inspection Robot Concept for Operation in Active Pipelines</title>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
-
-<link href='http://fonts.googleapis.com/css?family=Antic+Slab:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
-
-<link rel="stylesheet" href="../css/style.css" />
-
-<link href="../css/bootstrap.css" rel="stylesheet">
-<link href="../images/icon.ico" rel="shortcut icon" type="image/x-icon">
-
-<!--Goole Analytics Most Visited Article Code-->
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-45437411-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  ga('create', 'UA-68628727-1', 'auto');
+  ga('send', 'pageview');
 
 </script>
-
-
-<!-- Include Most Visited Articles JS Code -->
-<script type="text/javascript" src="mostvisited.js"></script>
-
-<!-- Include SHARE THIS js sources -->
-<script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "8f49e037-5155-4595-abc0-d069deae6488", doNotHash: true, doNotCopy: false, hashAddressBar: false, onhover:false});</script>
+<script>
+  (function() {
+    var cx = '016656741306535874023:f_iiykae6ri';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 </head>
+<body class="loading">
+<nav id="slide-menu">
+  <h1>Avestia Publishing</h1>
+  <ul>
+    <li><a href="about">About Us</a></li>
+    <li><a href="ethics">Ethics in Publishing</a></li>
+    <li><a href="openaccess">Open Access</a></li>
+    <li><a href="editor">Become a Reviewer or an Editor</a></li>
+    <li><a href="publishing">Your Publishing Needs</a></li>
+    <li><a href="proceedings">Conference Proceedings</a></li>
+    <li><a href="news">Latest News</a></li>
+    <li><a href="guidelines">Author Guidelines</a></li>
+    <li><a href="journals">Journals</a></li>
+    <li><a href="http://amss.avestia.com/">Submission</a></li>
+    <li><a href="copyright">Copyright</a></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+</nav>
 
-<body>
+<div id="content">
+  <div class="desktop">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
 
-<div class="wrapper">
-
-  <div class="header">
-
-    <div class="container">
-
-      <div class="row">
-
-        <header id="header">
-          <div class="logo col-sm-4"><a href="http://avestia.com"><img src="/images/logo.png" alt="Journal" class="img" /></a></div>
-          <div class="threemenu col-sm-5">
-            <div class="row"><a class="link col-sm-4" href="http://avestia.com"><img src="/images/home.jpg" class="img"></a> <a class="link col-sm-4" href="http://avestia.com/journals/"><img src="/images/journals.jpg" class="img"></a> <a class="link col-sm-4" href="http://amss.avestia.com"><img src="/images/submit.jpg" class="img"></a></div>
-          </div>
-          <div class="searching col-sm-3">
-<div class="sharethis">Share this page:<br/>
-<span class='st_email'></span>
-<span class='st_facebook'></span>
-<span class='st_twitter'></span>
-<span class='st_googleplus'></span>
-<span class='st_linkedin'></span>
-</div>
-            
-         <div class="search_wrapper">
-         <form class="search" action="../results" method="get">
-              <fieldset>
-                <span class="text">
-                <input name="q" id="q" type="text" value="" placeholder="Search..." /><button class="search_top_button">GO</button>
-                </span>
-
-              </fieldset>
-            </form>
-            
-            </div>
-          </div>
-          <div class="col-lg-12"><div class="avada-row">
-
-            <nav id="nav" class="nav-holder">
-
-              <div role="navigation" class="navbar navbar-default">
-
-                <div class="container-fluid">
-
-                  <div class="navbar-header">
-                  
-                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-<span class="navbar-brand" href="#">Menu</span>
-                  </div>
-
-                  <div class="navbar-collapse collapse">
-
-                    <ul class="nav navbar-nav">			
-						<li><a href="/">Journal Home</a></li><span class="menu-line">|</span>
-                        <li><a href="../aims/">Aims and Scopes</a></li><span class="menu-line">|</span>
-                        <li><a href="../charges/">Article Processing Charges</a></li><span class="menu-line">|</span>
-                        <li><a href="../guidelines/">Author Guidelines</a></li><span class="menu-line">|</span>
-                        <li><a href="../board/">Editorial Board</a></li><br>
-                        <li><a href="../volumes/">Past Volumes</a></li><span class="menu-line">|</span>
-                        <li><a href="../current/">Current Volume</a></li><span class="menu-line">|</span>
-                        <li><a href="../propose/">Propose a Special Topic</a></li><span class="menu-line">|</span>
-                        <li><a href="../register/">Receive Updates</a></li><span class="menu-line">|</span>
-                        <li><a href="../contact/">Contact Us</a></li>
-
-
-
-
-                    </ul>
-
-                  </div>
-
-                  <!--/.nav-collapse -->
-
-                </div>
-
-                <!--/.container-fluid -->
-
-              </div>
-
-            </nav>
-
-            </div>
-
-          </div>
-          <div class="clearfix"></div>
-
-        </header>
-
-      </div>
-
+    <div class="nav1">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
     </div>
-<div class="clearfix"></div>
+
+    <div class="search-menu">
+      <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
+      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+    </div>
+
+    <div class="nav2">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
+    </div>
   </div>
-
-  <div class="slider">
-
-  <div class="container">
-
-  <div class="row"><div class="col-lg-12"><img class="img2" src="../images/international.jpg" alt="img"></div></div>
-
-  </div>
-
-  </div>
-
-  <div class="container">
-  <div class="clearfix"></div>
-  <div class="row">
-
-  <div class="col-lg-12 text"><div align=center>
-<div class="table">
-
-    <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 style='border:none; width: 100%'>
-         <tr>
-                <td>Volume 1, Issue 2 - Year 2012 - Pages 15-27</td>
-                <td align="right"><a href="PDF/003.pdf">View PDF (Full-text)</a></td>
-        </tr>
-         <tr>
-                <td>DOI: 10.11159/ijmem.2012.003</td>
-                <td align="right"><a href="#references">Linked References</a></td>
-        </tr>
-		<tr>
-	<td colspan="2">ISSN: 1929-2724</td>
-	</tr>
-     </table>
-     
 </div>
+  </div>
+
+  <header>
+    <div class="mobile">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
+          <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+      </div>
+      <div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
+          <div class="menu-trigger"></div>
+      </div>
+  </div>
+</div>
+      <div class="bg">
+        <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+      </div>
+    </div> <!-Mobile -->
+  </header>
+
+  <div class="j-header-article">
+  <div class="name">
+    <h1>International Journal of Mechanical Engineering and Mechatronics (IJMEM)<br>
+    <p class="body">ISSN: 1929-2724</p></h1>
+    <div class="oalink">
+    <a href="/openaccess" target="blank" title="Avestia's Open Access">
+          <img src="../img/j-oa.png" border="0" onmouseover="this.src='../img/j-oa-hover.png'" onmouseout="this.src='../img/j-oa.png'" class="j-oa">
+    </a>
+  </div>
+  </div>
 </div>
 
-<br>
+  <div role="navigation" class="navbar navbar-default">
+  <ul>
+    <li><a href="">Journal Home</a></li>
+    <li><a href="aims">Aims & Scopes</a></li>
+    <li><a href="fee">Publishing Fee</a></li>
+    <li><a href="board">Editorial Board</a></li>
+    <li><button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">Volumes</button></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="volume1/issue1">Volume 1, Issue 1</a></li>
+      <li><a href="volume2">Volume 2</a></li>
+      <li><a href="current">Current Volume</a></li>
+    </ul>
+  </div><!--/.nav-collapse -->
+</div>
 
-<p align="center" style="font-size:22pt;">Kinematic Analysis and Locomotion Strategy of a Pipe Inspection Robot Concept for Operation in Active Pipelines</p>
-	<p align="center"><strong>Amr Bekhit, Abbas Dehghani, Robert Richardson</strong>
-    	<br>University of Leeds, School of Mechanical Engineering
+<div class="grid">
+<div class="unit unit-s-1 unit-m-1 unit-l-1">
+  <div class="main-content j-home">
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2">
+      <p class="body">
+      Volume 1, Issue 2 Year 2012 - Pages 15-27<br>
+      DOI: 10.11159/ijmem.2012.003</p>
+    </div>
+
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2 a-link">
+        <a href="PDF/003.pdf" class="body-link" class="body-link">View PDF (Full-text)</a><br>
+      <a href="#references" class="body-link">Linked References</a>
+    </div>
+
+    <h3 class="center">Kinematic Analysis and Locomotion Strategy of a Pipe Inspection Robot Concept for Operation in Active Pipelines</h3>
+
+    <p class="body-bold center">Amr Bekhit, Abbas Dehghani, Robert Richardson</p>
+
+    <p class="body center">University of Leeds, School of Mechanical Engineering
 Leeds, United Kingdom, LS2 9JT<br>
-men5a2b@leeds.ac.uk; a.dehghani@leeds.ac.uk; r.c.richardson@leeds.ac.uk
+men5a2b@leeds.ac.uk; a.dehghani@leeds.ac.uk; r.c.richardson@leeds.ac.uk</p>
+
+    <p class="body"><b>Abstract</b> - <i>A robot capable of operating in active pipelines would be of great commercial and industrial benefit. This paper outlines the requirements for such a robot and considers the advantages and disadvantages of existing systems. A new design for an inchworm robot based on the Gough-Stewart parallel platform is presented. The use of inchworm locomotion keeps the control system relatively simple, whilst the use of the Gough-Stewart platform allows the robot to benefit from the accuracy, rigidity and speed of parallel robots and provides a flexible base for any manipulators the robot may use. The design aims to provide minimal resistance to fluid flow by providing a low frontal area and by distributing the body of the robot towards the edge of the pipe, where the flow is slowest. An analysis of the robot's degrees of freedom, a derivation of the robot's inverse kinematics equations, and a static force analysis are presented along with a description of the robot's proposed locomotion algorithm.</i></p>
+
+    <p class="body"><b><i>Keywords:</i></b> Active, Pipe, Inspection, Hexapod, Gough, Stewart, Parallel, Robot.</p>
+
+    <p class="body">© Copyright 2015 Authors This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/3.0" class="body-link" target="_blank" class="body-link">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
+
+  <div class="border"></div>
+
+  <div class="indent">
+<h4>1. Introduction</h4> 
 
 
-</p>
+<p class="body">Pipelines form a very crucial part of the way we live today as they are the primary means of transporting many of the resources that we depend on, such as water, gas and oil. Many of these pipelines are situated underground so as not to affect everyday life. However, this makes repair and inspection of the pipelines a costly and difficult task, especially since many pipelines have not been designed to optimise automatic repair and inspection tasks (Tache et al. 2007) and rarely have any redundancy (Najjaran 2005). Without a reliable method of determining the exact location of a problem, large sections of a pipeline may need to be excavated. This can be made even more difficult if the pipes are situated in an urban environment, where the repair work can have a negative impact on the local residents and businesses.</p>
 
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p class="body">A robot capable of navigating pipelines could help pinpoint the exact location of faults and possibly even be involved in the repair process. The development of a robot capable of functioning whilst the pipeline is still active would  be of great commercial and industrial benefit as it would allow operation of the pipeline to be completely unaffected by any maintenance tasks.</p>
 
-<p align="justify"><i><strong>Abstract- </strong> A robot capable of operating in active pipelines would be of great commercial and industrial benefit. This paper outlines the requirements for such a robot and considers the advantages and disadvantages of existing systems. A new design for an inchworm robot based on the Gough-Stewart parallel platform is presented. The use of inchworm locomotion keeps the control system relatively simple, whilst the use of the Gough-Stewart platform allows the robot to benefit from the accuracy, rigidity and speed of parallel robots and provides a flexible base for any manipulators the robot may use. The design aims to provide minimal resistance to fluid flow by providing a low frontal area and by distributing the body of the robot towards the edge of the pipe, where the flow is slowest. An analysis of the robot's degrees of freedom, a derivation of the robot's inverse kinematics equations, and a static force analysis are presented along with a description of the robot's proposed locomotion algorithm. </i></p>
+<p class="body">In order to operate inside an active pipeline, the robot must fulfill the following criteria:</p>
 
+<ul><li>Navigate all the features of the pipeline and overcome any obstacles.</li>
+<li>Provide minimum resistance to the flow, in order to have as little effect on the operation of the pipeline as possible, and to allow the robot to be constructed using smaller, cheaper actuators.</li>
+<li>Be designed so that the presence of fluid in the pipe does not adversely affect the operation of the robot's mechanical and electronic systems.</li>
+<li>Be able to generate and store its own power, as it can be expected to operate for extended periods of time in a pipeline.</li>
+<li>Have the tools and dexterity needed to carry out as many of the required inspection and maintenance tasks as possible, thus eliminating the need to shutdown and excavate pipelines in all but the most catastrophic situations.</li>
+<li>Be completely autonomous and able to move through a pipe network in a systematic and efficient manner, assessing the condition of the pipeline, performing maintenance tasks where required and reporting information back to a base station.</li></ul>
 
-<p align="left"><i><strong>Keywords:</strong></i> Active, Pipe, Inspection, Hexapod, Gough, Stewart, Parallel, Robot</span></p>
+<h4>2. Assessment of Existing Pipe Inspection Robots</h4>
 
-<p>&nbsp;</p>
-<p align="justify">  © Copyright 2012 Authors - This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/2.0" target="_blank">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
+<p class="body">Although there have been many robots designed for the purpose of pipe inspection, most of these focus on operation in empty pipes and do not take into account the effects of pressurised fluid on the motion and stability of the robot. Existing pipe inspection robots can be categorised by their different locomotion methods: wheeled, inchworm, snake and legged.</p>
 
+<p class="subhead">2.1. Wheeled Robots</p>
 
-<img src="../images/line.png" width="100%;" height="1" />
-<h2>1. Introduction</h2> 
+<p class="body">Wheeled robots are widely used in this application due to their simple design and control methodologies, energy efficiency and potential for miniaturisation (Tatar, Mandru, et al. 2007). The simplest of these behave similar to regular wheeled vehicles in that they rely on their own weight to maintain contact between their wheels and the pipe wall. Examples of such robots have been discussed in (Ong, Kerr, et al. 2003; Kuntze and Haffner 1998; Scholl et al. 2000). Although these robots have no theoretical upper limit on the diameter of pipe they can navigate, they can only travel through horizontal or near horizontal pipe networks, with limitations on the maximum incline that they can traverse. Such robots would not be able to navigate vertical pipe sections and would not be capable of operating in pipes with high rates of fluid flow as they would be swept away.</p>
 
+<p class="body">In order to overcome these problems, some wheeled pipe inspection robots have attempted to use an active method of attracting the wheels to the pipe wall. Examples of such robots have exclusively relied on magnetism, such as those seen in (Kawaguchi et al. 1995; Tache et al. 2007). Although the design of both these robots means that they are not restricted by pipe diameter, their use of magnets limits their operational environment to those which are constructed primarily of ferrous materials.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Pipelines form a very crucial part of the way we live today as they are the primary means of transporting many of the resources that we depend on, such as water, gas and oil. Many of these pipelines are situated underground so as not to affect everyday life. However, this makes repair and inspection of the pipelines a costly and difficult task, especially since many pipelines have not been designed to optimise automatic repair and inspection tasks (Tache et al. 2007) and rarely have any redundancy (Najjaran 2005). Without a reliable method of determining the exact location of a problem, large sections of a pipeline may need to be excavated. This can be made even more difficult if the pipes are situated in an urban environment, where the repair work can have a negative impact on the local residents and businesses.</p>
+<p class="body">Other wheeled pipe inspection robots operate by pressing their wheels against the pipe surface through passive means (e.g. springs), or active means (e.g. linear actuators), or a combination of both. Examples of such robots are MOGRER (Fujiwara et al. 1993), the screw-drive robot presented in (Peng Li et al. 2008) and the MRINSPECT series of robots (Roh et al. 2009). Although these robots each have distinctive designs, they all follow the same general principle of pushing their wheels against the pipe wall and using them to propel down the pipe. Of particular note is Explorer, a segmented robot that is used for the inspection of gas pipelines. Unlike other pipe robots, Explorer was designed to operate in pressurised, active gas pipes. Each segment of the robot is designed to protect the internal workings from the high pressure inside the pipe and the shape of the robot is designed to provide minimum resistance to the flow of gas (Schempf et al. 2010).</p>
 
-<p align="justify" style="text-indent:19.85pt;">A robot capable of navigating pipelines could help pinpoint the exact location of faults and possibly even be involved in the repair process. The development of a robot capable of functioning whilst the pipeline is still active would  be of great commercial and industrial benefit as it would allow operation of the pipeline to be completely unaffected by any maintenance tasks.</p>
+<p class="body">Despite their mechanical simplicity, the efficiency of wheeled robots whilst climbing is not optimal, as the force used to push the wheels against the pipe wall acts against the actuators trying to drive the wheels.</p>
 
-<p align="justify" style="text-indent:19.85pt;">In order to operate inside an active pipeline, the robot must fulfill the following criteria:</p>
+<p class="subhead">2. 2. Inchworm Robots</p>
 
-<ul><li>-  Navigate all the features of the pipeline and overcome any obstacles.</li>
-<li>- Provide minimum resistance to the flow, in order to have as little effect on the operation of the pipeline as possible, and to allow the robot to be constructed using smaller, cheaper actuators.</li>
-<li>- Be designed so that the presence of fluid in the pipe does not adversely affect the operation of the robot's mechanical and electronic systems.</li>
-<li>- Be able to generate and store its own power, as it can be expected to operate for extended periods of time in a pipeline.</li>
-<li>- Have the tools and dexterity needed to carry out as many of the required inspection and maintenance tasks as possible, thus eliminating the need to shutdown and excavate pipelines in all but the most catastrophic situations.</li>
-<li>- Be completely autonomous and able to move through a pipe network in a systematic and efficient manner, assessing the condition of the pipeline, performing maintenance tasks where required and reporting information back to a base station.</li></ul>
+<p class="body">Inchworm-type robots, like wheeled robots, are relatively simple to control and allow the robot to navigate the various features inside the pipe. Some of the simplest examples can be seen in (Zhelong Wang and Gu 2008; Hu and Appleton 2005). Each of these robots uses a vibration source as the main driving force, coupled with a passive mechanical system pressing against the pipe wall. The simple nature of these robots means that they are easy to control and usually have very few parts, but are incapable of navigating junctions.</p>
 
-<h2>2. Assessment of Existing Pipe Inspection Robots</h2>
+<p class="body">Other inchworm robots have used an active method of pressing against the pipe wall. Although they are more complex than their passive variants, they have more control over their movement and can more easily change direction. Examples of such robots are discussed in (Yun-Jong Kim, Yoon, et al. 2009; Aracil, Saltaren, et al. 2003; Jeon et al. 2011). These robots all use a form of linear actuation for propulsion, coupled with full control over the extension and retraction of their limbs, which allows them to easily move forwards and backwards along the pipe. Examples of such robots have been demonstrated to navigate straight pipe sections and bends.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Although there have been many robots designed for the purpose of pipe inspection, most of these focus on operation in empty pipes and do not take into account the effects of pressurised fluid on the motion and stability of the robot. Existing pipe inspection robots can be categorised by their different locomotion methods: wheeled, inchworm, snake and legged.</p>
+<p class="body">Unlike wheeled robots, inchworm robots cannot continuously move forwards, but rather move forward in steps, which can make them slower than their wheeled counterparts. However, they are likely to be more efficient during climbing as the force pushing the robot's 'feet' against the pipe wall acts perpendicular to the robot's direction of motion and thus does not hinder it.</p>
 
-<h4>2.1. Wheeled Robots</h4>
+<p class="subhead">2. 3. Snake and Legged Robots</p>
 
-<p align="justify" style="text-indent:19.85pt;">Wheeled robots are widely used in this application due to their simple design and control methodologies, energy efficiency and potential for miniaturisation (Tatar, Mandru, et al. 2007). The simplest of these behave similar to regular wheeled vehicles in that they rely on their own weight to maintain contact between their wheels and the pipe wall. Examples of such robots have been discussed in (Ong, Kerr, et al. 2003; Kuntze and Haffner 1998; Scholl et al. 2000). Although these robots have no theoretical upper limit on the diameter of pipe they can navigate, they can only travel through horizontal or near horizontal pipe networks, with limitations on the maximum incline that they can traverse. Such robots would not be able to navigate vertical pipe sections and would not be capable of operating in pipes with high rates of fluid flow as they would be swept away.</p>
+<p class="body">Snake and legged robots both have many degrees of freedom, which permit them a wide range of different motions. However, this results in robots using more actuators and having more complex control systems than those found in robots using other locomotion types. Examples of legged pipe inspection robots can be found in the works of (Neubauer 1994) and (Zagler and Pfeiffer 2003) and are capable of navigating bends and junctions in a pipe. Similarly, snake robots used for pipe inspection can be seen in (Kuwada et al. 2008; Fjerdingen, Liljeback, et al. 2009; Wright et al. 2007). These robots consist of several modules connected together using actuated joints. Movement is primarily achieved through the use of travelling wave locomotion.</p>
 
-<p align="justify" style="text-indent:19.85pt;">In order to overcome these problems, some wheeled pipe inspection robots have attempted to use an active method of attracting the wheels to the pipe wall. Examples of such robots have exclusively relied on magnetism, such as those seen in (Kawaguchi et al. 1995; Tache et al. 2007). Although the design of both these robots means that they are not restricted by pipe diameter, their use of magnets limits their operational environment to those which are constructed primarily of ferrous materials.</p>
+<p class="body">The serial nature of both these locomotion types means that they require high power actuators and have limited payload capacity (Aracil, Saltaren, and Reinoso 2003). The nature of travelling wave locomotion in snake robots can make it difficult for sensors to take stable readings of their environment (S. Wakimoto et al. 2003). As pipelines are generally uniform and structured environments, the complexity of legged and snake robots may not be required for this application, especially since robots with simpler locomotion methods have demonstrated their ability to navigate the various features in pipelines.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Other wheeled pipe inspection robots operate by pressing their wheels against the pipe surface through passive means (e.g. springs), or active means (e.g. linear actuators), or a combination of both. Examples of such robots are MOGRER (Fujiwara et al. 1993), the screw-drive robot presented in (Peng Li et al. 2008) and the MRINSPECT series of robots (Roh et al. 2009). Although these robots each have distinctive designs, they all follow the same general principle of pushing their wheels against the pipe wall and using them to propel down the pipe. Of particular note is Explorer, a segmented robot that is used for the inspection of gas pipelines. Unlike other pipe robots, Explorer was designed to operate in pressurised, active gas pipes. Each segment of the robot is designed to protect the internal workings from the high pressure inside the pipe and the shape of the robot is designed to provide minimum resistance to the flow of gas (Schempf et al. 2010).</p>
-
-<p align="justify" style="text-indent:19.85pt;">Despite their mechanical simplicity, the efficiency of wheeled robots whilst climbing is not optimal, as the force used to push the wheels against the pipe wall acts against the actuators trying to drive the wheels.</p>
-
-<h4>2. 2. Inchworm Robots</h4>
-
-<p align="justify" style="text-indent:19.85pt;">Inchworm-type robots, like wheeled robots, are relatively simple to control and allow the robot to navigate the various features inside the pipe. Some of the simplest examples can be seen in (Zhelong Wang and Gu 2008; Hu and Appleton 2005). Each of these robots uses a vibration source as the main driving force, coupled with a passive mechanical system pressing against the pipe wall. The simple nature of these robots means that they are easy to control and usually have very few parts, but are incapable of navigating junctions.</p>
-
-<p align="justify" style="text-indent:19.85pt;">Other inchworm robots have used an active method of pressing against the pipe wall. Although they are more complex than their passive variants, they have more control over their movement and can more easily change direction. Examples of such robots are discussed in (Yun-Jong Kim, Yoon, et al. 2009; Aracil, Saltaren, et al. 2003; Jeon et al. 2011). These robots all use a form of linear actuation for propulsion, coupled with full control over the extension and retraction of their limbs, which allows them to easily move forwards and backwards along the pipe. Examples of such robots have been demonstrated to navigate straight pipe sections and bends.</p>
-
-<p align="justify" style="text-indent:19.85pt;">Unlike wheeled robots, inchworm robots cannot continuously move forwards, but rather move forward in steps, which can make them slower than their wheeled counterparts. However, they are likely to be more efficient during climbing as the force pushing the robot's 'feet' against the pipe wall acts perpendicular to the robot's direction of motion and thus does not hinder it.</p>
-
-<h4>2. 3. Snake and Legged Robots</h4>
-
-<p align="justify" style="text-indent:19.85pt;">Snake and legged robots both have many degrees of freedom, which permit them a wide range of different motions. However, this results in robots using more actuators and having more complex control systems than those found in robots using other locomotion types. Examples of legged pipe inspection robots can be found in the works of (Neubauer 1994) and (Zagler and Pfeiffer 2003) and are capable of navigating bends and junctions in a pipe. Similarly, snake robots used for pipe inspection can be seen in (Kuwada et al. 2008; Fjerdingen, Liljeback, et al. 2009; Wright et al. 2007). These robots consist of several modules connected together using actuated joints. Movement is primarily achieved through the use of travelling wave locomotion.</p>
-
-<p align="justify" style="text-indent:19.85pt;">The serial nature of both these locomotion types means that they require high power actuators and have limited payload capacity (Aracil, Saltaren, and Reinoso 2003). The nature of travelling wave locomotion in snake robots can make it difficult for sensors to take stable readings of their environment (S. Wakimoto et al. 2003). As pipelines are generally uniform and structured environments, the complexity of legged and snake robots may not be required for this application, especially since robots with simpler locomotion methods have demonstrated their ability to navigate the various features in pipelines.</p>
-
-<h2>3. Robot Design</h2>
+<h4>3. Robot Design</h4>
 
 <figure>
-<img src="003_files/image001.jpg" class="img"/>
+<img src="003_files/image001.jpg" class="article-img">
 
 <figcaption>
 Figure 1. Top to bottom, left to right: CAD model of the proposed design; a photo of the constructed prototype; a photo with the electronics and support discs removed, for clarity; top view of the robot; a photo of the prototype whilst climbing up a vertical pipe.</figcaption>
 </figure>
-<br>
 
 
-<p align="justify" style="text-indent:19.85pt;">From the literature review, a number of different locomotion methods were identified that could be used to develop a pipe inspection robot. When considering design concepts for the proposed robot in this paper, snake and legged locomotion methods were dismissed due to their control complexity, and wheeled methods were not deemed to be the most efficient method for climbing. Inchworm locomotion was determined to be best method for a climbing robot and could be implemented using relatively simple control algorithms. Based on this, and inspired by the work done by (Aracil, Saltaren, and Reinoso 2003) on their use of parallel robots for climbing, the design shown in Fig. 1 is proposed.</p>
 
-<p align="justify" style="text-indent:19.85pt;">As can be seen from the figure, the robot design has the same configuration as a traditional Gough-Stewart platform. However, unlike conventional platforms, both the bottom and top bases are not fixed, but are formed from a ring of linear actuators. This allows the overall size of the rings to be changed in order to accommodate for different pipe diameters. In order to prevent the linear actuators from colliding with the pipe wall while navigating bends, several support discs extend out from the rings. These discs also provide the adhesion points between the robot and the pipe wall. The robot has 12 degrees of freedom and is controlled entirely by linear actuators. Fig. 2 shows an exploded view of the robot, identifying the main sections.</p>
+<p class="body">From the literature review, a number of different locomotion methods were identified that could be used to develop a pipe inspection robot. When considering design concepts for the proposed robot in this paper, snake and legged locomotion methods were dismissed due to their control complexity, and wheeled methods were not deemed to be the most efficient method for climbing. Inchworm locomotion was determined to be best method for a climbing robot and could be implemented using relatively simple control algorithms. Based on this, and inspired by the work done by (Aracil, Saltaren, and Reinoso 2003) on their use of parallel robots for climbing, the design shown in Fig. 1 is proposed.</p>
+
+<p class="body">As can be seen from the figure, the robot design has the same configuration as a traditional Gough-Stewart platform. However, unlike conventional platforms, both the bottom and top bases are not fixed, but are formed from a ring of linear actuators. This allows the overall size of the rings to be changed in order to accommodate for different pipe diameters. In order to prevent the linear actuators from colliding with the pipe wall while navigating bends, several support discs extend out from the rings. These discs also provide the adhesion points between the robot and the pipe wall. The robot has 12 degrees of freedom and is controlled entirely by linear actuators. Fig. 2 shows an exploded view of the robot, identifying the main sections.</p>
 
 <figure>
-<img src="003_files/image002.jpg" class="img"/>
+<img src="003_files/image002.jpg" class="article-img">
 
 <figcaption>
 Figure 2. Exploded view of the robot, identifying the main sections.</figcaption>
 </figure>
-<br>
 
 
-<p align="justify" style="text-indent:19.85pt;">As well as providing enough degrees of freedom to navigate inside a pipe, the use of the Gough-Stewart platform allows the robot to benefit from the rigidity, accuracy and speed of parallel robots. This makes it an ideal platform to host a wide variety of tools that can be used inside a pipe and gives it the dexterity needed to use these tools to perform repair tasks.</p>
 
-<p align="justify" style="text-indent:19.85pt;">The "skeletal" nature of the design aims to minimise the drag force exerted by the fluid in the pipe by having a small frontal area and by distributing the mass of the robot towards the edges of the pipe where the flow is slowest. Although the support discs used in the prototype would increase the robot's drag coefficient due to their non-streamlined design, they are perfectly adequate for initially testing the robot in a dry environment.</p>
+<p class="body">As well as providing enough degrees of freedom to navigate inside a pipe, the use of the Gough-Stewart platform allows the robot to benefit from the rigidity, accuracy and speed of parallel robots. This makes it an ideal platform to host a wide variety of tools that can be used inside a pipe and gives it the dexterity needed to use these tools to perform repair tasks.</p>
 
-<h4>3. 1.  Degrees of Freedom</h4>
+<p class="body">The "skeletal" nature of the design aims to minimise the drag force exerted by the fluid in the pipe by having a small frontal area and by distributing the mass of the robot towards the edges of the pipe where the flow is slowest. Although the support discs used in the prototype would increase the robot's drag coefficient due to their non-streamlined design, they are perfectly adequate for initially testing the robot in a dry environment.</p>
 
-<p align="justify" style="text-indent:19.85pt;">The degrees of freedom of the design can be calculated using the Kutzbach-Greubler (KG) criterion as follows:</p>
+<p class="subhead">3. 1.  Degrees of Freedom</p>
 
-<div align=center>
+<p class="body">The degrees of freedom of the design can be calculated using the Kutzbach-Greubler (KG) criterion as follows:</p>
 
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
-  style='font-size:11.0pt;'>Total DOF = DOF of each link - DOF constrained by each joint</span></p>
+  style='font-size:11.0pt;'>Total DOF = DOF of each link DOF constrained by each joint</span></p>
   </td>
   <td width="10%" style='width:8.54%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=right style='text-align:right'>(1)</p>
   </td>
  </tr>
 </table>
-
-
-</div>
+</div></center>
 
 <figure>
-<img src="003_files/image003.jpg" class="img"/>
+<img src="003_files/image003.jpg" class="article-img">
 
 <figcaption>
 Figure 3. Kinematic diagram of the robot.</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Fig. 3 shows a kinematic representation of the robot. The support discs were omitted as they do not affect the degrees of freedom. In order to calculate the total degrees of freedom, the design will be analysed in two separate parts: the rings and the parallel platform.</p>
+<p class="body">Fig. 3 shows a kinematic representation of the robot. The support discs were omitted as they do not affect the degrees of freedom. In order to calculate the total degrees of freedom, the design will be analysed in two separate parts: the rings and the parallel platform.</p>
 
-<h4><i>3. 1. 1. Ring Analysis</i></h4>
+<p class="subhead"><i>3. 1. 1. Ring Analysis</i></p>
 
 <figure>
-<img src="003_files/image004.jpg" class="img"/>
+<img src="003_files/image004.jpg" class="article-img">
 
 <figcaption>
 Figure 4. Kinematic diagram of an individual ring.</figcaption>
 </figure>
-<br>
 
 
-<p align="justify" style="text-indent:19.85pt;">Each ring consists of three prismatic joints connected together via rotary joints. The result of applying the KG criterion to the structure is shown below in Table 1.</p>
+<p class="body">Each ring consists of three prismatic joints connected together via rotary joints. The result of applying the KG criterion to the structure is shown below in Table 1.</p>
 
-
+<center>
 <div class="widetable">
+  <p class="body">Table 1. Results of applying the KG criterion to the ring in 3D.</p>
 <table>
-<caption>Table 1. Results of applying the KG criterion to the ring in 3D.</caption>
 <thead>
  <tr>
   <td width=303 style='width:227.05pt;border:solid black 1.0pt;
@@ -382,17 +355,16 @@ Figure 4. Kinematic diagram of an individual ring.</figcaption>
  </tr>
 </tbody>
 </table>
-</div>
-
-<p>&nbsp;</p>
-
-<p align="justify" style="text-indent:19.85pt;">By inspection, it is evident that this is not the case. If the same structure is examined in 2D, the following result is obtained:</p>
+</div></center>
 
 
+<p class="body">By inspection, it is evident that this is not the case. If the same structure is examined in 2D, the following result is obtained:</p>
+
+<center>
 <div class="widetable">
+  <p class="body">Table 2. Results of applying the KG criterion to the
+ring in 2D.</p>
 <table>
-<caption>Table 2. Results of applying the KG criterion to the
-ring in 2D.</caption>
 <thead>
  <tr>
   <td width=302 style='width:8.0cm;border:solid black 1.0pt;
@@ -458,29 +430,29 @@ ring in 2D.</caption>
  </tr>
  </tbody>
 </table>
-</div>
+</div></center>
 
-<p>&nbsp;</p>
 
-<p align="justify" style="text-indent:19.85pt;">The reason for this discrepancy is due to two of the rotary joints introducing redundant constraints into the system. In 3D, rotary joints constrain links such that they are coplanar and can rotate about a common point. By examining the ring structure in 3D, it can be deduced that only one rotary joint is needed to force the motion of the links to be coplanar, with the other two joints simply allowing two links to rotate about a common point. The KG criterion does not have a means of identifying redundant constraints and thus gives an incorrect result for this structure when evaluated in 3D. On the other hand, the nature of a 2D environment forces all components to be coplanar and thus the constraints imposed by the rotary joints are used only to enforce the rotation behaviour with no redundant constraints, which is why the KG equation produces the correct number of DOFs when calculated in 2D.</p>
 
-<p align="justify" style="text-indent:19.85pt;">It is possible to form a kinematically identical structure in 3D by replacing two of the rotary joints with one spherical and one universal joint, although in practice, this might lead to a less rigid structure. This is shown below in Fig.5.</p>
+<p class="body">The reason for this discrepancy is due to two of the rotary joints introducing redundant constraints into the system. In 3D, rotary joints constrain links such that they are coplanar and can rotate about a common point. By examining the ring structure in 3D, it can be deduced that only one rotary joint is needed to force the motion of the links to be coplanar, with the other two joints simply allowing two links to rotate about a common point. The KG criterion does not have a means of identifying redundant constraints and thus gives an incorrect result for this structure when evaluated in 3D. On the other hand, the nature of a 2D environment forces all components to be coplanar and thus the constraints imposed by the rotary joints are used only to enforce the rotation behaviour with no redundant constraints, which is why the KG equation produces the correct number of DOFs when calculated in 2D.</p>
+
+<p class="body">It is possible to form a kinematically identical structure in 3D by replacing two of the rotary joints with one spherical and one universal joint, although in practice, this might lead to a less rigid structure. This is shown below in Fig.5.</p>
 
 <figure>
-<img src="003_files/image005.jpg" class="img"/>
+<img src="003_files/image005.jpg" class="article-img">
 
 <figcaption>
 Figure 5. Equivalent kinematic diagram of a ring.</figcaption>
 </figure>
-<br>
 
 
-<p align="justify" style="text-indent:19.85pt;">Re-evaluating the KG criterion in 3D results in the following:</p>
+<p class="body">Re-evaluating the KG criterion in 3D results in the following:</p>
 
+<center>
 <div class="widetable">
+  <p class="body">Table 3. Results of applying the KG criterion to the
+kinematically equivalent ring.</p>
 <table>
-<caption>Table 3. Results of applying the KG criterion to the
-kinematically equivalent ring.</caption>
 <thead>
  <tr>
   <td width=309 style='width:231.5pt;border:solid black 1.0pt;
@@ -570,32 +542,28 @@ kinematically equivalent ring.</caption>
  </tr>
 </tbody>
 </table>
-</div>
+</div></center>
 
-<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span lang=EN-GB style='font-size:12.0pt;font-family:"Cambria","serif"'>&nbsp;</p> <p class=MsoNormal style='text-indent:0cm'><span lang=EN-GB style='font-size:
-12.0pt;font-family:"Cambria","serif"'>&nbsp;</p>
+<p class="body">Three linear actuators can therefore be used to fully control the ring.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Three linear actuators can therefore be used to fully control the ring.</p>
+<p class="subhead"><i>3. 1. 2. Parallel Platform Analysis</i></p>
 
-<h4><i>3. 1. 2. Parallel Platform Analysis</i></h4>
-
-<p align="justify" style="text-indent:19.85pt;">The parallel platform uses a conventional hexapod configuration with 6 vertical links connected to the upper and lower rings. Each link consists of a linear actuator with a universal joint connected on either end. One of the joints connects to the ring rigidly, so that there is no rotation between the joint and the ring, while the other is connected so that it can rotate with respect to the ring. Fig. 6 shows a kinematic representation of the platform.</p>
+<p class="body">The parallel platform uses a conventional hexapod configuration with 6 vertical links connected to the upper and lower rings. Each link consists of a linear actuator with a universal joint connected on either end. One of the joints connects to the ring rigidly, so that there is no rotation between the joint and the ring, while the other is connected so that it can rotate with respect to the ring. Fig. 6 shows a kinematic representation of the platform.</p>
 
 <figure>
-<img src="003_files/image006.jpg" class="img"/>
+<img src="003_files/image006.jpg" class="article-img">
 
 <figcaption>
 Figure 6. Kinematic diagram of the parallel platform.</figcaption>
 </figure>
-<br>
 
+<p class="body">Assuming that the top and bottom rings are rigid (and thus considered to be one link each), and with the bottom ring grounded, the KG criterion results in the following:</p>
 
-<p align="justify" style="text-indent:19.85pt;">Assuming that the top and bottom rings are rigid (and thus considered to be one link each), and with the bottom ring grounded, the KG criterion results in the following:</p>
-
+<center>
 <div class="widetable">
+  <p class="body">Table 4. Results of applying the KG criterion to the
+parallel platform.</p>
 <table>
-<caption>Table 4. Results of applying the KG criterion to the
-parallel platform.</caption>
 <thead>
  <tr>
   <td width=305 style='width:229.1pt;border:solid black 1.0pt;
@@ -675,32 +643,29 @@ parallel platform.</caption>
  </tbody>
 </table>
 </div>
-<p>&nbsp;</p>
+</center>
 
-<p align="justify" style="text-indent:19.85pt;">As is the case with hexapod parallel robots, they have 6 degrees of freedom. For this robot, 6 linear actuators are used to control the parallel platform.</p>
+<p class="body">As is the case with hexapod parallel robots, they have 6 degrees of freedom. For this robot, 6 linear actuators are used to control the parallel platform.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Combining the parallel platform with the top and bottom rings results in a robot with 12 degrees of freedom controlled entirely by linear actuators.</p>
+<p class="body">Combining the parallel platform with the top and bottom rings results in a robot with 12 degrees of freedom controlled entirely by linear actuators.</p>
 
-<h4>3. 2. Inverse Kinematics</h4>
+<p class="subhead">3. 2. Inverse Kinematics</p>
 
 
-<p align="justify" style="text-indent:19.85pt;">In order to determine the actuator lengths needed to move the end effector to a target position and orientation, the inverse kinematics equations for the robot were derived. This was done by solving the vector equations that relate the target position and orientation to the robot's origin via the location and orientation of the linear actuators. </p>
+<p class="body">In order to determine the actuator lengths needed to move the end effector to a target position and orientation, the inverse kinematics equations for the robot were derived. This was done by solving the vector equations that relate the target position and orientation to the robot's origin via the location and orientation of the linear actuators. </p>
 
-<p align="justify" style="text-indent:19.85pt;">Fig. 7 shows a vector representation of the robot structure. Points <img src="003_files/abrv001.gif" /> and <img src="003_files/abrv002.gif" /> represent the connections between the top and bottom rings and their respective universal joints. The counterpart points <img src="003_files/abrv003.gif" /> and <img src="003_files/abrv004.gif" /> are the projections of <img src="003_files/abrv001.gif" /> and <img src="003_files/abrv002.gif" />, respectively, on to a plane that is parallel to the original ring plane but is coincident with the universal joint hinges. Points <img src="003_files/abrv005.gif" /> and <img src="003_files/abrv006.gif" /> are the local origins of the top and bottom rings, respectively. The origins are defined as the centroids of the triangle of linear actuators that form each ring. The counterpart points <img src="003_files/abrv007.gif" /> and <img src="003_files/abrv008.gif" /> are projections of <img src="003_files/abrv005.gif" /> and <img src="003_files/abrv006.gif" /> in the same manner as points <img src="003_files/abrv003.gif" /> and <img src="003_files/abrv004.gif" />. <img src="003_files/abrv006.gif" /> is considered to be the global origin of the robot and its axes are used as the global axis system, whilst <img src="003_files/abrv005.gif" /> is the target position. For simplicity, the support discs have been ignored as they can be represented by simple offsets along the z-axes of the local origins.</p>
+<p class="body">Fig. 7 shows a vector representation of the robot structure. Points <img src="003_files/abrv001.gif" /> and <img src="003_files/abrv002.gif" /> represent the connections between the top and bottom rings and their respective universal joints. The counterpart points <img src="003_files/abrv003.gif" /> and <img src="003_files/abrv004.gif" /> are the projections of <img src="003_files/abrv001.gif" /> and <img src="003_files/abrv002.gif" />, respectively, on to a plane that is parallel to the original ring plane but is coincident with the universal joint hinges. Points <img src="003_files/abrv005.gif" /> and <img src="003_files/abrv006.gif" /> are the local origins of the top and bottom rings, respectively. The origins are defined as the centroids of the triangle of linear actuators that form each ring. The counterpart points <img src="003_files/abrv007.gif" /> and <img src="003_files/abrv008.gif" /> are projections of <img src="003_files/abrv005.gif" /> and <img src="003_files/abrv006.gif" /> in the same manner as points <img src="003_files/abrv003.gif" /> and <img src="003_files/abrv004.gif" />. <img src="003_files/abrv006.gif" /> is considered to be the global origin of the robot and its axes are used as the global axis system, whilst <img src="003_files/abrv005.gif" /> is the target position. For simplicity, the support discs have been ignored as they can be represented by simple offsets along the z-axes of the local origins.</p>
 
 <figure>
-<img src="003_files/image007.jpg" class="img"/>
+<img src="003_files/image007.jpg" class="article-img">
 
 <figcaption>
 Figure  7. Simplified vector representation of the robot structure, showing the main points of interest on the left, and their counterpart points on the right.</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">The vector representing any of the six vertical linear actuators can be expressed as <img src="003_files/image021.gif" />, where <img src="003_files/image022.gif" /> and the combination of <i>u</i> and <i>v</i> is one of the following pairs: (1,2), (2,3), (3,4), (4,5), (5,6) and (6,1). This vector can be related to the robot's counterpart origin and target position through the following equation:</p>
+<p class="body">The vector representing any of the six vertical linear actuators can be expressed as <img src="003_files/image021.gif" />, where <img src="003_files/image022.gif" /> and the combination of <i>u</i> and <i>v</i> is one of the following pairs: (1,2), (2,3), (3,4), (4,5), (5,6) and (6,1). This vector can be related to the robot's counterpart origin and target position through the following equation:</p>
 
-<div align=center>
-
-
+<center><div class="widetable">
 <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
  style='width:100.0%;border-collapse:collapse;border:none'>
  <tr>
@@ -713,41 +678,36 @@ Figure  7. Simplified vector representation of the robot structure, showing the 
   </td>
  </tr>
 </table>
+</div></center>
 
 
 
-</div>
-
-
-
-<p align="justify" style="text-indent:19.85pt;">In order to determine the vectors <img src="003_files/image026.gif" />, <img src="003_files/image027.gif" /> and <img src="003_files/image028.gif" />, the positions <img src="003_files/image029.gif" />, <img src="003_files/image030.gif" />, <img src="003_files/image019.gif" /> and <img src="003_files/abrv007.gif" /> relative to the robot origin need to be determined. Fig.8 shows how these points relate to the geometry of the ring.</p>
+<p class="body">In order to determine the vectors <img src="003_files/image026.gif" />, <img src="003_files/image027.gif" /> and <img src="003_files/image028.gif" />, the positions <img src="003_files/image029.gif" />, <img src="003_files/image030.gif" />, <img src="003_files/image019.gif" /> and <img src="003_files/abrv007.gif" /> relative to the robot origin need to be determined. Fig.8 shows how these points relate to the geometry of the ring.</p>
 
 
 <figure>
-<img src="003_files/image008.jpg" class="img"/>
+<img src="003_files/image008.jpg" class="article-img">
 
 <figcaption>
 Figure 8. Geometry of the robot rings.</figcaption>
 </figure>
-<br>
 
 
 
-<p align="justify" style="text-indent:19.85pt;">The points <img src="003_files/image032.gif" /> represent either <img src="003_files/abrv001.gif" /> or <img src="003_files/abrv002.gif" /> depending on whether the top or bottom ring is being examined. The lengths <img src="003_files/image033.gif" /> and the angles <img src="003_files/image034.gif" /> can be calculated from the extensions of the linear actuators that form the ring and the dimensions of the links connecting them together. The equations that govern them can be derived by examining the geometry of the rings in detail, as shown in Fig. 9.</p>
+<p class="body">The points <img src="003_files/image032.gif" /> represent either <img src="003_files/abrv001.gif" /> or <img src="003_files/abrv002.gif" /> depending on whether the top or bottom ring is being examined. The lengths <img src="003_files/image033.gif" /> and the angles <img src="003_files/image034.gif" /> can be calculated from the extensions of the linear actuators that form the ring and the dimensions of the links connecting them together. The equations that govern them can be derived by examining the geometry of the rings in detail, as shown in Fig. 9.</p>
 
 <figure>
-<img src="003_files/image009.jpg" class="img"/>
+<img src="003_files/image009.jpg" class="article-img">
 
 <figcaption>
 Figure 9. Detailed geometric representation of the ring.</figcaption>
 </figure>
-<br>
 
 
-
+<center>
 <div class="widetable">
+  <p class="body">Table 5 lists the length and angle definitions used to derive the equations.</p>
 <table>
-<caption>Table 5 lists the length and angle definitions used to derive the equations.</caption>
 <thead>
  <tr>
   <td width=92 style='width:69.2pt;border:solid black 1.0pt;
@@ -882,16 +842,13 @@ Figure 9. Detailed geometric representation of the ring.</figcaption>
 </tbody>
 </table>
 </div>
-
-<p>&nbsp;</p>
-
-<p align="justify" style="text-indent:19.85pt;">The <i>S<sub>xy</sub></i> lengths are simply calculated by adding the corresponding <i>L<sub>xy</sub></i> and <i>t</i> lengths, as follows:</p>
-
-<div align=center>
+</center>
 
 
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<p class="body">The <i>S<sub>xy</sub></i> lengths are simply calculated by adding the corresponding <i>L<sub>xy</sub></i> and <i>t</i> lengths, as follows:</p>
+
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -902,16 +859,10 @@ Figure 9. Detailed geometric representation of the ring.</figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
-
-</div>
-
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -922,16 +873,11 @@ Figure 9. Detailed geometric representation of the ring.</figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
 
-</div>
-
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -942,19 +888,14 @@ Figure 9. Detailed geometric representation of the ring.</figcaption>
   </td>
  </tr>
 </table>
-
-
-</div>
+</div></center>
 
 
 
-<p align="justify" style="text-indent:19.85pt;">The <i>m<sub>xy</sub></i> lengths are then calculated using the standard formulas for triangle median length:</p>
+<p class="body">The <i>m<sub>xy</sub></i> lengths are then calculated using the standard formulas for triangle median length:</p>
 
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -965,15 +906,10 @@ Figure 9. Detailed geometric representation of the ring.</figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
-
-</div>
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -984,15 +920,10 @@ Figure 9. Detailed geometric representation of the ring.</figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
-
-</div>
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1003,29 +934,24 @@ Figure 9. Detailed geometric representation of the ring.</figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
 
-</div>
-
-
-<p align="justify" style="text-indent:19.85pt;">With the <i>S<sub>xy</sub></i> and <i>m<sub>xy</sub></i> lengths determined, it is possible to calculate the <i>&#952;<sub>x</sub></i> angles by examining the sub-triangle formed by each triangle side and two medians. In Fig. 10, the triangle formed by <i>S<sub>16</sub></i>, <i>m<sub>23</sub></i> and <i>m<sub>45</sub></i> is shown along with the corresponding corner angle:</p>
+<p class="body">With the <i>S<sub>xy</sub></i> and <i>m<sub>xy</sub></i> lengths determined, it is possible to calculate the <i>&#952;<sub>x</sub></i> angles by examining the sub-triangle formed by each triangle side and two medians. In Fig. 10, the triangle formed by <i>S<sub>16</sub></i>, <i>m<sub>23</sub></i> and <i>m<sub>45</sub></i> is shown along with the corresponding corner angle:</p>
 
 <figure>
-<img src="003_files/image010.jpg" class="img"/>
+<img src="003_files/image010.jpg" class="article-img">
 
 <figcaption>
 Figure 10. Geometry used to calculate <i>&#952;<sub>1</sub></i>. </figcaption>
 </figure>
-<br>
 
 
-<p align="justify" style="text-indent:19.85pt;">Using the cosine rule:</p>
 
-<div align=center>
+<p class="body">Using the cosine rule:</p>
 
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1036,18 +962,13 @@ Figure 10. Geometry used to calculate <i>&#952;<sub>1</sub></i>. </figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
 
-</div>
+<p class="body">Rearranging this equation results in:</p>
 
-
-<p align="justify" style="text-indent:19.85pt;">Rearranging this equation results in:</p>
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1058,18 +979,13 @@ Figure 10. Geometry used to calculate <i>&#952;<sub>1</sub></i>. </figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
 
-</div>
+<p class="body">Similarly, for the remaining angles:</p>
 
-
-<p align="justify" style="text-indent:19.85pt;">Similarly, for the remaining angles:</p>
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1080,15 +996,10 @@ Figure 10. Geometry used to calculate <i>&#952;<sub>1</sub></i>. </figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
-
-</div>
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1099,15 +1010,10 @@ Figure 10. Geometry used to calculate <i>&#952;<sub>1</sub></i>. </figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
-
-</div>
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1118,15 +1024,10 @@ Figure 10. Geometry used to calculate <i>&#952;<sub>1</sub></i>. </figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
-
-</div>
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1137,15 +1038,10 @@ Figure 10. Geometry used to calculate <i>&#952;<sub>1</sub></i>. </figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
-
-</div>
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1156,28 +1052,22 @@ Figure 10. Geometry used to calculate <i>&#952;<sub>1</sub></i>. </figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
 
-</div>
-
-
-<p align="justify" style="text-indent:19.85pt;">With the <i>&#952;<sub>x</sub></i> angles calculated, it becomes possible to determine the <i>d<sub>x</sub></i> lengths by examining the triangle formed by the <i>t</i>, <i>d<sub>x</sub></i> and <i>m<sub>xy</sub></i> lengths, an example of which is shown in Fig. 11.</p>
+<p class="body">With the <i>&#952;<sub>x</sub></i> angles calculated, it becomes possible to determine the <i>d<sub>x</sub></i> lengths by examining the triangle formed by the <i>t</i>, <i>d<sub>x</sub></i> and <i>m<sub>xy</sub></i> lengths, an example of which is shown in Fig. 11.</p>
 
 <figure>
-<img src="003_files/image011.jpg" class="img"/>
+<img src="003_files/image011.jpg" class="article-img">
 
 <figcaption>
 Figure 11. Geometry used to calculate <i>d<sub>1</sub></i>.</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Using the cosine rule:</p>
+<p class="body">Using the cosine rule:</p>
 
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1188,19 +1078,14 @@ Figure 11. Geometry used to calculate <i>d<sub>1</sub></i>.</figcaption>
   </td>
  </tr>
 </table>
-
-
-</div>
+</div></center>
 
 
 
-<p align="justify" style="text-indent:19.85pt;">Similarly for the remaining <i>d<sub>x</sub></i> lengths:</p>
+<p class="body">Similarly for the remaining <i>d<sub>x</sub></i> lengths:</p>
 
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1211,15 +1096,10 @@ Figure 11. Geometry used to calculate <i>d<sub>1</sub></i>.</figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
-
-</div>
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1230,15 +1110,10 @@ Figure 11. Geometry used to calculate <i>d<sub>1</sub></i>.</figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
-
-</div>
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1249,16 +1124,11 @@ Figure 11. Geometry used to calculate <i>d<sub>1</sub></i>.</figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
 
-</div>
-
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1269,15 +1139,10 @@ Figure 11. Geometry used to calculate <i>d<sub>1</sub></i>.</figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
-
-</div>
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+  <table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1288,30 +1153,24 @@ Figure 11. Geometry used to calculate <i>d<sub>1</sub></i>.</figcaption>
   </td>
  </tr>
 </table>
-
-
-</div>
+</div></center>
 
 
 
-<p align="justify" style="text-indent:19.85pt;">Before calculating the <i>&#945;<sub>xy</sub></i> angles, the <i>u<sub>xy</sub></i> lengths need to be determined first. This is done by considering the triangle formed by two adjacent <i>t</i> lengths and their corresponding <i>u<sub>xy</sub></i> length, as shown below in Fig. 12:</p>
+<p class="body">Before calculating the <i>&#945;<sub>xy</sub></i> angles, the <i>u<sub>xy</sub></i> lengths need to be determined first. This is done by considering the triangle formed by two adjacent <i>t</i> lengths and their corresponding <i>u<sub>xy</sub></i> length, as shown below in Fig. 12:</p>
 
 <figure>
-<img src="003_files/image012.jpg" class="img"/>
+<img src="003_files/image012.jpg" class="article-img">
 
 <figcaption>
 Figure 12. Geometry used to calculate <i>u<sub>12</sub></i>.</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Using the cosine rule:</p>
-
-
-<div align=center>
+<p class="body">Using the cosine rule:</p>
 
 
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1322,18 +1181,14 @@ Figure 12. Geometry used to calculate <i>u<sub>12</sub></i>.</figcaption>
   </td>
  </tr>
 </table>
-
-
-</div>
+</div></center>
 
 
 
-<p align="justify" style="text-indent:19.85pt;">Similarly for the other <i>u<sub>xy</sub></i> lengths:</p>
-<div align=center>
+<p class="body">Similarly for the other <i>u<sub>xy</sub></i> lengths:</p>
 
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1344,15 +1199,10 @@ Figure 12. Geometry used to calculate <i>u<sub>12</sub></i>.</figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
-
-</div>
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1363,29 +1213,23 @@ Figure 12. Geometry used to calculate <i>u<sub>12</sub></i>.</figcaption>
   </td>
  </tr>
 </table>
-
-
-</div>
+</div></center>
 
 
 
-<p align="justify" style="text-indent:19.85pt;">The <i>&#945;<sub>xy</sub></i> angles can now be calculated by considering the triangle formed by each <i>u<sub>xy</sub></i> length and its corresponding <i>d<sub>x</sub></i> lengths as shown in Fig. 13:</p>
+<p class="body">The <i>&#945;<sub>xy</sub></i> angles can now be calculated by considering the triangle formed by each <i>u<sub>xy</sub></i> length and its corresponding <i>d<sub>x</sub></i> lengths as shown in Fig. 13:</p>
 
 <figure>
-<img src="003_files/image013.jpg" class="img"/>
+<img src="003_files/image013.jpg" class="article-img">
 
 <figcaption>
 Figure 13. Geometry used to calculate <i>&#945;<sub>12</sub></i>.</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Using the cosine rule:</p>
+<p class="body">Using the cosine rule:</p>
 
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1396,19 +1240,13 @@ Figure 13. Geometry used to calculate <i>&#945;<sub>12</sub></i>.</figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
 
-</div>
+<p class="body">Rearranging this equation results in:</p>
 
-
-
-
-<p align="justify" style="text-indent:19.85pt;">Rearranging this equation results in:</p>
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1419,18 +1257,13 @@ Figure 13. Geometry used to calculate <i>&#945;<sub>12</sub></i>.</figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
 
-</div>
+<p class="body">Similarly for the other <i>&#945;<sub>xy</sub></i> angles:</p>
 
-
-<p align="justify" style="text-indent:19.85pt;">Similarly for the other <i>&#945;<sub>xy</sub></i> angles:</p>
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1441,15 +1274,10 @@ Figure 13. Geometry used to calculate <i>&#945;<sub>12</sub></i>.</figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
-
-</div>
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1460,15 +1288,10 @@ Figure 13. Geometry used to calculate <i>&#945;<sub>12</sub></i>.</figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
-
-</div>
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1479,15 +1302,10 @@ Figure 13. Geometry used to calculate <i>&#945;<sub>12</sub></i>.</figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
-
-</div>
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1498,15 +1316,10 @@ Figure 13. Geometry used to calculate <i>&#945;<sub>12</sub></i>.</figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
-
-</div>
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1517,19 +1330,14 @@ Figure 13. Geometry used to calculate <i>&#945;<sub>12</sub></i>.</figcaption>
   </td>
  </tr>
 </table>
-
-
-</div>
+</div></center>
 
 
 
-<p align="justify" style="text-indent:19.85pt;">With the <i>d<sub>x</sub></i> and the <i>&#945;<sub>xy</sub></i> angles calculated, the vectors <img src="003_files/image073.gif" /> relative to the ring's local origin can now be calculated using the equation below, assuming the axis system shown in Fig.8:</p>
+<p class="body">With the <i>d<sub>x</sub></i> and the <i>&#945;<sub>xy</sub></i> angles calculated, the vectors <img src="003_files/image073.gif" /> relative to the ring's local origin can now be calculated using the equation below, assuming the axis system shown in Fig.8:</p>
 
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1540,19 +1348,14 @@ Figure 13. Geometry used to calculate <i>&#945;<sub>12</sub></i>.</figcaption>
   </td>
  </tr>
 </table>
-
-
-</div>
+</div></center>
 
 
 
-<p align="justify" style="text-indent:19.85pt;">The counterpart points for each ring are calculated by translating the original points along the ring's local z-axis for a distance <i>s</i>, where <i>s</i> is the distance between a universal joint's hinge and the point at which it connects to a ring. This is a fixed value for all the universal joints. For the top ring, this translation is in the –z direction, whereas for the bottom ring, it is in the +z direction, as shown below:</p>
+<p class="body">The counterpart points for each ring are calculated by translating the original points along the ring's local z-axis for a distance <i>s</i>, where <i>s</i> is the distance between a universal joint's hinge and the point at which it connects to a ring. This is a fixed value for all the universal joints. For the top ring, this translation is in the –z direction, whereas for the bottom ring, it is in the +z direction, as shown below:</p>
 
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1563,20 +1366,15 @@ Figure 13. Geometry used to calculate <i>&#945;<sub>12</sub></i>.</figcaption>
   </td>
  </tr>
 </table>
+</div></center>
+
+<p class="body">The same translation is performed on <img src="003_files/abrv005.gif" /> and <img src="003_files/abrv006.gif" /> to calculate their counterparts<img src="003_files/abrv007.gif" /> and<img src="003_files/abrv008.gif"/>.</p>
+
+<p class="body">A further step is required for the vectors of the top ring and its origin, as they need to be expressed relative to the robot's global origin rather than that of the top ring. This is done by multiplying each vector by a transformation matrix, <i>M</i>, which represents the target orientation of the top ring relative to the bottom one:</p>
 
 
-</div>
-
-<p align="justify" style="text-indent:19.85pt;">The same translation is performed on <img src="003_files/abrv005.gif" /> and <img src="003_files/abrv006.gif" /> to calculate their counterparts<img src="003_files/abrv007.gif" /> and<img src="003_files/abrv008.gif"/>.</p>
-
-<p align="justify" style="text-indent:19.85pt;">A further step is required for the vectors of the top ring and its origin, as they need to be expressed relative to the robot's global origin rather than that of the top ring. This is done by multiplying each vector by a transformation matrix, <i>M</i>, which represents the target orientation of the top ring relative to the bottom one:</p>
-
-
-<div align=center>
-
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
- style='width:100.0%;border-collapse:collapse;border:none'>
+<center><div class="widetable">
+<table>
  <tr>
   <td width="100%" style='width:91.46%;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center'><span
@@ -1587,20 +1385,18 @@ Figure 13. Geometry used to calculate <i>&#945;<sub>12</sub></i>.</figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
 
-</div>
+<p class="body">Once the positions of <img src="003_files/image029.gif" />, <img src="003_files/image030.gif" />, <img src="003_files/abrv008.gif" /> and <img src="003_files/abrv007.gif" /> have been determined, their values can be substituted back into Equation (2) to calculate <img src="003_files/image021.gif" />. The modulus of <img src="003_files/image021.gif" /> represents the required extension of the linear actuator and can be sent to the robot's control system.</p>
 
-
-<p align="justify" style="text-indent:19.85pt;">Once the positions of <img src="003_files/image029.gif" />, <img src="003_files/image030.gif" />, <img src="003_files/abrv008.gif" /> and <img src="003_files/abrv007.gif" /> have been determined, their values can be substituted back into Equation (2) to calculate <img src="003_files/image021.gif" />. The modulus of <img src="003_files/image021.gif" /> represents the required extension of the linear actuator and can be sent to the robot's control system.</p>
-
-<h4>3. 3. Static Force Analysis</h4>
-<p align="justify" style="text-indent:19.85pt;">In order to determine the strength of the actuators required to hold the robot against the pipe wall, a simulation was run to estimate the magnitude of the forces exerted on the robot due to the fluid flow inside a pipe. The parameters of the fluid flow were retrieved from Balfour Beatty and are summarised in Table 6 below.</p>
+<p class="subhead">3. 3. Static Force Analysis</p>
+<p class="body">In order to determine the strength of the actuators required to hold the robot against the pipe wall, a simulation was run to estimate the magnitude of the forces exerted on the robot due to the fluid flow inside a pipe. The parameters of the fluid flow were retrieved from Balfour Beatty and are summarised in Table 6 below.</p>
     
-
+<center>
 <div class="widetable">
+  <p class="body">Table 6. Fluid simulation parameters.</p>
 <table>
-<caption>Table 6. Fluid simulation parameters.</caption>
 <thead>
  <tr>
   <td width=171 style='width:128.35pt;border:solid black 1.0pt;
@@ -1641,23 +1437,21 @@ Figure 13. Geometry used to calculate <i>&#945;<sub>12</sub></i>.</figcaption>
  </tbody>
 </table>
 </div>
+</center>
 
-<p>&nbsp;</p>
-
-<p align="justify" style="text-indent:19.85pt;">The simulation was run in ANSYS 13 and the forces exerted on all three axes were calculated. Fig.14 shows the simulation setup, and Table 7 contains a summary of the results.</p>
+<p class="body">The simulation was run in ANSYS 13 and the forces exerted on all three axes were calculated. Fig.14 shows the simulation setup, and Table 7 contains a summary of the results.</p>
 
 <figure>
-<img src="003_files/image014.jpg" class="img"/>
+<img src="003_files/image014.jpg" class="article-img">
 
 <figcaption>
 Figure 14. Screenshot showing the direction of fluid flow and the axis system used in the simulation.</figcaption>
 </figure>
-<br>
 
-
+<center>
 <div class="widetable">
+  <p class="body">Table  7. Simulated forces exerted on the robot.</p>
 <table>
-<caption>Table  7. Simulated forces exerted on the robot.</caption>
 <thead>
  <tr>
   <td width=64 style='width:47.95pt;border:solid black 1.0pt;
@@ -1705,36 +1499,34 @@ Figure 14. Screenshot showing the direction of fluid flow and the axis system us
  </tbody>
 </table>
 </div>
-
-<p>&nbsp;</p>
-
-<p align="justify" style="text-indent:19.85pt;">As is expected, the majority of the force is exerted on the robot in the direction of the fluid flow. As well as the fluid force, the weight of the robot is also significant. At 800g, this results in a weight of 7.85N. The maximum force is applied to the robot when the weight acts in the same direction as fluid force (i.e. inside a vertical pipe with the fluid flowing down). This results in a total force of 22.82N applied along the robot's longitudinal axis.</p>
-
-<p align="justify" style="text-indent:19.85pt;">The total force affects the robot in two major ways:</p>
-
-<ul><li>-  It affects the holding force that the ring actuators are required to generate in order to hold the robot in place against the pipe wall.</li>
-<li>- It affects the force that the Gough-Stewart actuators are required to generate in order to push a ring forward against the fluid flow.</li></ul>
+</center>
 
 
-<p align="justify" style="text-indent:19.85pt;">An analysis of the forces on each set of actuators is presented below.</p>
+<p class="body">As is expected, the majority of the force is exerted on the robot in the direction of the fluid flow. As well as the fluid force, the weight of the robot is also significant. At 800g, this results in a weight of 7.85N. The maximum force is applied to the robot when the weight acts in the same direction as fluid force (i.e. inside a vertical pipe with the fluid flowing down). This results in a total force of 22.82N applied along the robot's longitudinal axis.</p>
 
-<h4><i>3. 3. 1. Ring Actuator Force</i></h4>
+<p class="body">The total force affects the robot in two major ways:</p>
 
-<p align="justify" style="text-indent:19.85pt;">The ring actuators are used to force the support discs against the pipe wall, generating a frictional force that holds the robot in place. The maximum force required is when the fluid and gravitational force are both acting along the robot's longitudinal axis and only one ring is supporting the robot. The total force is therefore distributed equally amongst the three support discs on the holding ring. Fig. 15 shows a free body diagram of the forces acting on one of the discs.</p>
+<ul><li>It affects the holding force that the ring actuators are required to generate in order to hold the robot in place against the pipe wall.</li>
+<li>It affects the force that the Gough-Stewart actuators are required to generate in order to push a ring forward against the fluid flow.</li></ul>
+
+
+<p class="body">An analysis of the forces on each set of actuators is presented below.</p>
+
+<p class="subhead"><i>3. 3. 1. Ring Actuator Force</i></p>
+
+<p class="body">The ring actuators are used to force the support discs against the pipe wall, generating a frictional force that holds the robot in place. The maximum force required is when the fluid and gravitational force are both acting along the robot's longitudinal axis and only one ring is supporting the robot. The total force is therefore distributed equally amongst the three support discs on the holding ring. Fig. 15 shows a free body diagram of the forces acting on one of the discs.</p>
 
 <figure>
-<img src="003_files/image015.jpg" class="img"/>
+<img src="003_files/image015.jpg" class="article-img">
 
 <figcaption>
 Figure 15. Free body diagram of a support disc pressed against the pipe wall.</figcaption>
 </figure>
-<br>
-
-<p align="justify" style="text-indent:19.85pt;">The holding force, <i>H</i>, that holds the robot against the fluid and gravity force, <i>F</i>, is generated by the linear actuator force pushing the disc against the pipe wall, <i>N</i>, and the coefficient of friction between the rubber on the support disc and the pipe wall, <i>&#956;</i>, as governed by the following equation:</p>
-
-<div align=center>
 
 
+<p class="body">The holding force, <i>H</i>, that holds the robot against the fluid and gravity force, <i>F</i>, is generated by the linear actuator force pushing the disc against the pipe wall, <i>N</i>, and the coefficient of friction between the rubber on the support disc and the pipe wall, <i>&#956;</i>, as governed by the following equation:</p>
+
+<center><div class="widetable">
 <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
  style='width:100.0%;border-collapse:collapse;border:none'>
  <tr>
@@ -1747,15 +1539,10 @@ Figure 15. Free body diagram of a support disc pressed against the pipe wall.</f
   </td>
  </tr>
 </table>
+</div></center>
 
 
-</div>
-
-
-
-<div align=center>
-
-
+<center><div class="widetable">
 <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
  style='width:100.0%;border-collapse:collapse;border:none'>
  <tr>
@@ -1768,18 +1555,12 @@ Figure 15. Free body diagram of a support disc pressed against the pipe wall.</f
   </td>
  </tr>
 </table>
+</div></center>
 
 
-</div>
+<p class="body">Since two actuators push each support disc, the holding force is distributed amongst them according to their mechanical arrangement, as shown in Fig.16. The force required by each actuator is calculated as follows:</p>
 
-
-<p align="justify" style="text-indent:19.85pt;">Since two actuators push each support disc, the holding force is distributed amongst them according to their mechanical arrangement, as shown in Fig.16. The force required by each actuator is calculated as follows:</p>
-
-
-
-<div align=center>
-
-
+<center><div class="widetable">
 <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
  style='width:100.0%;border-collapse:collapse;border:none'>
  <tr>
@@ -1792,39 +1573,32 @@ Figure 15. Free body diagram of a support disc pressed against the pipe wall.</f
   </td>
  </tr>
 </table>
-
-
-</div>
+</div></center>
 
 <figure>
-<img src="003_files/image016.jpg" class="img"/>
+<img src="003_files/image016.jpg" class="article-img">
 <figcaption>
 Figure 16. Free body diagram showing how the force pressing the support disc against the pipe wall is distributed amongst two actuators.</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Since each actuator pushes against two support discs, the total force required by each one is doubled to 17.56N</p>
+<p class="body">Since each actuator pushes against two support discs, the total force required by each one is doubled to 17.56N</p>
 
-<h4>3. 3. 2. Gough-Stewart Actuator Force</h4>
+<p class="subhead">3. 3. 2. Gough-Stewart Actuator Force</p>
 
-<p align="justify" style="text-indent:19.85pt;">The Gough-Stewart actuators are used to move the rings through the pipe to their next holding position. The maximum force exerted on them will be when moving a ring against both the fluid flow and gravity. With each ring having a mass 170g, this results in a weight of 1.67N. In order to determine the fluid force, another simulation was run using only a single ring inside a pipe and using the same conditions described previously. This resulted in a force of 7.32N. The total force acting on the ring is therefore 8.99N. This force is distributed among the 6 actuators so that each actuator needs to overcome 1.50N.</p>
+<p class="body">The Gough-Stewart actuators are used to move the rings through the pipe to their next holding position. The maximum force exerted on them will be when moving a ring against both the fluid flow and gravity. With each ring having a mass 170g, this results in a weight of 1.67N. In order to determine the fluid force, another simulation was run using only a single ring inside a pipe and using the same conditions described previously. This resulted in a force of 7.32N. The total force acting on the ring is therefore 8.99N. This force is distributed among the 6 actuators so that each actuator needs to overcome 1.50N.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Since the Gough-Stewart actuators are almost always at an angle to the robot's longitudinal axis, the force needs to be resolved through that angle in order to determine the actual force applied to the actuator. For this particular situation, the largest angle occurs when one ring is fully retracted, the other is fully extended, and the Gough-Stewart actuators are fully retracted. This results in an angle of 18.7&deg; to the robot's longitudinal axis, as measured from the CAD model and shown below in Fig. 17.</p>
+<p class="body">Since the Gough-Stewart actuators are almost always at an angle to the robot's longitudinal axis, the force needs to be resolved through that angle in order to determine the actual force applied to the actuator. For this particular situation, the largest angle occurs when one ring is fully retracted, the other is fully extended, and the Gough-Stewart actuators are fully retracted. This results in an angle of 18.7&deg; to the robot's longitudinal axis, as measured from the CAD model and shown below in Fig. 17.</p>
 
 <figure>
-<img src="003_files/image017.jpg" class="img"/>
+<img src="003_files/image017.jpg" class="article-img">
 
 <figcaption>
 Figure 17. Gough-Stewart actuator angle.</figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">Based on this information, the force required by the Gough-Stewart actuators can be calculated as follows:</p>
+<p class="body">Based on this information, the force required by the Gough-Stewart actuators can be calculated as follows:</p>
 
-
-<div align=center>
-
-
+<center><div class="widetable">
 <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
  style='width:100.0%;border-collapse:collapse;border:none'>
  <tr>
@@ -1837,53 +1611,50 @@ Figure 17. Gough-Stewart actuator angle.</figcaption>
   </td>
  </tr>
 </table>
+</div></center>
 
 
-</div>
+<p class="body">The actuators chosen for this robot, the PQ12-63-12, have a maximum load of 24N, and are thus suitable for use in this prototype.</p>
+
+<h4>4. Locomotion Strategy</h4>
 
 
-<p align="justify" style="text-indent:19.85pt;">The actuators chosen for this robot, the PQ12-63-12, have a maximum load of 24N, and are thus suitable for use in this prototype.</p>
+<p class="body">The robot is planned to use an inchworm locomotion method to move inside the pipe, expanding and contracting the upper and lower rings in order to attach to and detach from the pipe wall, while using the remaining six actuators to translate and rotate the rings in 6 degrees of freedom to the required position for the next movement.</p>
 
-<h2>4. Locomotion Strategy</h2>
-
-
-<p align="justify" style="text-indent:19.85pt;">The robot is planned to use an inchworm locomotion method to move inside the pipe, expanding and contracting the upper and lower rings in order to attach to and detach from the pipe wall, while using the remaining six actuators to translate and rotate the rings in 6 degrees of freedom to the required position for the next movement.</p>
-
-<p align="justify" style="text-indent:19.85pt;">In order to autonomously navigate the various features in the pipeline, the robot will need to be aware of its position and orientation in relation to the pipe wall, and be able to orient itself to follow the trajectory of the pipe. The proposed locomotion algorithm utilises the upper and lower rings as the robot's "antennae", which are used to determine the location of each ring in relation to the pipe wall. The algorithm is as follows:</p>
+<p class="body">In order to autonomously navigate the various features in the pipeline, the robot will need to be aware of its position and orientation in relation to the pipe wall, and be able to orient itself to follow the trajectory of the pipe. The proposed locomotion algorithm utilises the upper and lower rings as the robot's "antennae", which are used to determine the location of each ring in relation to the pipe wall. The algorithm is as follows:</p>
 
 
-<ul><li>-  The sensing mechanism on a ring is used to measure the distance between the ring centre and pipe wall in several places.</li>
-<li>- This information is then used to construct a cross section of the pipe wall along the same plane as the ring.</li>
-<li>- If the cross section is circular, then the ring is in the centre of the pipe and is perpendicular to the pipe tangent. No further orientation is required.</li>
-<li>- If the cross section is non-circular, then the ring has moved into a section of pipe with a different curvature, or is not in the centre of the pipe. By analysing the cross section, it is possible to determine the position of the robot relative to the pipe wall and thus the translations and rotations that need to be applied to the ring, such that the ring plane would produce a circular cross section.</li></ul>
+<ul><li>The sensing mechanism on a ring is used to measure the distance between the ring centre and pipe wall in several places.</li>
+<li>This information is then used to construct a cross section of the pipe wall along the same plane as the ring.</li>
+<li>If the cross section is circular, then the ring is in the centre of the pipe and is perpendicular to the pipe tangent. No further orientation is required.</li>
+<li>If the cross section is non-circular, then the ring has moved into a section of pipe with a different curvature, or is not in the centre of the pipe. By analysing the cross section, it is possible to determine the position of the robot relative to the pipe wall and thus the translations and rotations that need to be applied to the ring, such that the ring plane would produce a circular cross section.</li></ul>
 
 
-<p align="justify" style="text-indent:19.85pt;">Fig. 18 below shows some examples of how the position of the robot inside the pipe affects the shape of the cross section.</p>
+<p class="body">Fig. 18 below shows some examples of how the position of the robot inside the pipe affects the shape of the cross section.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Ideally, the robot's sensing mechanism would consist of several distance sensors (e.g. ultrasound or infrared sensors) placed around the ring that would measure the distance to the pipe wall. However, due to an apparent lack of low cost sensor modules that can measure small distances (less than 50mm) while operating continuously in a confined space, it was decided to use a sensorless system in order to measure the distances required.</p>
+<p class="body">Ideally, the robot's sensing mechanism would consist of several distance sensors (e.g. ultrasound or infrared sensors) placed around the ring that would measure the distance to the pipe wall. However, due to an apparent lack of low cost sensor modules that can measure small distances (less than 50mm) while operating continuously in a confined space, it was decided to use a sensorless system in order to measure the distances required.</p>
 
 <figure>
-<img src="003_files/image018.jpg" class="img"/>
+<img src="003_files/image018.jpg" class="article-img">
 
 <figcaption>
 Figure 18. Examples showing how the cross section varies depend on the robot's position inside the pipe.</figcaption>
 </figure>
-<br>
 
 
-<p align="justify" style="text-indent:19.85pt;">The sensorless system takes advantage of the increase in current drawn by motors when their load increases. In order to determine when the robot has gained a foothold in the pipe, the control system will expand the ring while continually monitoring the force exerted by the ring's actuators by measuring their current. Once the required holding force has been achieved, the expansion is stopped. The graph in Fig.19 shows how the current drawn by one of the robot's actuators changes as it extends and retracts, with Table 8 explaining the various points of interest. As can be seen from the graph, when the actuator reaches its mechanical limits the current increases sharply due to the motor stalling. The large difference between the stall current and the normal operating current makes it easy to detect when the actuator is fully pressed against pipe wall and thus exerting the maximum holding force. Even with the motors loaded at their maximum of 24N, the current when extending and retracting does not exceed 100mA, making it easy to detect when the motors stall.</p>
+<p class="body">The sensorless system takes advantage of the increase in current drawn by motors when their load increases. In order to determine when the robot has gained a foothold in the pipe, the control system will expand the ring while continually monitoring the force exerted by the ring's actuators by measuring their current. Once the required holding force has been achieved, the expansion is stopped. The graph in Fig.19 shows how the current drawn by one of the robot's actuators changes as it extends and retracts, with Table 8 explaining the various points of interest. As can be seen from the graph, when the actuator reaches its mechanical limits the current increases sharply due to the motor stalling. The large difference between the stall current and the normal operating current makes it easy to detect when the actuator is fully pressed against pipe wall and thus exerting the maximum holding force. Even with the motors loaded at their maximum of 24N, the current when extending and retracting does not exceed 100mA, making it easy to detect when the motors stall.</p>
 
 <figure>
-<img src="003_files/image019.jpg" class="img"/>
+<img src="003_files/image019.jpg" class="article-img">
 
 <figcaption>
 Figure 19. Graph showing how the linear actuator current (blue solid line) varies as the actuator extends and retracts (red dotted line), with no load.</figcaption>
 </figure>
-<br>
 
+<center>
 <div class="widetable">
+  <p class="body">Table 8. Explanation of points of interest in Fig.19.</p>
 <table>
-<caption>Table 8. Explanation of points of interest in Fig.19.</caption>
 <thead>
  <tr>
   <td width=83 style='width:62.1pt;border:solid black 1.0pt;
@@ -1963,126 +1734,224 @@ Figure 19. Graph showing how the linear actuator current (blue solid line) varie
  </tr>
  </tbody>
 </table>
-</div>
-<p>&nbsp;</p>
+</div></center>
 
-<p align="justify" style="text-indent:19.85pt;">In order to measure the distances between the pipe wall and the centre of the ring, the robot would move its ring in various directions, whilst keeping it aligned to the same initial plane. When the ring collides with the pipe wall, the current drawn by the actuators will sharply increase. This increase in current triggers the robot to stop moving and to record the current actuator lengths. These are then used to calculate the distance travelled by the ring and thus the distance between the centre of the ring and the pipe wall in that direction. The process can then be repeated in several different directions.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Although the sensorless method is more likely to be slower than using active sensors, it reduces the cost and weight of the robot and allows a prototype to be constructed with existing resources. Fig. 20 shows how the sensorless system can be used by the robot to navigate a curved pipe section.</p>
+<p class="body">In order to measure the distances between the pipe wall and the centre of the ring, the robot would move its ring in various directions, whilst keeping it aligned to the same initial plane. When the ring collides with the pipe wall, the current drawn by the actuators will sharply increase. This increase in current triggers the robot to stop moving and to record the current actuator lengths. These are then used to calculate the distance travelled by the ring and thus the distance between the centre of the ring and the pipe wall in that direction. The process can then be repeated in several different directions.</p>
+
+<p class="body">Although the sensorless method is more likely to be slower than using active sensors, it reduces the cost and weight of the robot and allows a prototype to be constructed with existing resources. Fig. 20 shows how the sensorless system can be used by the robot to navigate a curved pipe section.</p>
 
 <figure>
-<img src="003_files/image020.jpg" class="img"/>
+<img src="003_files/image020.jpg" class="article-img">
 
 <figcaption>
 Figure 20. Robot's locomotion method. The robot first uses its sensorless measurement system to identify the cross section of the pipe. From this, it determines how it should orient its ring so that it is perpendicular to the tangent of the pipe.</figcaption>
 </figure>
-<br>
 
 
 
-<h2>5. Summary and Conclusion</h2>
 
-<p align="justify" style="text-indent:19.85pt;">Pipelines are an integral part of the world's infrastructure but can be difficult to maintain and repair due to their inaccessibility. A robot that is capable of operation in an active pipeline would be of great industrial benefit. The requirements of such a robot were outlined.</p>
+<h4>5. Summary and Conclusion</h4>
 
-<p align="justify" style="text-indent:19.85pt;">A review of existing pipe inspection robots showed that robots capable of navigating a pipe network have been developed using many different locomotion types. However, nearly all the robots were designed for operation in empty pipes and so did not have to deal with restrictions to their shape and area inside the pipe. Only one robot was designed to operate in live pipes, but was not designed to operate indefinitely and struggled to navigate vertical pipes. It was clear from the review that research into robots operating in live pipes is an important topic and novel solutions are needed.</p>
+<p class="body">Pipelines are an integral part of the world's infrastructure but can be difficult to maintain and repair due to their inaccessibility. A robot that is capable of operation in an active pipeline would be of great industrial benefit. The requirements of such a robot were outlined.</p>
 
-<p align="justify" style="text-indent:19.85pt;">Based on the requirements outlined earlier and the conclusions drawn from the literature review, a novel design of pipe inspection robot was drawn up based on the Gough-Stewart platform and using an inchworm locomotion method. The design aims to allow the robot to operate in an active pipe by providing low resistance to flow, and provides a flexible base on which various tools could be mounted. An analysis of the robot's degrees of freedom, a derivation of the inverse kinematic equations, and a static force analysis were presented and the robot's sensing and locomotion strategy outlined.</p>
+<p class="body">A review of existing pipe inspection robots showed that robots capable of navigating a pipe network have been developed using many different locomotion types. However, nearly all the robots were designed for operation in empty pipes and so did not have to deal with restrictions to their shape and area inside the pipe. Only one robot was designed to operate in live pipes, but was not designed to operate indefinitely and struggled to navigate vertical pipes. It was clear from the review that research into robots operating in live pipes is an important topic and novel solutions are needed.</p>
 
-<h2>6. Future Work</h2>
+<p class="body">Based on the requirements outlined earlier and the conclusions drawn from the literature review, a novel design of pipe inspection robot was drawn up based on the Gough-Stewart platform and using an inchworm locomotion method. The design aims to allow the robot to operate in an active pipe by providing low resistance to flow, and provides a flexible base on which various tools could be mounted. An analysis of the robot's degrees of freedom, a derivation of the inverse kinematic equations, and a static force analysis were presented and the robot's sensing and locomotion strategy outlined.</p>
 
-<p align="justify" style="text-indent:19.85pt;">The construction of a prototype of the presented design is complete and the current focus of work is on implementing the locomotion algorithm and testing it inside a straight pipe in various orientations. Once the algorithm has been developed sufficiently to allow the robot to navigate straight pipes, the robot will be tested inside a 90-degree bend and a T-junction in order to identify any enhancements that need to be made to cope with these scenarios. The robot will then be tested in a pipe network consisting of straight and curved sections of pipe to assess its ability to adapt to changing pipe trajectories.</p>
+<h4>6. Future Work</h4>
 
+<p class="body">The construction of a prototype of the presented design is complete and the current focus of work is on implementing the locomotion algorithm and testing it inside a straight pipe in various orientations. Once the algorithm has been developed sufficiently to allow the robot to navigate straight pipes, the robot will be tested inside a 90-degree bend and a T-junction in order to identify any enhancements that need to be made to cope with these scenarios. The robot will then be tested in a pipe network consisting of straight and curved sections of pipe to assess its ability to adapt to changing pipe trajectories.</p>
 
-<img src="images/line.png" width="100&#37;" height="1" />
-<H2><a name="references">References</a></H2>
+<h4 id="references">References</h4>
+<div class="ref">
+<p class="body"> Aracil, R., Saltaren, R., and Reinoso, O. (2003) Parallel robots for autonomous climbing along tubular structures. Robotics and Autonomous Systems 42, 2. <a href="http://dx.doi.org/10.1016/S0921-8890(02)00360-3" target="_blank">View Article</a></p>
 
-<p> Aracil, R., Saltaren, R., and Reinoso, O. (2003) Parallel robots for autonomous climbing along tubular structures. Robotics and Autonomous Systems 42, 2. <a href="http://dx.doi.org/10.1016/S0921-8890(02)00360-3" target="_blank">View Article</a></p>
+<p class="body"> Fjerdingen, S.A., Liljeback, P., and Transeth,A.A. (2009) A snake-like robot for internal inspection of complex pipe structures (PIKo). In Intelligent Robots and Systems, 2009. IROS 2009. IEEE/RSJ International Conference on, 5665–5671. <a href="http://dx.doi.org/10.1109/IROS.2009.5354751" target="_blank">View Article</a></p>
 
-<p> Fjerdingen, S.A., Liljeback, P., and Transeth,A.A. (2009) A snake-like robot for internal inspection of complex pipe structures (PIKo). In Intelligent Robots and Systems, 2009. IROS 2009. IEEE/RSJ International Conference on, 5665–5671. <a href="http://dx.doi.org/10.1109/IROS.2009.5354751" target="_blank">View Article</a></p>
-
-<p> Fujiwara, S., Kanehara, R., Okada, T., and Sanemori, T. (1993) An articulated multi-vehicle robot for inspection and testing of pipeline interiors. In Proceedings of the 1993 IEEE/RSJ International Conference on Intelligent Robots and Systems, 509 –16. <a href="http://dx.doi.org/10.1109/IROS.1993.583154" target="_blank">View Article</a></p>
-
-
-<p> Hu, Z., and Appleton, E. (2005) Dynamic characteristics of a novel self-drive pipeline pig. IEEE Transactions on Robotics (October) 21, 5. <a href="http://dx.doi.org/10.1016/j.freeradbiomed.2007.03.010" target="_blank">View Article</a></p>
+<p class="body"> Fujiwara, S., Kanehara, R., Okada, T., and Sanemori, T. (1993) An articulated multi-vehicle robot for inspection and testing of pipeline interiors. In Proceedings of the 1993 IEEE/RSJ International Conference on Intelligent Robots and Systems, 509 –16. <a href="http://dx.doi.org/10.1109/IROS.1993.583154" target="_blank">View Article</a></p>
 
 
-<p> Jeon, W., Park, J., Kim, I., Kang, Y.K, and Yang, H. (2011) Development of high mobility in-pipe inspection robot. In 2011 IEEE/SICE International Symposium on System Integration, SII 2011, December 20, 2011 - December 22, 2011. Kyoto, Japan: IEEE Computer Society, 479–484. <a href="http://dx.doi.org/10.1109/SII.2011.6147496" target="_blank">View Article</a></p>
-
-<p> Kawaguchi, Y., Yoshida, I., Kurumatani, H., Kikuta, T., and Yamada,Y. (1995) Internal pipe inspection robot. In Proceedings., 1995 IEEE International Conference on Robotics and Automation, 1 ,857-862. <a href="http://dx.doi.org/10.1016/j.freeradbiomed.2007.03.010" target="_blank">View Article</a></p>
-
-<p> Kim, Y.J., Yoon, H.K., and Park, Y.W. (2009) Development of the inpipe robot for various sizes. In 2009 IEEE/ASME International Conference on Advanced Intelligent Mechatronics, 1745-1749. <a href="http://dx.doi.org/10.1109/AIM.2009.5229808" target="_blank">View Article</a></p>
-
-<p> Kuntze, H.-B., and Haffner , H. (1998) Experiences with the development of a robot for smart multisensoric pipe inspection. In Proceedings of the 1998 IEEE International Conference on Robotics & Automation, 2:1773 –1778. <a href="http://dx.doi.org/10.1109/ROBOT.1998.677423" target="_blank">View Article</a></p>
-
-<p> Kuwada, A., Wakimoto, S., Koichi, S., and Adomi, Y. (2008) Automatic pipe negotiation control for snake-like robot. In Proceedings of the 2008 IEEE/ASME International Conference on Advanced Intelligent Mechatronics, 558 –563. <a href="http://dx.doi.org/10.1109/AIM.2008.4601721" target="_blank">View Article</a></p>
-
-<p> Li, P., Ma, S., Li, B., and Wang, Y. (2008) Design of a mobile mechanism possessing driving ability and detecting function for in-pipe inspection. In IEEE Conference on Robotics and Automation, 3992 –3997. <a href="http://dx.doi.org/10.1109/ROBOT.2008.4543824" target="_blank">View Article</a></p>
-
-<p> Najjaran, H. (2005) Underwater robot for inspection of in-service transmission mains. Fact sheet. National Research Council Canada. June. <a href="http://archive.nrc-cnrc.gc.ca/eng/projects/irc/underwater-robot.html" target="_blank">View Article</a></p>
-
-<p> Neubauer, W. (1994) A spider-like robot that climbs vertically in ducts or pipes. In Proceedings of the IEEE/RSJ/GI International Conference on Intelligent Robots and Systems  '94., 2, 1178-1185. <a href="http://dx.doi.org/ 10.1109/IROS.1994.407465" target="_blank">View Article</a></p>
-
-<p> Ong, J.K., Kerr, D., and Bouazza-Marouf, K. (2003) Design of a semi-autonomous modular robotic vehicle for gas pipeline inspection. Proceedings of the Institution of Mechanical Engineers. Part I: Journal of Systems and Control Engineering 217, 2. <a href="http://hdl.handle.net/2134/5145" target="_blank">View Article</a></p>
-
-<p> Roh, S.G., Kim, D.W., Lee, J.S., Moon, H., and Choi, H.R. (2009) In-pipe robot based on selective drive mechanism. International Journal of Control, Automation and Systems 7, 1. <a href="http://dx.doi.org/10.1007/s12555-009-0113-z" target="_blank">View Article</a></p>
-
-<p> Schempf, H., Mutschler, E., Gavaert, A., Skoptsov, G., and Crowley, W. (2010) Visual and nondestructive evaluation inspection of live gas mains using the explorer family of pipe robots. Journal of Field Robotics 27, 3. <a href="http://dx.doi.org/10.1002/rob.20330" target="_blank">View Article</a></p>
-
-<p> Scholl, K.-U., Kepplin, V., Berns, K., and Dillmann, R., (2000) Controlling a multi-joint robot for autonomous sewer inspection. In IEEE International Conference on Robotics and Automation, 2, 1701- 1706. <a href="http://dx.doi.org/10.1109/ROBOT.2000.844841" target="_blank">View Article</a></p>
-
-<p> Tache, F., Fischer, W., Moser, R., Mondada, F., and  Siegwart, R. (2007) Adapted magnetic wheel unit for compact robots inspecting complex shaped pipe structures. In Proceedings of the 2007 IEEE/ASME International Conference on Advanced Intelligent Mechatronics. <a href="http://dx.doi.org/10.1109/AIM.2007.4412506" target="_blank">View Article</a></p>
-
-<p> Tatar, O., Mandru, D., and Ardelean, I., (2007) Development of mobile minirobots for in pipe inspection tasks. Mechanika 68, 6. <a href="http://www.ktu.edu/lt/mokslas/zurnalai/mechanika/mechtu_68/Tatar668.pdf" target="_blank">View Article</a></p>
-
-<p> Wakimoto, S., Nakajima, J., Takata, M., Kanda, T., and Suzumori. K. (2003) A micro snake-like robot for small pipe inspection. In Proceedings of 2003 International Symposium on Micromechatronics and Human Science, 303-308. <a href="http://dx.doi.org/10.1109/MHS.2003.1249959" target="_blank">View Article</a></p>
-
-<p> Wang, Z.,, and Gu, H., (2008) A bristle-based pipeline robot for Ill-constraint pipes. IEEE/ASME Transactions on Mechatronics 13, 3. <a href="http://dx.doi.org/10.1109/TMECH.2008.924133" target="_blank">View Article</a></p>
-
-<p> Wright, C., Johnson, A., Peck, A., McCord, Z.,  Naaktgeboren, A., Gianfortoni, P., Gonzalez-Rivero, M., Hatton, R., and Choset, H. (2007) Design of a modular snake robot. In Proceedings of the 2007 IEEE/RSJ International Conference on Intelligent Robots and Systems, 2609 –2614. <a href="http://dx.doi.org/10.1109/IROS.2007.4399617" target="_blank">View Article</a></p>
-
-<p> Zagler, A., and Pfeiffer, F. (2003) 'MORITZ' a pipe crawler for tube junctions. In Proceedings of the 2003 IEEE International Conference on Robotics & Automation, 3, 2954 –2959. <a href="http://dx.doi.org/10.1109/ROBOT.2003.1242044" target="_blank">View Article</a></p>
+<p class="body"> Hu, Z., and Appleton, E. (2005) Dynamic characteristics of a novel self-drive pipeline pig. IEEE Transactions on Robotics (October) 21, 5. <a href="http://dx.doi.org/10.1016/j.freeradbiomed.2007.03.010" target="_blank">View Article</a></p>
 
 
-<img src="images/line.png" width="100&#37;" height="1" />
-<H2><a name="references">Website References</a></H2>
-<p> Friction Factors, Consulted on 27 Dec. 2012 <a href="http://www.roymech.co.uk/Useful_Tables/Tribology/co_of_frict.htm" target="_blank">View Website</a></p>
+<p class="body"> Jeon, W., Park, J., Kim, I., Kang, Y.K, and Yang, H. (2011) Development of high mobility in-pipe inspection robot. In 2011 IEEE/SICE International Symposium on System Integration, SII 2011, December 20, 2011 December 22, 2011. Kyoto, Japan: IEEE Computer Society, 479–484. <a href="http://dx.doi.org/10.1109/SII.2011.6147496" target="_blank">View Article</a></p>
 
-<div class="clearfix"></div>
+<p class="body"> Kawaguchi, Y., Yoshida, I., Kurumatani, H., Kikuta, T., and Yamada,Y. (1995) Internal pipe inspection robot. In Proceedings., 1995 IEEE International Conference on Robotics and Automation, 1 ,857-862. <a href="http://dx.doi.org/10.1016/j.freeradbiomed.2007.03.010" target="_blank">View Article</a></p>
+
+<p class="body"> Kim, Y.J., Yoon, H.K., and Park, Y.W. (2009) Development of the inpipe robot for various sizes. In 2009 IEEE/ASME International Conference on Advanced Intelligent Mechatronics, 1745-1749. <a href="http://dx.doi.org/10.1109/AIM.2009.5229808" target="_blank">View Article</a></p>
+
+<p class="body"> Kuntze, H.-B., and Haffner , H. (1998) Experiences with the development of a robot for smart multisensoric pipe inspection. In Proceedings of the 1998 IEEE International Conference on Robotics & Automation, 2:1773 –1778. <a href="http://dx.doi.org/10.1109/ROBOT.1998.677423" target="_blank">View Article</a></p>
+
+<p class="body"> Kuwada, A., Wakimoto, S., Koichi, S., and Adomi, Y. (2008) Automatic pipe negotiation control for snake-like robot. In Proceedings of the 2008 IEEE/ASME International Conference on Advanced Intelligent Mechatronics, 558 –563. <a href="http://dx.doi.org/10.1109/AIM.2008.4601721" target="_blank">View Article</a></p>
+
+<p class="body"> Li, P., Ma, S., Li, B., and Wang, Y. (2008) Design of a mobile mechanism possessing driving ability and detecting function for in-pipe inspection. In IEEE Conference on Robotics and Automation, 3992 –3997. <a href="http://dx.doi.org/10.1109/ROBOT.2008.4543824" target="_blank">View Article</a></p>
+
+<p class="body"> Najjaran, H. (2005) Underwater robot for inspection of in-service transmission mains. Fact sheet. National Research Council Canada. June. <a href="http://archive.nrc-cnrc.gc.ca/eng/projects/irc/underwater-robot.html" target="_blank">View Article</a></p>
+
+<p class="body"> Neubauer, W. (1994) A spider-like robot that climbs vertically in ducts or pipes. In Proceedings of the IEEE/RSJ/GI International Conference on Intelligent Robots and Systems  '94., 2, 1178-1185. <a href="http://dx.doi.org/ 10.1109/IROS.1994.407465" target="_blank">View Article</a></p>
+
+<p class="body"> Ong, J.K., Kerr, D., and Bouazza-Marouf, K. (2003) Design of a semi-autonomous modular robotic vehicle for gas pipeline inspection. Proceedings of the Institution of Mechanical Engineers. Part I: Journal of Systems and Control Engineering 217, 2. <a href="http://hdl.handle.net/2134/5145" target="_blank">View Article</a></p>
+
+<p class="body"> Roh, S.G., Kim, D.W., Lee, J.S., Moon, H., and Choi, H.R. (2009) In-pipe robot based on selective drive mechanism. International Journal of Control, Automation and Systems 7, 1. <a href="http://dx.doi.org/10.1007/s12555-009-0113-z" target="_blank">View Article</a></p>
+
+<p class="body"> Schempf, H., Mutschler, E., Gavaert, A., Skoptsov, G., and Crowley, W. (2010) Visual and nondestructive evaluation inspection of live gas mains using the explorer family of pipe robots. Journal of Field Robotics 27, 3. <a href="http://dx.doi.org/10.1002/rob.20330" target="_blank">View Article</a></p>
+
+<p class="body"> Scholl, K.-U., Kepplin, V., Berns, K., and Dillmann, R., (2000) Controlling a multi-joint robot for autonomous sewer inspection. In IEEE International Conference on Robotics and Automation, 2, 17011706. <a href="http://dx.doi.org/10.1109/ROBOT.2000.844841" target="_blank">View Article</a></p>
+
+<p class="body"> Tache, F., Fischer, W., Moser, R., Mondada, F., and  Siegwart, R. (2007) Adapted magnetic wheel unit for compact robots inspecting complex shaped pipe structures. In Proceedings of the 2007 IEEE/ASME International Conference on Advanced Intelligent Mechatronics. <a href="http://dx.doi.org/10.1109/AIM.2007.4412506" target="_blank">View Article</a></p>
+
+<p class="body"> Tatar, O., Mandru, D., and Ardelean, I., (2007) Development of mobile minirobots for in pipe inspection tasks. Mechanika 68, 6. <a href="http://www.ktu.edu/lt/mokslas/zurnalai/mechanika/mechtu_68/Tatar668.pdf" target="_blank">View Article</a></p>
+
+<p class="body"> Wakimoto, S., Nakajima, J., Takata, M., Kanda, T., and Suzumori. K. (2003) A micro snake-like robot for small pipe inspection. In Proceedings of 2003 International Symposium on Micromechatronics and Human Science, 303-308. <a href="http://dx.doi.org/10.1109/MHS.2003.1249959" target="_blank">View Article</a></p>
+
+<p class="body"> Wang, Z.,, and Gu, H., (2008) A bristle-based pipeline robot for Ill-constraint pipes. IEEE/ASME Transactions on Mechatronics 13, 3. <a href="http://dx.doi.org/10.1109/TMECH.2008.924133" target="_blank">View Article</a></p>
+
+<p class="body"> Wright, C., Johnson, A., Peck, A., McCord, Z.,  Naaktgeboren, A., Gianfortoni, P., Gonzalez-Rivero, M., Hatton, R., and Choset, H. (2007) Design of a modular snake robot. In Proceedings of the 2007 IEEE/RSJ International Conference on Intelligent Robots and Systems, 2609 –2614. <a href="http://dx.doi.org/10.1109/IROS.2007.4399617" target="_blank">View Article</a></p>
+
+<p class="body"> Zagler, A., and Pfeiffer, F. (2003) 'MORITZ' a pipe crawler for tube junctions. In Proceedings of the 2003 IEEE International Conference on Robotics & Automation, 3, 2954 –2959. <a href="http://dx.doi.org/10.1109/ROBOT.2003.1242044" target="_blank">View Article</a></p>
+
+
+<h4>Website References</h4>
+<p class="body"> Friction Factors, Consulted on 27 Dec. 2012 <a href="http://www.roymech.co.uk/Useful_Tables/Tribology/co_of_frict.htm" target="_blank">View Website</a></p>
+</div> <!--REF -->
+  </div> <!--INDENT -->
+
+  </div> <!--Main Content -->
+</div>
+</div>
+
+  <footer>
+<div class="grid">
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <ul class="footer-links">
+        <li><a href="/" class="body-link">Avestia Publishing</a></li>
+        <li><a href="journals" class="body-link">Journals</a></li>
+        <li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
+        <li><a href="terms" class="body-link">Terms of Use</a></li>
+        <li><a href="sitemap" class="body-link">Sitemap</a></li>
+      </ul>
+    </div>
   </div>
-<div class="clearfix"></div>
+
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <p class="body">
+        Avestia Publishing,<br>
+        International ASET Inc.<br>
+        Unit 417, 1376 Bank St.<br>
+        Ottawa, ON, Canada, K1H 7Y3<br>
+        +1 613-695-3040<br>
+        <a href="mailto:info@avestia.com" class="body-link">info@avestia.com</a>
+      </p>
+    </div>
   </div>
-<div class="clearfix"></div>
-  </div>
 
-  
-
-  <div class="footer">
-
-  <div class="container">
-
-  <div class="col-sm-7 footer-link">
-
-        <p><a href="http://avestia.com">Avestia Publishing</a></p>
-        <p><a href="../register/">Subscribe to our Mailing List</a></p>
-        <p><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://avestia.com/feedback?refURL=' + refURL+'">Feedback</a>');</script></p>
-        <p><a href="../terms/">Terms of Use</a></p>
-		<p><a href="../sitemap/">Sitemap</a></p>
-
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer social">
+    <form class="subscribe" action="../subscribe.php" method="post">
+            <span id="sprytextfield2"><input name="email" type="text" id="email" value="Join our mailing list"
+              onblur="if (this.value == '') {this.value = 'Join our mailing list';}"
+        onfocus="if (this.value == 'Join our mailing list') {this.value = '';}" ></span>
+      <input type="submit" name="submit" value="Submit" class="form_button" />
+        </form>
+        
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.facebook.com/pages/International-Academy-of-Science-Engineering-and-Technology/207827708283" target="blank" title="International ASET Inc. Facebook Page">
+          <img src="../img/fb.png" border="0" onmouseover="this.src='../img/fb-hover.png'" onmouseout="this.src='../img/fb.png'">
+        </a>
       </div>
-      <div class="col-sm-5 footer-txt">
-        <p>Avestia Publishing, International ASET Inc. </p>
-        <p>Unit No. 417, 1376 Bank St. </p>
-        <p>Ottawa, Ontario, Canada </p>
-        <p>Postal Code: K1H 7Y3</p>
-        <p>Phone Number: 1-613-695-3040</p>
 
-  </div>
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://twitter.com/ASET_INC" target="blank" title="International ASET Inc. Twitter">
+          <img src="../img/twitter.png" border="0" onmouseover="this.src='../img/twitter-hover.png'" onmouseout="this.src='../img/twitter.png'">
+        </a>
+      </div>
 
-  </div>
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.linkedin.com/company/1169039" target="blank" title="International ASET Inc. LinkedIn">
+          <img src="../img/linkedin.png" border="0" onmouseover="this.src='../img/linkedin-hover.png'" onmouseout="this.src='../img/linkedin.png'">
+        </a>
+      </div>
 
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://plus.google.com/u/0/+International-aset/posts" target="blank" title="International ASET Inc. Google+ Page">
+          <img src="../img/google.png" border="0" onmouseover="this.src='../img/google-hover.png'" onmouseout="this.src='../img/google.png'">
+        </a>
+      </div>
+
+      <p class="body">© Copyright 2015, International ASET Inc. – All Rights Reserved.</p>
+    </div>
   </div>
 
 </div>
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.js"></script>
+</footer>
+</div>
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../js/cbpAnimatedHeader.min.js"></script>
+    <script src="../js/SpryValidationSelect.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationTextField.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationConfirm.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationCheckbox.js" type="text/javascript"></script>
+    <script src="../js/SpryValidationTextarea.js" type="text/javascript"></script>
+
+<script src="../js/classie.js"></script>
+<script src="../js/jquery.easing.js"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script defer src="../js/demo.js"></script>
+<script type="text/javascript" src="../css/animate.min.css"></script>
+<script type="text/javascript" src="../js/jnav.js"></script>
+
+<script type="text/javascript">
+<!--
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email");
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
+var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
+var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2", {invalidValue:"-1"});
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
+var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
+var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6");
+//-->
+</script>
+
+    <script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
+
+<script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger-1')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
 </body>
+</html>

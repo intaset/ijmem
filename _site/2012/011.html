@@ -1,203 +1,360 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en"><head>
-
-<meta charset="utf-8">
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive">
+<meta name="description" content="The Volume 1, Issue 1 published for IJMEM Journal.">
+<meta name="keywords" content="avestia, publishing, journals, papers, science, renewable energy">
 <title>IJMEM - Thermal Management Analysis of a Lithium-Ion Battery Pack using Flow Network Approach</title>
 
-<link href='http://fonts.googleapis.com/css?family=PT+Sans:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+<meta name="handheldfriendly" content="true">
+<meta name="mobileoptimized" content="240">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href='http://fonts.googleapis.com/css?family=Antic+Slab:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+<link href="../css/avestia.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
+<!--[if IE-9]><html lang="en" class="ie9"><![endif]-->
 
-<link rel="stylesheet" href="../css/style.css" />
+<script src="../js/modernizr.custom.63321.js"></script>
+<script type="text/javascript" src="../mostvisited.js"></script> 
+<script type="text/javascript" src="../mostvisitedExt.js"></script> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<link href="../css/bootstrap.css" rel="stylesheet">
-<link href="../images/icon.ico" rel="shortcut icon" type="image/x-icon">
-<!--Goole Analytics Most Visited Article Code-->
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-45437411-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  ga('create', 'UA-68628727-1', 'auto');
+  ga('send', 'pageview');
 
 </script>
-
-
-<!-- Include Most Visited Articles JS Code -->
-<script type="text/javascript" src="mostvisited.js"></script> 
-
-<!-- Include SHARE THIS js sources -->
-<script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "8f49e037-5155-4595-abc0-d069deae6488", doNotHash: true, doNotCopy: false, hashAddressBar: false, onhover:false});</script>
+<script>
+  (function() {
+    var cx = '016656741306535874023:f_iiykae6ri';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 </head>
+<body class="loading">
+<nav id="slide-menu">
+  <h1>Avestia Publishing</h1>
+  <ul>
+    <li><a href="about">About Us</a></li>
+    <li><a href="ethics">Ethics in Publishing</a></li>
+    <li><a href="openaccess">Open Access</a></li>
+    <li><a href="editor">Become a Reviewer or an Editor</a></li>
+    <li><a href="publishing">Your Publishing Needs</a></li>
+    <li><a href="proceedings">Conference Proceedings</a></li>
+    <li><a href="news">Latest News</a></li>
+    <li><a href="guidelines">Author Guidelines</a></li>
+    <li><a href="journals">Journals</a></li>
+    <li><a href="http://amss.avestia.com/">Submission</a></li>
+    <li><a href="copyright">Copyright</a></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+</nav>
 
-<body>
+<div id="content">
+  <div class="desktop">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
 
-<div class="wrapper">
-
-  <div class="header">
-
-  <div class="container">
-
-  <div class="row">
-
-        <header id="header">
-          <div class="logo col-sm-4"><a href="http://avestia.com"><img src="/images/logo.png" alt="Journal" class="img" /></a></div>
-          <div class="threemenu col-sm-5">
-            <div class="row"><a class="link col-sm-4" href="http://avestia.com"><img src="/images/home.jpg" class="img"></a> <a class="link col-sm-4" href="http://avestia.com/journals/"><img src="/images/journals.jpg" class="img"></a> <a class="link col-sm-4" href="http://amss.avestia.com"><img src="/images/submit.jpg" class="img"></a></div>
-          </div>
-          <div class="searching col-sm-3">
-<div class="sharethis">Share this page:<br/>
-<span class='st_email'></span>
-<span class='st_facebook'></span>
-<span class='st_twitter'></span>
-<span class='st_googleplus'></span>
-<span class='st_linkedin'></span>
-</div>
-            
-         <div class="search_wrapper">
-         <form class="search" action="../results" method="get">
-              <fieldset>
-                <span class="text">
-                <input name="q" id="q" type="text" value="" placeholder="Search..." /><button class="search_top_button">GO</button>
-                </span>
-
-              </fieldset>
-            </form>
-            
-            </div>
-          </div>
-          <div class="col-lg-12"><div class="avada-row">
-
-            <nav id="nav" class="nav-holder">
-
-              <div role="navigation" class="navbar navbar-default">
-
-                <div class="container-fluid">
-
-                  <div class="navbar-header">
-      
-                  
-                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-<span class="navbar-brand" href="#">Menu</span>
-      </div>
-
-      <div class="navbar-collapse collapse">
-
-        <ul class="nav navbar-nav">			
-			<li><a href="/">Journal Home</a></li><span class="menu-line">|</span>
-                        <li><a href="../aims/">Aims and Scopes</a></li><span class="menu-line">|</span>
-                        <li><a href="../charges/">Article Processing Charges</a></li><span class="menu-line">|</span>
-                        <li><a href="../guidelines/">Author Guidelines</a></li><span class="menu-line">|</span>
-                        <li><a href="../board/">Editorial Board</a></li><br>
-                        <li><a href="../volumes/">Past Volumes</a></li><span class="menu-line">|</span>
-                        <li><a href="../current/">Current Volume</a></li><span class="menu-line">|</span>
-                        <li><a href="../propose/">Propose a Special Topic</a></li><span class="menu-line">|</span>
-                        <li><a href="../register/">Receive Updates</a></li><span class="menu-line">|</span>
-                        <li><a href="../contact/">Contact Us</a></li>
-
-
-
-        </ul>
-
-      </div>
-
-      <!--/.nav-collapse -->
-
-      </div>
-
-      <!--/.container-fluid -->
-
-      </div>
-
-    </nav>
-
+    <div class="nav1">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
     </div>
 
+    <div class="search-menu">
+      <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
+      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
     </div>
-    <div class="clearfix"></div>
 
-    </header>
-
+    <div class="nav2">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
+    </div>
   </div>
-
-  </div>
-<div class="clearfix"></div>
-  </div>
-
-  <div class="slider">
-
-  <div class="container">
-
-  <div class="row"><div class="col-lg-12"><img class="img2" src="../images/international.jpg" alt="img"></div></div>
-
-  </div>
-
-  </div>
-
-  <div class="container">
-  <div class="clearfix"></div>
-  <div class="row">
-
-  <div class="col-lg-12 text"><div align=center>
-<div class="table">
-
-  <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 style='border:none; width: 100%'>
-   <tr>
-      <td>Volume 1, Issue 2 - Year 2012 - Pages 88-94</td>
-      <td align="right"><a href="PDF/011.pdf">View PDF (Full-text)</a></td>
-    </tr>
-   <tr>
-      <td>DOI: 10.11159/ijmem.2012.011</td>
-      <td align="right"><a href="#references">Linked References</a></td>
-    </tr>
-	<tr>
-	<td colspan="2">ISSN: 1929-2724</td>
-	</tr>
-   </table>
-   
 </div>
+  </div>
+
+  <header>
+    <div class="mobile">
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
+          <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+      </div>
+      <div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
+          <div class="menu-trigger"></div>
+      </div>
+  </div>
+</div>
+      <div class="bg">
+        <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+      </div>
+    </div> <!--Mobile -->
+  </header>
+
+  <div class="j-header-article">
+  <div class="name">
+    <h1>International Journal of Mechanical Engineering and Mechatronics (IJMEM)<br>
+    <p class="body">ISSN: 1929-2724</p></h1>
+    <div class="oalink">
+    <a href="/openaccess" target="blank" title="Avestia's Open Access">
+          <img src="../img/j-oa.png" border="0" onmouseover="this.src='../img/j-oa-hover.png'" onmouseout="this.src='../img/j-oa.png'" class="j-oa">
+    </a>
+  </div>
+  </div>
 </div>
 
-<br>
+  <div role="navigation" class="navbar navbar-default">
+  <ul>
+    <li><a href="">Journal Home</a></li>
+    <li><a href="aims">Aims & Scopes</a></li>
+    <li><a href="fee">Publishing Fee</a></li>
+    <li><a href="board">Editorial Board</a></li>
+    <li><button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">Volumes</button></li>
+    <li><a href="contact">Contact Us</a></li>
+  </ul>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="volume1/issue1">Volume 1, Issue 1</a></li>
+      <li><a href="volume2">Volume 2</a></li>
+      <li><a href="current">Current Volume</a></li>
+    </ul>
+  </div><!--/.nav-collapse -->
+</div>
 
-<p align="center" style="font-size:22pt;">Thermal Management Analysis of a Lithium-Ion Battery Pack using Flow Network Approach</p>
-	<p align="center"><strong>G. Karimi, A.R. Dehghan</strong>
-  	<br>Department of Chemical Engineering, Shiraz University
+<div class="grid">
+<div class="unit unit-s-1 unit-m-1 unit-l-1">
+  <div class="main-content j-home">
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2">
+      <p class="body">
+      Volume 1, Issue 2 Year 2012 - Pages 88-94<br>
+      DOI: 10.11159/ijmem.2012.011</p>
+    </div>
+
+    <div class="unit unit-s-1 unit-s-1-2 unit-m-1-2 unit-l-1-2 a-link">
+        <a href="PDF/011.pdf" class="body-link" class="body-link">View PDF (Full-text)</a><br>
+      <a href="#references" class="body-link">Linked References</a>
+    </div>
+
+    <h3 class="center">Thermal Management Analysis of a Lithium-Ion Battery Pack using Flow Network Approach</h3>
+
+    <p class="body-bold center">G. Karimi, A.R. Dehghan</p>
+
+    <p class="body center">Department of Chemical Engineering, Shiraz University
 Shiraz, Iran<br>
-ghkarimi@shirazu.ac.ir; adb068@gmail.com
+ghkarimi@shirazu.ac.ir; adb068@gmail.com</p>
 
-</p>
+    <p class="body"><b>Abstract</b> - <i>Among various issues that high power application lithium-ion (Li-ion) batteries are encountered, thermal issues have received more attention because of their potential to degrade battery performance. In the present work, a lumped capacitance heat transfer model was developed in conjunction with a flow network approach to investigate thermal performance of a commercial-size Li-ion battery pack under various operating conditions. Air and silicon oil were chosen as cooling media in the battery pack for two conventional flow arrangements, U- and Z-configurations. Numerical results have revealed that the temperature distributions inside the battery pack can be significantly affected by the coolant type and the flow configuration. The calculated parasitic losses due to the fan/pump power demand as well as the temperature dispersion within the battery pack can be used to devise and optimize the battery thermal management system (BTMS).</i></p>
 
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+    <p class="body"><b><i>Keywords:</i></b> Li-ion Battery Pack, Modeling, Lumped Capacitance, Battery Thermal Management System, Flow Network Approach</p>
 
-<p align="justify"><i><strong>Abstract- </strong>  Among various issues that high power application lithium-ion (Li-ion) batteries are encountered, thermal issues have received more attention because of their potential to degrade battery performance. In the present work, a lumped capacitance heat transfer model was developed in conjunction with a flow network approach to investigate thermal performance of a commercial-size Li-ion battery pack under various operating conditions. Air and silicon oil were chosen as cooling media in the battery pack for two conventional flow arrangements, U- and Z-configurations. Numerical results have revealed that the temperature distributions inside the battery pack can be significantly affected by the coolant type and the flow configuration. The calculated parasitic losses due to the fan/pump power demand as well as the temperature dispersion within the battery pack can be used to devise and optimize the battery thermal management system (BTMS).</i></p>
+    <p class="body">© Copyright 2015 Authors This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/3.0" class="body-link" target="_blank" class="body-link">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
 
-<p align="left"><i><strong>Keywords:</strong></i> Li-ion Battery Pack, Modeling, Lumped Capacitance, Battery Thermal Management System, Flow Network Approach</p>
-<p>&nbsp;</p>
-<p align="justify">  &copy; Copyright 2012 Authors - This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/2.0" target="_blank">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
+<p class="body">Nomenclature
 
-<img src="../images/line.png" width="100%;" height="1" />
-<h2>1. Introduction</h2> 
+<ul class="topics">
+
+  <li><img width=16 height=17 src="011_files_2/image001.png">: cross sectional area [m<sup>2</sup>]</li>
+
+  <li><i><img width=20 height=19 src="011_files_2/image002.png"></i>: Biot number</li>
+
+  <li><img width=12 height=15 src="011_files_2/image003.png">: heat capacity [J/(kg.K)]</li>
+
+<li><img width=23 height=25 src="011_files_2/image004.png"> : friction coefficient
+
+  </li>
+
+  <li><img width=21
+
+  height=24 src="011_files_2/image005.png">: hydraulic diameter [m]
+
+  </li>
+
+  <li><img width=17
+
+  height=17 src="011_files_2/image006.png">: Faraday constant; 96485 [C/mole]
+
+  </li>
+ 
+ <li><img width=13
+
+  height=19 src="011_files_2/image007.png">: heat transfer coefficient [W/(m<sup>2</sup>.K)]
+
+  </li>
+
+  <li><img width=9
+
+  height=17 src="011_files_2/image008.png">: discharge current per unit volume [A/m<sup>3</sup>]
+
+  </li>
+
+<li><img width=13
+
+  height=19 src="011_files_2/image009.png">: thermal conductivity [W/(m.K)]
+
+  </li>
+
+  <li><img width=15
+
+  height=17 src="011_files_2/image010.png">: distance/length [m]
+
+  </li>
+
+  <li><img width=17
+
+  height=17 src="011_files_2/image011.png">: mass flow rate [kg/s]
+
+  </li>
+
+  <li><img
+
+  width=19 height=19 src="011_files_2/image012.png">: number of cells/loops/branches/flow channels
+
+  </li>
+
+  <li><img width=16
+
+  height=17 src="011_files_2/image013.png">: pressure [Pa]
+
+  </li>
+
+  <li><img width=16
+
+  height=17 src="011_files_2/image014.png">: perimeter [m]
+
+  </li>
+
+  <li><img width=13
+
+  height=21 src="011_files_2/image015.png">: heat generation rate per unit volume [W/m<sup>3</sup>]
+
+  </li>
+
+  <li><img width=17
+
+  height=24 src="011_files_2/image016.png">: internal equivalent resistance [&#937;.m<sup>3</sup>]
+
+  </li>
+
+  <li><img width=23
+
+  height=19 src="011_files_2/image017.png">: Reynolds number
+
+  </li>
+
+  <li><img width=15
+
+  height=19 src="011_files_2/image018.png">: entropy [J/(mole.K)]
+
+  </li>
+
+  <li><img width=9
+
+  height=16 src="011_files_2/image019.png">: time [s]
+
+  </li>
+
+  <li><img width=15
+
+  height=17 src="011_files_2/image020.png">: temperature [&#730;C, K]
+
+  </li>
+
+  <li><img width=12
+
+  height=15 src="011_files_2/image021.png">: fluid velocity [m/s]
+
+  </li>
+
+  <li><img width=13
+
+  height=15 src="011_files_2/image022.png">: distance/spatial coordinate [m]
+
+  </li>
+
+  <li><img width=15
+
+  height=17 src="011_files_2/image023.png">: spatial coordinate [m]
+
+  </li>
+</ul>
+  
+<p class="body">Greek Letters</p>
+<ul class="topics">
+  <li><img
+
+  width=16 height=15 src="011_files_2/image024.png">: thermal diffusivity [m<sup>2</sup>/s]
+
+  </li>
+
+  <li><img
+
+  width=15 height=17 src="011_files_2/image025.png">: Difference
+
+  </li>
+
+  <li><img
+
+  width=16 height=17 src="011_files_2/image026.png">: viscosity [Pa.s]
+
+  </li>
+
+  <li><img
+
+  width=16 height=17 src="011_files_2/image027.png">: Density [kg/m<sup>3</sup>]
+
+  </li>
+</ul>
+
+  <p class="body">Subscripts</p>
+
+<ul class="topics">
+
+  <li><img
+
+  width=12 height=15 src="011_files_2/image003.png">: Coolant
+
+  </li>
+
+  <li><img
+
+  width=16 height=21 src="011_files_2/image028.png">: Friction
+
+  </li>
+</ul>
+
+  <div class="border"></div>
+
+  <div class="indent">
+<h4>1. Introduction</h4> 
 
 
 
 
 
-<p align="justify" style="text-indent:19.85pt;">Because of increasing demand on new
+<p class="body">Because of increasing demand on new
 
 reliable power source for hybrid electric vehicles, lithium-ion (Li-ion)
 
@@ -251,7 +408,7 @@ lowest possible value (Karimi and Li,
 
 performance will make electric cars a better competitor in comparison with
 
-internal combustion engine automobiles. </p><p align="justify" style="text-indent:19.85pt;">Due to inherent restrictions and
+internal combustion engine automobiles. </p><p class="body">Due to inherent restrictions and
 
 limited operating conditions associated with experimental measurements,
 
@@ -261,690 +418,7 @@ performance analysis of BTMS under battery transient operations. Somasundaram <i
 
 thermal-electrochemical model for passive thermal </p>
 
-
-
-<div class="widetable">
-<table>
-<caption></caption>
-<thead>Nomenclature</thead>
-<tbody>
- <tr>
- 
- 
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=16
-
-  height=17 src="011_files_2/image001.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>cross sectional area [m<sup>2</sup>]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><i><img width=20 height=19 src="011_files_2/image002.png"></i></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>Biot number</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=12
-
-  height=15 src="011_files_2/image003.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>heat capacity [J/(kg.K)]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=23
-
-  height=25 src="011_files_2/image004.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>friction coefficient</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=21
-
-  height=24 src="011_files_2/image005.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>hydraulic diameter [m]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=17
-
-  height=17 src="011_files_2/image006.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>Faraday constant; 96485 [C/mole]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=13
-
-  height=19 src="011_files_2/image007.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>heat transfer coefficient [W/(m<sup>2</sup>.K)]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=9
-
-  height=17 src="011_files_2/image008.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>discharge current per unit volume [A/m<sup>3</sup>]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=13
-
-  height=19 src="011_files_2/image009.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>thermal conductivity [W/(m.K)]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=15
-
-  height=17 src="011_files_2/image010.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>distance/length [m]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=17
-
-  height=17 src="011_files_2/image011.png"> </p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>mass flow rate [kg/s]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img
-
-  width=19 height=19 src="011_files_2/image012.png"> </p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>number of cells/loops/branches/flow channels</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=16
-
-  height=17 src="011_files_2/image013.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>pressure [Pa]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=16
-
-  height=17 src="011_files_2/image014.png"> </p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>perimeter [m]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=13
-
-  height=21 src="011_files_2/image015.png"> </p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>heat generation rate per unit volume [W/m<sup>3</sup>]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=17
-
-  height=24 src="011_files_2/image016.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>internal equivalent resistance [&#937;.m<sup>3</sup>]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=23
-
-  height=19 src="011_files_2/image017.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>Reynolds number</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=15
-
-  height=19 src="011_files_2/image018.png"> </p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>entropy [J/(mole.K)]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=9
-
-  height=16 src="011_files_2/image019.png"> </p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>time [s]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=15
-
-  height=17 src="011_files_2/image020.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>temperature [&#730;C, K]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=12
-
-  height=15 src="011_files_2/image021.png"> </p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>fluid velocity [m/s]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=13
-
-  height=15 src="011_files_2/image022.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>distance/spatial coordinate [m]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img width=15
-
-  height=17 src="011_files_2/image023.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>spatial coordinate [m]</p>
-
-  </td>
-
- </tr> 
-
- <tr style='height:15.0pt'>
-
-  <td width=432 nowrap colspan=2 valign=bottom style='width:323.95pt;
-
-  border-top:none;border-left:solid windowtext 1.0pt;border-bottom:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><b>Greek Letters</b></p>
-
-  </td>
-
- </tr>
-
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img
-
-  width=16 height=15 src="011_files_2/image024.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>thermal diffusivity [m<sup>2</sup>/s]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img
-
-  width=15 height=17 src="011_files_2/image025.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>Difference</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img
-
-  width=16 height=17 src="011_files_2/image026.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>viscosity [Pa.s]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img
-
-  width=16 height=17 src="011_files_2/image027.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>Density [kg/m<sup>3</sup>]</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td width=432 nowrap colspan=2 valign=bottom style='width:323.95pt;
-
-  border-top:none;border-left:solid windowtext 1.0pt;border-bottom:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><b>Subscripts</b></p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img
-
-  width=12 height=15 src="011_files_2/image003.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>Coolant</p>
-
-  </td>
-
- </tr>
-
- <tr style='height:15.0pt'>
-
-
-  <td nowrap valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-
-  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt; border-bottom:solid windowtext 1.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'><img
-
-  width=16 height=21 src="011_files_2/image028.png"></p>
-
-  </td>
-
-  <td width=395 nowrap valign=bottom style='width:296.15pt;border:none;
-
-  border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt; border-bottom:solid windowtext 1.0pt'>
-
-  <p class=MsoNormal style='text-indent:0cm'>Friction</p>
-
-  </td>
-
- </tr>
-
- </tbody>
- </table>
-
-
-
-</div>
-
-<br>
-<p align="justify" style="text-indent:19.85pt;">management of a spiral-wound Li-ion
+<p class="body">management of a spiral-wound Li-ion
 
 battery. Thermal and electrochemical equations are coupled through heat
 
@@ -1052,7 +526,7 @@ obtained. It was found that a distributed cooling strategy based on forced air
 
 convection would be an effective method in a BTMS (Karimi and Li, 2013). </p>
 
-<p align="justify" style="text-indent:19.85pt;">The present research is an extension to Karimi and Li's work in which
+<p class="body">The present research is an extension to Karimi and Li's work in which
 
 a combination of lumped capacitance method and flow network approach are used
 
@@ -1067,10 +541,10 @@ requirements to circulate the coolant within the pack. The results of this work
 can be used for optimization of the BTMS.</p>
 
 
-<h2>2. Model Formulation</h2>
+<h4>2. Model Formulation</h4>
 
 
-<p align="justify" style="text-indent:19.85pt;">Li&#8722;ion batteries are fabricated in many
+<p class="body">Li&#8722;ion batteries are fabricated in many
 
 different shapes and configurations, for example, cylindrical, coin, prismatic
 
@@ -1084,7 +558,7 @@ electric (HE), plug in hybrid electric (PHE) or plug in electric vehicular
 
 applications. In this work, combinations of the thin film flat type battery is
 
-considered for the analysis.</p><p align="justify" style="text-indent:19.85pt;">Typical Li&#8722;ion cell consists of a negative electrode
+considered for the analysis.</p><p class="body">Typical Li&#8722;ion cell consists of a negative electrode
 
 formed from a thin layer of powdered graphite, or certain other carbons,
 
@@ -1110,16 +584,13 @@ insulated from each other using separators. The material types, thicknesses and
 
 thermo-physical properties of cell layers are listed in Table 1.</p>
 
-<p align="justify" style="text-indent:19.85pt;">During the charge/discharge process,
+<p class="body">During the charge/discharge process,
 
 lithium ions are inserted or extracted from the interstitial space between
 
 atomic layers within the active materials. The chemical reactions are expressed
 
 as:</p>
-
-<div align=center>
-
 
 <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
  style='width:100.0%;border-collapse:collapse;border:none'>
@@ -1134,13 +605,6 @@ as:</p>
  </tr>
 </table>
 
-
-</div>
-
-
-<div align=center>
-
-
 <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
  style='width:100.0%;border-collapse:collapse;border:none'>
  <tr>
@@ -1154,13 +618,6 @@ as:</p>
  </tr>
 </table>
 
-
-</div>
-
-
-<div align=center>
-
-
 <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
  style='width:100.0%;border-collapse:collapse;border:none'>
  <tr>
@@ -1173,17 +630,13 @@ as:</p>
   </td>
  </tr>
 </table>
+<br>
 
-
-</div>
-
-
-<p>&nbsp;</p><
-p align="justify" style="text-indent:19.85pt;">In these
+<p class="body">In these
 
 chemical formulas, the reactions proceed from the left side to the right side
 
-during the discharge and in the reverse direction during the charge cycle.</p><p align="justify" style="text-indent:19.85pt;">Individual battery units are
+during the discharge and in the reverse direction during the charge cycle.</p><p class="body">Individual battery units are
 
 thermally managed by direct heat exchange with a dielectric cooling medium,
 
@@ -1197,7 +650,7 @@ eventually collected in the exit manifold and leaves the pack via an exit port.
 
 Two configurations namely U- and Z-configurations are considered in the present
 
-study.</p><p align="justify" style="text-indent:19.85pt;">The battery pack model presented here consists of two parts: the
+study.</p><p class="body">The battery pack model presented here consists of two parts: the
 
 single battery thermal model and the battery pack flow network model. The
 
@@ -1209,9 +662,11 @@ a fictitious load. The flow conditions around each battery unit are determined
 
 using the flow network model. Both models are described in the following
 
-sections.</p><h4>2. 1. The Battery Thermal Model</h4>
+sections.</p>
 
-<p align="justify" style="text-indent:19.85pt;">The structure and assembly of the battery pack under consideration is
+<p class="subhead">2. 1. The Battery Thermal Model</p>
+
+<p class="body">The structure and assembly of the battery pack under consideration is
 
 the same as that used in a previous work by Karimi and Li (Karimi and
 
@@ -1220,9 +675,6 @@ Li, 2013). Heat generation in the cells is assumed to be caused
 by ohmic internal resistances and entropy change resulting from electrochemical
 
 reactions and can be calculated from:</p>
-
-<div align=center>
-
 
 <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
  style='width:100.0%;border-collapse:collapse;border:none'>
@@ -1236,11 +688,9 @@ reactions and can be calculated from:</p>
   </td>
  </tr>
 </table>
+<br>
 
-
-</div>
-
-<p align="justify" style="text-indent:0pt;">where <img src="011_files/eqn001.gif" style="top:-2pt; display: inline"/>is the rate of internal heat generation per unit volume, R<sub>i</sub>
+<p class="body">where <img src="011_files/eqn001.gif" style="top:-2pt; display: inline"/>is the rate of internal heat generation per unit volume, R<sub>i</sub>
 
 is the internal equivalent resistance and i is the rate of discharge per unit
 
@@ -1256,22 +706,19 @@ temperature and state of charge of the battery, it should be measured under
 
 various battery operating conditions. The battery internal resistance has been
 
-determined experimentally (Karimi and Li, 2013).</p><p align="justify" style="text-indent:19.85pt;">From the physical dimensions and
+determined experimentally (Karimi and Li, 2013).</p><p class="body">From the physical dimensions and
 
 thermal properties of cell layers and coolant flow conditions around the
 
 battery units, the dimensionless Biot number (Bi) is estimated to be less than
 
-0.1.</p><p align="justify" style="text-indent:19.85pt;">This indicates that the temperature
+0.1.</p><p class="body">This indicates that the temperature
 
 gradients across individual battery units are negligible. On the other hand,
 
 the temperature variations would be dominant only along the cell/battery
 
 heights. Hence, the battery governing equation is as follow:</p>
-
-<div align=center>
-
 
 <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
  style='width:100.0%;border-collapse:collapse;border:none'>
@@ -1285,12 +732,9 @@ heights. Hence, the battery governing equation is as follow:</p>
   </td>
  </tr>
 </table>
+<br>
 
-
-</div>
-
-
-<p align="justify" style="text-indent:0pt;">where  is spatial coordinate
+<p class="body">where  is spatial coordinate
 
 along the battery height, <i>h</i> is local heat transfer
 
@@ -1302,9 +746,10 @@ by <<i>k</i><i> </i>and <i>&#945;</i>, respectively. <i>T<sub>c</sub></i> is t
 
 temperature.</p>
 
+<center>
 <div class="widetable">
+  <p class="body">Table 1. Unit cell specifications.</p>
 <table>
-<caption>Table 1. Unit cell specifications.</caption>
 <thead>
  <tr>
 
@@ -1799,13 +1244,9 @@ temperature.</p>
  </tbody>
 
 </table>
+</div></center>
 
-
-
-</div>
-
-<br>
-<p class=MsoNormal style='text-indent:0cm'>Equation 5 is
+<p class="body">Equation 5 is
 
 subject to the initial and boundary conditions. It is assumed that the whole
 
@@ -1815,10 +1256,10 @@ initially at a specified temperature, and during the battery discharge, each bat
 
 adjacent cooling media by convection. </p>
 
-<h4>2. 2. Flow Network Model</h4>
+<p class="subhead">2. 2. Flow Network Model</p>
 
 
-<p align="justify" style="text-indent:19.85pt;">The coolant flow path consisting of the inlet, outlet, supplying and
+<p class="body">The coolant flow path consisting of the inlet, outlet, supplying and
 
 collecting manifolds and the coolant flow channels forms a series of flow
 
@@ -1827,10 +1268,6 @@ loops. The flow distribution in each loop is governed by the conservation laws.
 The conservation of mass principle requires that total mass flow into and out
 
 of each junction in the flow network must be equal, or:</p>
-
-
-<div align=center>
-
 
 <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
  style='width:100.0%;border-collapse:collapse;border:none'>
@@ -1846,18 +1283,12 @@ of each junction in the flow network must be equal, or:</p>
 </table>
 
 
-</div>
 
-
-
-<p align="justify" style="text-indent:19.85pt;">In order to satisfy the conservation
+<p class="body">In order to satisfy the conservation
 
 of energy, the sum of pressure changes around each of the flow loops should be
 
 zero:</p>
-
-
-<div align=center>
 
 
 <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
@@ -1874,18 +1305,9 @@ zero:</p>
 </table>
 
 
-</div>
-
-
-
-<p align="justify" style="text-indent:19.85pt;">The frictional head loss can be expressed by Darcy-Weisbach
+<p class="body">The frictional head loss can be expressed by Darcy-Weisbach
 
 equation:</p>
-
-
-
-<div align=center>
-
 
 <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
  style='width:100.0%;border-collapse:collapse;border:none'>
@@ -1901,20 +1323,13 @@ equation:</p>
 </table>
 
 
-</div>
-
-
-
-<p align="justify" style="text-indent:0pt;">where <i>L</i> and <i>D<sub>h</sub></i> are the length and
+<p class="body">where <i>L</i> and <i>D<sub>h</sub></i> are the length and
 
 hydraulic diameter of branches in the loops and <i>&#961;</i> and
 
 <i>v</i> are the associated averaged values of the coolant's
 
 density and velocity, respectively. The friction coefficient, ><i>C<sub>&#402;</sub></i>can be determined from:</p>
-
-
-<div align=center>
 
 
 <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width="100%"
@@ -1930,10 +1345,7 @@ density and velocity, respectively. The friction coefficient, ><i>C<sub>&#402;</
  </tr>
 </table>
 
-
-</div>
-
-<p align="justify" style="text-indent:19.85pt;">A linear
+<p class="body">A linear
 
 relationship is used to interpolate <i>C<sub>&#402;</sub></i> in the transient region and all the surfaces
 
@@ -1941,18 +1353,18 @@ are considered to be smooth (Karimi <i>et al.</i>, 2005).</p>
 
 
 
-<p align="justify" style="text-indent:19.85pt;">Hardy
+<p class="body">Hardy
 
 Cross method is implemented to obtain the flow rate distributions in the
 
 coolant flow loops surrounding the battery units (Cross, 1936).</p>
 
 
-<h2>3. Results and Discussion</h2>
+<h4>3. Results and Discussion</h4>
 
 
 
-<p align="justify" style="text-indent:19.85pt;">Table 2 lists the battery pack thermal management
+<p class="body">Table 2 lists the battery pack thermal management
 
 system parameters used in the present study. The battery pack consists of a
 
@@ -1963,14 +1375,14 @@ be16 cm wide and 23 cm tall</p>
 
 
 <figure>
-<img src="011_files/image001.png" class="img"/>
+<img src="011_files/image001.png" class="article-img">
 
 <figcaption>
 Figure 1. Schematic of a typical Li-ion battery pack thermal management system. </figcaption>
 </figure>
-<br>
 
-<p align="justify" style="text-indent:0pt;">and comprised of 10 cell units connected in parallel. Hence, the
+
+<p class="body">and comprised of 10 cell units connected in parallel. Hence, the
 
 electric capacity of each battery unit is 20 <i>mA/cm<sup>2</sup></i> and the associated current density is estimated to be 5.4 <i>mA</i>. The overall magnitude of the battery
 
@@ -1992,7 +1404,7 @@ U-configuration in which the coolant enters the pack from lower left inlet and
 
 leaves the pack at the upper left outlet. Silicon oil and air are selected as
 
-possible coolant media. </p><p align="justify" style="text-indent:19.85pt;">Lithium-ion
+possible coolant media. </p><p class="body">Lithium-ion
 
 battery cells have demonstrated excellent performance when operated at ambient
 
@@ -2016,7 +1428,7 @@ an acceptable range for which heat generation data are available (<i>eg.</i>
 
 20-40&#730;C ), and (b) to
 
-ensure that a relatively uniform voltage distribution prevails within the pack.</p><p align="justify" style="text-indent:19.85pt;">The whole
+ensure that a relatively uniform voltage distribution prevails within the pack.</p><p class="body">The whole
 
 computational domain (including the battery container and thermal management
 
@@ -2030,7 +1442,7 @@ with the boundary conditions. The performance of the thermal management system i
 
 the temperature uniformity within the pack and the parasitic power consumption
 
-(pump or blower) for the coolant circulation.</p><p align="justify" style="text-indent:19.85pt;">In the
+(pump or blower) for the coolant circulation.</p><p class="body">In the
 
 following section, numerical results for various thermal management strategies
 
@@ -2044,7 +1456,7 @@ remarks are still valid for battery charging. </p>
 
 
 
-<p align="justify" style="text-indent:19.85pt;">Figure 2
+<p class="body">Figure 2
 
 shows the temperature distributions inside the battery pack for various rates
 
@@ -2065,7 +1477,7 @@ battery cells.</p>
 
 
 
-<p class=MsoNormal style='text-indent:19.85pt'>Figure
+<p class="body">Figure
 
 3 compares temperature distributions in the battery pack at the end of
 
@@ -2087,10 +1499,10 @@ much larger than that of the Z-configurations for both coolants. Hence the
 
 Z-configuration outperforms U-configuration for both coolant fluids.</p>
 
-
+<center>
 <div class="widetable">
+  <p class="body">Table 2. System parameters.</p>
 <table>
-<caption>Table 2. System parameters.</caption>
 <thead>
 <tr>
   <td width=746 nowrap colspan=2 style='width:559.5pt;border:solid windowtext 1.0pt;
@@ -2254,11 +1666,9 @@ Z-configuration outperforms U-configuration for both coolant fluids.</p>
  </tr>
  </tbody>
 </table>
+</div></center>
 
-</div>
-
-<br>
-<p align="justify" style="text-indent:19.85pt;">
+<p class="body">
 It is very important for a thermal
 
 management system to warrant uniformity in temperature at minimum power
@@ -2287,7 +1697,7 @@ C rates and at the end of the discharge period. For both coolants, the
 
 Z-configuration results in a more uniform flow and temperature distributions. The calculated pressure drops throughout the pack and the associated
 
-power requirements are also listed in this table. As expected,<span
+power requirements are also listed in this table. As expected,
  a larger power is required to
 
 circulate silicon oil inside the pack. It is worthwhile to mention that minor
@@ -2300,17 +1710,17 @@ would be very efficient.</p>
 
 
 <figure>
-<img src="011_files/image002.png" class="img"/>
+<img src="011_files/image002.png" class="article-img">
 
 <figcaption>
 Figure 2. Effect of C rate on the battery pack temperature distributions (a) 1C, (b) 2C and (c) 5C [Cooling medium: silicon oil, Z-configuration, inlet flow rate = 0.0001168 <i>m<Sup>3</Sup>/sec</i>, h = 100 W/<i>m2</i>. ̊C, inlet velocity = 0.1 <i>m/sec</i>]</figcaption>
 </figure>
-<br>
 
 
-<h2>4. Conclusions</h2>
 
-<p class=MsoNormal style='text-indent:19.85pt'>The performance of an electric vehicle is affected by
+<h4>4. Conclusions</h4>
+
+<p class="body">The performance of an electric vehicle is affected by
 
 the operating temperature and the degree of temperature gradient in its battery
 
@@ -2322,7 +1732,7 @@ parameters. </p>
 
 
 
-<p class=MsoNormal style='text-indent:19.85pt'>A lumped capacitance heat transfer
+<p class="body">A lumped capacitance heat transfer
 
 model was developed in conjunction with a flow network approach to investigate
 
@@ -2346,7 +1756,7 @@ the coolant.</p>
 
 
 <figure>
-<img src="011_files/image003.png" class="img"/>
+<img src="011_files/image003.png" class="article-img">
 
 <figcaption>
 Figure 3. Temperature distributions in the battery pack at the end of
@@ -2361,13 +1771,13 @@ and (c): silicon oil, inlet flow rate = 0.0001168 <i>m<sup>3</sup></i>/<i>sec</i
 
 and (d): Air, inlet flow rate = 0.01168 <i>m<sup>3</sup></i>/<i>sec</i>, <i>h </i>= 250 W/<i>m<sup>2</sup></i>. &#778;C, inlet velocity = 10 <i>m</i>/<i>sec</i>]</figcaption>
 </figure>
-<br>
 
 
+<center>
 <div class="widetable">
+  <p class="body">Table 3. Performance analysis of the presented
+BTMS.</p>
 <table>
-<caption>Table 3. Performance analysis of the presented
-BTMS.</caption>
 <thead>
  <tr>
   <td width=140 nowrap style='width:104.65pt;border:solid windowtext 1.0pt;
@@ -2642,10 +2052,10 @@ BTMS.</caption>
  </tbody>
 </table>
 </div>
+</center>
 
-<br>
 
-<p align="justify" style="text-indent:19.85pt;">(c) Numerical results have indicated
+<p class="body">(c) Numerical results have indicated
 
 that with Z-configuration (for both air and silicon oil) a more uniform
 
@@ -2654,71 +2064,164 @@ temperature distribution develops inside the pack at the expense of a slightly
 larger power demand. (d) The results of the present model can be used to design and optimize Li-ion battery thermal management systems type. Compared to air, silicon oil is much more viscous and as a result; a larger power is required for its circulations.</p>
 
 
-<img src="images/line.png" width="100&#37;" height="1" />
-<H2><a name="references">References</a></H2>
+<h4 id="references">References</h4>
+
+<div class="ref">
+<p class="body"> Al Hallaj, S., Prakash, J., Selman, J. R. (2000). Characterization of commercial Li-ion batteries using electrochemical calorimetric measurements. Journal of Power Sources, 87, 6−194. <a href="http://dx.doi.org/10.1016/S0378-7753(99)00472-3 " target="_blank">View Article</a></p>
+<p class="body"> Chen, Y., Evans, J. W. (1994). Thermal analysis of lithium polymer electrolyte batteries by a two dimensional model −Thermal behaviour and design optimization. Electrochimica Acta, 39, 517−526. <a href="http://dx.doi.org/10.1016/0013-4686(94)80095-2" target="_blank">View Article</a></p>
+<p class="body"> Cross, H. (1936). Analysis of flow in networks of conduits or conductors. Univ. Illinois Bulletin 286. <a href="https://www.ideals.illinois.edu/bitstream/handle/2142/4433/engineeringexperv00000i00286.pdf?sequence=3 " target="_blank">View Article</a></p>
+<p class="body"> Duan, X., Naterer, G. F. (2010). Heat transfer in phase change materials for thermal management of electric vehicle battery modules. International Journal of Heat and Mass Transfer, 53, 5176−5182. <a href="http://dx.doi.org/10.1016/j.ijheatmasstransfer.2010.07.044 " target="_blank">View Article</a></p>
+<p class="body"> Fang, W., Kwon, O. J., Wang, C. Y. (2010). Electrochemical thermal modeling of automotive Li-ion batteries and experimental validation using a three-electrode cell. International Journal of Energy Research, 34, 107−115. <a href="http://dx.doi.org/10.1002/er.1652 " target="_blank">View Article</a></p>
+<p class="body"> Forgez, C., Do, D. V., Friedrich, G., Morcrette, M., Delacourt, C. (2010). Thermal modeling of a cylindrical LiFePO<sub>4</sub>/graphite lithium-ion battery. Journal of Power Sources, 195, 2961−2968. <a href="http://dx.doi.org/10.1016/j.jpowsour.2009.10.105" target="_blank">View Article</a></p>
+<p class="body"> Inui, Y., Kobayashi, Y., Watanabe, Y., Watase, Y., Kitamura, Y. (2007). Simulation of temperature distribution in cylindrical and prismatic lithium ion secondary batteries. Energy Conversion and Management, 48, 2103−2109. <a href="http://dx.doi.org/10.1016/j.enconman.2006.12.012" target="_blank">View Article</a></p>
+<p class="body"> Karimi, G., Li, X. (2012). Thermal management of lithium-ion batteries for electric Vehicles. International Journal of Energy Research, 37, 13-24. <a href="http://dx.doi.org/10.1002/er.1956 " target="_blank">View Article</a></p>
+<p class="body"> Kizilel, R., Sabbah, R., Selman, J. R., Al-Hallaj, S. (2009). An alternative cooling system to enhance the safety of Li-ion battery packs. Journal of Power Sources, 194, 1105−1112. <a href="http://dx.doi.org/10.1016/j.jpowsour.2009.06.074" target="_blank">View Article</a></p>
+<p class="body"> Karimi, G., Baschuk, J. J., Li, X. (2005). Performance analysis and optimization of PEM fuel cell stacks using flow network approach. Journal of Power Sources, 147, 162–177. <a href="http://dx.doi.org/10.1016/j.jpowsour.2005.01.023" target="_blank">View Article</a></p>
+<p class="body">  Maleki, A., Shamsuri, A. K. (2003). Thermal analysis and modeling of a notebook computer battery. Journal of Power Sources, 115, 131−136. <a href="http://dx.doi.org/10.1016/S0378-7753(02)00722-X " target="_blank">View Article</a></p>
+<p class="body"> Pesaran, A. A. (2001). Battery Thermal Management in EVs and HEVs: Issues and Solutions. Advanced Automotive Battery Conference, Las Vegas, Nevada, February 6-8. <a href="http://www.nrel.gov/vehiclesandfuels/energystorage/pdfs/aabc_lv.pdf" target="_blank">View Article</a></p>
+<p class="body"> Somasundaram, K., Birgersson, E., Mujumdar, A.S. (2012). Thermal- electrochemical model for passive thermal management of a spiral-wound lithium-ion battery. Journal of Power Sources, 203, 84−96. <a href="http://dx.doi.org/10.1016/j.jpowsour.2011.11.075" target="_blank">View Article</a></p>
 
 
 
-<p> Al Hallaj, S., Prakash, J., Selman, J. R. (2000). Characterization of commercial Li-ion batteries using electrochemical calorimetric measurements. Journal of Power Sources, 87, 6−194. <a href="http://dx.doi.org/10.1016/S0378-7753(99)00472-3 " target="_blank">View Article</a></p>
-<p> Chen, Y., Evans, J. W. (1994). Thermal analysis of lithium polymer electrolyte batteries by a two dimensional model −Thermal behaviour and design optimization. Electrochimica Acta, 39, 517−526. <a href="http://dx.doi.org/10.1016/0013-4686(94)80095-2" target="_blank">View Article</a></p>
-<p> Cross, H. (1936). Analysis of flow in networks of conduits or conductors. Univ. Illinois Bulletin 286. <a href="https://www.ideals.illinois.edu/bitstream/handle/2142/4433/engineeringexperv00000i00286.pdf?sequence=3 " target="_blank">View Article</a></p>
-<p> Duan, X., Naterer, G. F. (2010). Heat transfer in phase change materials for thermal management of electric vehicle battery modules. International Journal of Heat and Mass Transfer, 53, 5176−5182. <a href="http://dx.doi.org/10.1016/j.ijheatmasstransfer.2010.07.044 " target="_blank">View Article</a></p>
-<p> Fang, W., Kwon, O. J., Wang, C. Y. (2010). Electrochemical thermal modeling of automotive Li-ion batteries and experimental validation using a three-electrode cell. International Journal of Energy Research, 34, 107−115. <a href="http://dx.doi.org/10.1002/er.1652 " target="_blank">View Article</a></p>
-<p> Forgez, C., Do, D. V., Friedrich, G., Morcrette, M., Delacourt, C. (2010). Thermal modeling of a cylindrical LiFePO<sub>4</sub>/graphite lithium-ion battery. Journal of Power Sources, 195, 2961−2968. <a href="http://dx.doi.org/10.1016/j.jpowsour.2009.10.105" target="_blank">View Article</a></p>
-<p> Inui, Y., Kobayashi, Y., Watanabe, Y., Watase, Y., Kitamura, Y. (2007). Simulation of temperature distribution in cylindrical and prismatic lithium ion secondary batteries. Energy Conversion and Management, 48, 2103−2109. <a href="http://dx.doi.org/10.1016/j.enconman.2006.12.012" target="_blank">View Article</a></p>
-<p> Karimi, G., Li, X. (2012). Thermal management of lithium-ion batteries for electric Vehicles. International Journal of Energy Research, 37, 13-24. <a href="http://dx.doi.org/10.1002/er.1956 " target="_blank">View Article</a></p>
-<p> Kizilel, R., Sabbah, R., Selman, J. R., Al-Hallaj, S. (2009). An alternative cooling system to enhance the safety of Li-ion battery packs. Journal of Power Sources, 194, 1105−1112. <a href="http://dx.doi.org/10.1016/j.jpowsour.2009.06.074" target="_blank">View Article</a></p>
-<p> Karimi, G., Baschuk, J. J., Li, X. (2005). Performance analysis and optimization of PEM fuel cell stacks using flow network approach. Journal of Power Sources, 147, 162–177. <a href="http://dx.doi.org/10.1016/j.jpowsour.2005.01.023" target="_blank">View Article</a></p>
-<p>  Maleki, A., Shamsuri, A. K. (2003). Thermal analysis and modeling of a notebook computer battery. Journal of Power Sources, 115, 131−136. <a href="http://dx.doi.org/10.1016/S0378-7753(02)00722-X " target="_blank">View Article</a></p>
-<p> Pesaran, A. A. (2001). Battery Thermal Management in EVs and HEVs: Issues and Solutions. Advanced Automotive Battery Conference, Las Vegas, Nevada, February 6-8. <a href="http://www.nrel.gov/vehiclesandfuels/energystorage/pdfs/aabc_lv.pdf" target="_blank">View Article</a></p>
-<p> Somasundaram, K., Birgersson, E., Mujumdar, A.S. (2012). Thermal- electrochemical model for passive thermal management of a spiral-wound lithium-ion battery. Journal of Power Sources, 203, 84−96. <a href="http://dx.doi.org/10.1016/j.jpowsour.2011.11.075" target="_blank">View Article</a></p>
+<p class="body"> Sabbah, R., Kizilel, R., Selman, J.R., Al-Hallaj, S. (2008). Active (air-cooled) vs. passive (phase change material) thermal management of high power lithium-ion packs: Limitation of temperature rise and uniformity of temperature distribution. Journal of Power Sources, 182, 630−638. <a href="http://dx.doi.org/10.1016/j.jpowsour.2008.03.082" target="_blank">View Article</a></p>
+</div> <!--REF -->
+  </div> <!--INDENT -->
 
+  </div> <!--Main Content -->
+</div>
+</div>
 
-
-<p> Sabbah, R., Kizilel, R., Selman, J.R., Al-Hallaj, S. (2008). Active (air-cooled) vs. passive (phase change material) thermal management of high power lithium-ion packs: Limitation of temperature rise and uniformity of temperature distribution. Journal of Power Sources, 182, 630−638. <a href="http://dx.doi.org/10.1016/j.jpowsour.2008.03.082" target="_blank">View Article</a></p>
-
-
-
-
-<div class="clearfix"></div>
-  </div>
-<div class="clearfix"></div>
-  </div>
-<div class="clearfix"></div>
-  </div>
-
-  
-
-  <div class="footer">
-
-  <div class="container">
-
-  <div class="col-sm-7 footer-link">
-
-    <p><a href="http://avestia.com">Avestia Publishing</a></p>
-    <p><a href="../register/">Subscribe to our Mailing List</a></p>
-    <p><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://avestia.com/feedback?refURL=' + refURL+'">Feedback</a>');</script></p>
-    <p><a href="../terms/">Terms of Use</a></p>
-		<p><a href="../sitemap/">Sitemap</a></p>
-
-  </div>
-  <div class="col-sm-5 footer-txt">
-    <p>Avestia Publishing, International ASET Inc. </p>
-    <p>Unit No. 417, 1376 Bank St. </p>
-    <p>Ottawa, Ontario, Canada </p>
-    <p>Postal Code: K1H 7Y3</p>
-    <p>Phone Number: 1-613-695-3040</p>
-
+  <footer>
+<div class="grid">
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <ul class="footer-links">
+        <li><a href="/" class="body-link">Avestia Publishing</a></li>
+        <li><a href="journals" class="body-link">Journals</a></li>
+        <li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
+        <li><a href="terms" class="body-link">Terms of Use</a></li>
+        <li><a href="sitemap" class="body-link">Sitemap</a></li>
+      </ul>
+    </div>
   </div>
 
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <p class="body">
+        Avestia Publishing,<br>
+        International ASET Inc.<br>
+        Unit 417, 1376 Bank St.<br>
+        Ottawa, ON, Canada, K1H 7Y3<br>
+        +1 613-695-3040<br>
+        <a href="mailto:info@avestia.com" class="body-link">info@avestia.com</a>
+      </p>
+    </div>
   </div>
 
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer social">
+    <form class="subscribe" action="../subscribe.php" method="post">
+            <span id="sprytextfield2"><input name="email" type="text" id="email" value="Join our mailing list"
+              onblur="if (this.value == '') {this.value = 'Join our mailing list';}"
+        onfocus="if (this.value == 'Join our mailing list') {this.value = '';}" ></span>
+      <input type="submit" name="submit" value="Submit" class="form_button" />
+        </form>
+        
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.facebook.com/pages/International-Academy-of-Science-Engineering-and-Technology/207827708283" target="blank" title="International ASET Inc. Facebook Page">
+          <img src="../img/fb.png" border="0" onmouseover="this.src='../img/fb-hover.png'" onmouseout="this.src='../img/fb.png'">
+        </a>
+      </div>
+
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://twitter.com/ASET_INC" target="blank" title="International ASET Inc. Twitter">
+          <img src="../img/twitter.png" border="0" onmouseover="this.src='../img/twitter-hover.png'" onmouseout="this.src='../img/twitter.png'">
+        </a>
+      </div>
+
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.linkedin.com/company/1169039" target="blank" title="International ASET Inc. LinkedIn">
+          <img src="../img/linkedin.png" border="0" onmouseover="this.src='../img/linkedin-hover.png'" onmouseout="this.src='../img/linkedin.png'">
+        </a>
+      </div>
+
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://plus.google.com/u/0/+International-aset/posts" target="blank" title="International ASET Inc. Google+ Page">
+          <img src="../img/google.png" border="0" onmouseover="this.src='../img/google-hover.png'" onmouseout="this.src='../img/google.png'">
+        </a>
+      </div>
+
+      <p class="body">© Copyright 2015, International ASET Inc. – All Rights Reserved.</p>
+    </div>
   </div>
 
 </div>
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.js"></script>
+</footer>
+</div>
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../js/cbpAnimatedHeader.min.js"></script>
+    <script src="../js/SpryValidationSelect.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationTextField.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationConfirm.js" type="text/javascript"></script>
+
+    <script src="../js/SpryValidationCheckbox.js" type="text/javascript"></script>
+    <script src="../js/SpryValidationTextarea.js" type="text/javascript"></script>
+
+<script src="../js/classie.js"></script>
+<script src="../js/jquery.easing.js"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script defer src="../js/demo.js"></script>
+<script type="text/javascript" src="../css/animate.min.css"></script>
+<script type="text/javascript" src="../js/jnav.js"></script>
+
+<script type="text/javascript">
+<!--
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email");
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
+var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
+var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2", {invalidValue:"-1"});
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
+var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
+var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6");
+//-->
+</script>
+
+    <script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
+
+<script type="text/javascript">
+/*
+  Slidemenu
+*/
+(function() {
+  var $body = document.body
+  , $menu_trigger = $body.getElementsByClassName('menu-trigger-1')[0];
+
+  if ( typeof $menu_trigger !== 'undefined' ) {
+    $menu_trigger.addEventListener('click', function() {
+      $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+    });
+  }
+
+}).call(this);
+</script>
 </body>
-
 </html>
-
