@@ -532,12 +532,12 @@ mail($email, $subject, $message,  "FROM: $jName <no-reply@avestia.com>");
 </div>
   
   <div class="grid">
-  <div class="main-content">
+  <div class="main-content j-home">
     <div class="unit unit-s-1 unit-m-1 unit-l-1">
     <h2>Receive Updates</h2>
 
     <p class="body">Confirm Subscription</p>
-    <p class="body">Thank you for subscribing to IJEPR - International Journal of Environmental Pollution and Remediation. A confirmation email has been sent to your email. Please click on the confirmation link available in the email to confirm your subscription.</p>
+    <p class="body">Thank you for subscribing to IJMEM - International Journal of Mechanical Engineering and Mechatronics. A confirmation email has been sent to your email. Please click on the confirmation link available in the email to confirm your subscription.</p>
 
     <p class="body">&nbsp;</p>
     <p class="body">&nbsp;</p>
