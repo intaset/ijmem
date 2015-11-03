@@ -1445,11 +1445,6 @@ footer .grid {
     right: 0px;
     display: block;
 }
-
-  #slide-menu a {
-    font-size: 1em;
-  }
-
   body.menu-active div#content {
     right: 300px;
   }
